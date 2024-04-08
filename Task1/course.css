@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header"
+        "nav main"
+        "footer footer";
+}
+
+header {
+    background-color: #555;
+    color: white;
+    padding: 1em;
+    grid-area: header;
+}
+
+nav {
+    background-color: whitesmoke;
+    color: black;
+    grid-area: nav;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.navHeader {
+    padding-left: 1em;
+
+}
+
+#lessonsList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-right: 2%;
+    border-color: whitesmoke;
+    border-style: solid;
+    /*width: 10%;*/
+    background-color: whitesmoke;
+}
+
+.lessonlink {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Change the link color on hover */
+.lessonlink:hover {
+    background-color: #555;
+    color: whitesmoke;
+}
+
+.lessonlinkActive {
+    background-color: #111;
+    color: whitesmoke;
+}
+
+main {
+    background-color: whitesmoke;
+    color: black;
+    margin-left: 1em;
+    padding: 1em;
+    grid-area: main;
+}
+
+footer {
+    padding: 1em;
+    background-color: #555;
+    color: white;
+    grid-area: footer;
+}
+
+.button {
+    padding: 0.5em 2em;
+    text-decoration: none;
+    background-color: whitesmoke;
+    border: 2px solid #555;
+    color: #555;
+}
+
+/* Change the link color on hover */
+.button:hover {
+    text-decoration: none;
+    background-color: #555;
+    color: whitesmoke;
+    border: 2px solid #555;
+}

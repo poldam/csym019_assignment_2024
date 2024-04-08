@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "Animation BA (Hons)",
+        "overview": "The BA Animation degree at the University of Northampton focuses on preparing students for a career in animation, including specialist areas such as motion capture, visual effects, storyboarding, 2D and 3D animation for video games and narrative development. You will be introduced to the key points in the creative process, from initial concepting through to the production of final animations. Animation degree students will also develop the technical skills required to create professional standard animations for a variety of digital media formats, such as film, TV, video games and augmented or virtual reality.",
+        "link": "https://www.northampton.ac.uk/courses/animation-ba-hons/",
+        "KEY FACTS": {
+            "UCAS Code": [
+                {
+                    "type": "BA",
+                    "value": "I710"
+                },
+                {
+                    "type": "BA with Foundation",
+                    "value": "I711"
+                }
+            ],
+            "Level": "Undergraduate",
+            "Duration": [
+                {
+                    "type": "Full Time",
+                    "value": "3 years"
+                },
+                {
+                    "type": "Full Time Foundation",
+                    "value": "4 years"
+                },
+                {
+                    "type": "Part Time",
+                    "value": "4 - 6 years"
+                }
+            ],
+            "Starting": "September"
+        }
+    },
+    {
+        "id": 2,
+        "title": "Accounting and Finance (Top-Up) MSc",
+        "overview": "Our MSc Accounting and Finance (Top-up) aims to extend and enhance the understanding and competence gained via professional qualifications and to enhance the ability of students to think strategically about management and organisational change within accounting and finance. This programme is designed for AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates and provides a means to support the continuing professional and personal needs of accounting practitioners.",
+        "link": "https://www.northampton.ac.uk/courses/accounting-and-finance-top-up-msc/"
+    }
+]
