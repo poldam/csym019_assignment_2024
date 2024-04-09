@@ -67,10 +67,25 @@
         },
         "COURSECONTENT": {
             "CourseDetails": {
-                "html": "<p>Throughout your BA Animation degree, you will focus on the production of professional standard animation and visual effects for a variety of digital media, such as film, tv, web-based marketing and video games. You will also be exposed to the whole life cycle of animation production from the initial ideas process, through narrative development, to creation of the final production. You will work with industry-trained tutors to ensure you understand the requirements of animation production processes for specific media platforms and markets.<p><p>Studying a degree in Animation at UON will give you the creative and technical software skills, and the industry knowledge required by leading animation and video game studios. You will produce a personal portfolio of your work to reflect industry and professional practice needs, informed by historical and contemporary references.</p><p>We teach our Animation university course in a practical, studio based environment, with hands-on tutorials led by industry-trained tutors who, alongside practising animation professionals, will provide regular feedback on your work.</p><p class='roboto-bold'>Please note the modules shown here relate to the academic year 23/24. The modules relating to the academic year 24/25 will be available from June 2024.</p>"
+                "html": "<p>Throughout your BA Animation degree, you will focus on the production of professional standard animation and visual effects for a variety of digital media, such as film, tv, web-based marketing and video games. You will also be exposed to the whole life cycle of animation production from the initial ideas process, through narrative development, to creation of the final production. You will work with industry-trained tutors to ensure you understand the requirements of animation production processes for specific media platforms and markets.<p><p>Studying a degree in Animation at UON will give you the creative and technical software skills, and the industry knowledge required by leading animation and video game studios. You will produce a personal portfolio of your work to reflect industry and professional practice needs, informed by historical and contemporary references.</p><p>We teach our Animation university course in a practical, studio based environment, with hands-on tutorials led by industry-trained tutors who, alongside practising animation professionals, will provide regular feedback on your work.</p><p class='roboto-bold'>Please note the modules shown here relate to the academic year 23/24. The modules relating to the academic year 24/25 will be available from June 2024.</p>",
+                "stages": [
+                    {
+                        "name": "STAGE 1",
+                        "html": "",
+                        "modules": [
+                            {
+                                "name": "Fundamentals of Animation",
+                                "credits": "20",
+                                "code": "CSY1070",
+                                "status": "Compulsory",
+                                "description": "This module equips students with the core practical, theoretical and critical skills needed to start animation development. Students will develop core knowledge to support Animation for 2D, 3D, Visual Effects and Games. They will explore different animation methods using traditional techniques."
+                            }
+                        ]
+                    }
+                ]
             },
             "EntryRequirements": {
-                "html": "<p>A typical offer to study BA Animation is:</p><ul><li>BCC at A Level or,</li><li>DMM at BTEC/Cambridge Technical or,</li><li>Pass (C and above) at T Level</li></ul><p>All selected applicants will be invited for a portfolio review and discussion. We welcome applications from students with a mix of A levels and BTEC/Cambridge Technical qualifications.</p><p>For more information on how to make an application, please visit our<a href='/undergraduate/how-to-apply/'><strong>How to Apply page</strong>.</a></p><p>For more information on how to apply as an International student, please visit our<a href='/international/how-to-apply/'><strong>How to Apply page</strong>.</a></p><h5>Integrated Foundation Year (IFY) Entry Requirements</h5><p>Admission to the Animation degree foundation course is normally:</p><ul><li>DEE at A Level or,</li><li>MPP at BTEC or,</li><li>Pass (D or E) at T Level</li></ul><p>However, we would also like to hear from you if you have professional or industry experience instead, a range of other qualifications or self-developed subject knowledge that relates to the course you wish to study.</p><h5>English Language Requirements</h5><p>All International and EU students applying for a course with the University of Northampton must meet the following minimum English language requirements:</p><ul><li><strong>IELTS 6.0 (or equivalent) with a minimum of 5.5 in all bands</strong><br>for study at undergraduate level</li></ul><p>For information regarding English language requirements at the University, please see our&nbsp;<a href='/international/english-language-requirements/'><strong>IELTS&nbsp;page</strong>.</a></p><p>If you would like information on making an application,<a href='/international/how-to-apply/'><strong>please see our&nbsp;How to Apply page</strong>.</a></p>"
+                "html": "<p>A typical offer to study BA Animation is:</p><ul><li>BCC at A Level or,</li><li>DMM at BTEC/Cambridge Technical or,</li><li>Pass (C and above) at T Level</li></ul><p>All selected applicants will be invited for a portfolio review and discussion. We welcome applications from students with a mix of A levels and BTEC/Cambridge Technical qualifications.</p><p>For more information on how to make an application, please visit our <a href='/undergraduate/how-to-apply/'><strong>How to Apply page</strong>.</a></p><p>For more information on how to apply as an International student, please visit our <a href='/international/how-to-apply/'><strong>How to Apply page</strong>.</a></p><h5>Integrated Foundation Year (IFY) Entry Requirements</h5><p>Admission to the Animation degree foundation course is normally:</p><ul><li>DEE at A Level or,</li><li>MPP at BTEC or,</li><li>Pass (D or E) at T Level</li></ul><p>However, we would also like to hear from you if you have professional or industry experience instead, a range of other qualifications or self-developed subject knowledge that relates to the course you wish to study.</p><h5>English Language Requirements</h5><p>All International and EU students applying for a course with the University of Northampton must meet the following minimum English language requirements:</p><ul><li><strong>IELTS 6.0 (or equivalent) with a minimum of 5.5 in all bands</strong><br>for study at undergraduate level</li></ul><p>For information regarding English language requirements at the University, please see our <a href='/international/english-language-requirements/'><strong>IELTS page</strong>.</a></p><p>If you would like information on making an application, <a href='/international/how-to-apply/'><strong>please see our&nbsp;How to Apply page</strong>.</a></p>"
             },
             "FeesandFunding": {
                 "html": "Fees and Funding TODO"
@@ -82,7 +97,25 @@
                 "html": "<p>The <a href='https://www.northampton.ac.uk/undergraduate/integrated-foundation-year/'><strong>Integrated Foundation Year (IFY)</strong></a>&nbsp;offers a new and exciting route into studying for a degree, attracting ambitious and driven students who are willing to learn and advance.</p><p>If you have non-standard qualifications or do not quite meet the admissions requirements, we can offer you a fantastic opportunity to study a four year programme which includes an Integrated Foundation Year. The Integrated Foundation Year will help you develop the theoretical/practical and academic skills you need, in order to successfully progress to the full award on the Animation degree course.</p><p>Our four year courses will enable you to successfully follow the degree pathway of your choice while gaining essential study skills. The foundation year of your chosen degree will be studied on a full-time basis and is aimed at supporting the transition to higher education. Years two, three and four are then studied as a standard degree programme.</p>"
             },
             "FAQs": {
-                "html": "FAQs TODO"
+                "html": "",
+                "questions": [
+                    {
+                        "q": "How will I learn on the Animation BA course?",
+                        "a": "All teaching occurs in classroom tutorials of up to 25 people. We as staff demonstrate the objectives and tasks from the ground up so it’s very practical."
+                    },
+                    {
+                        "q": "How am I assessed on the Animation BA course?",
+                        "a": "All assessed work is primarily portfolio based with reflective reports and essays."
+                    },
+                    {
+                        "q": "What skills do I need to be an animator?",
+                        "a": "<p>The following skills would generally be required:</p><ul><li>Ability to work to client briefs and self-management</li><li>Excellent understanding of animation principles</li><li>Production and presentation to industry standards</li><li>Knowledge of diverse processes for producing unique animative content</li><li>Specialism in a wide range of animation software</li><li>Technical knowledge regarding optimisation</li><li>Working both individually and as part of a team</li><li>Analysing and critiquing of own work and work of others</li></ul>"
+                    },
+                    {
+                        "q": "What software might I use on the BA Animation course?",
+                        "a": "<ul><li>Adobe Creative Suite, specifically Photoshop, Substance Painter/Designer, Premiere Pro, Animate, After Effects.</li><li>Blender</li><li>Autodesk Maya</li><li>Houdini</li><li>Unreal Engine</li><li>Toon Boom</li><li>ZBrush</li></ul>"
+                    }
+                ]
             }
         }
     },

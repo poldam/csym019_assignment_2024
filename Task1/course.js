@@ -3,6 +3,7 @@ var SELECTEDLESSON = 0;
 var SELECTEDCURR = 'euro';
 var USDRATE = 1.27;
 var EURORATE = 1.17;
+var RELOADSECONDS = 100;
 
 function loadAndHandleJSON(jsonFile, callback) {
     fetch(jsonFile)
@@ -12,7 +13,7 @@ function loadAndHandleJSON(jsonFile, callback) {
 
     setTimeout(function () {
         loadAndHandleJSON('./course.json', setUpLessons);
-    }, 10000);
+    }, RELOADSECONDS * 1000);
 }
 
 function setUpLessons(error, lessons) {
@@ -104,8 +105,27 @@ function lessonClicked(event) {
                 if (lesson.COURSECONTENT.CourseDetails.html)
                     html = lesson.COURSECONTENT.CourseDetails.html
 
+                if(lesson.COURSECONTENT.CourseDetails.stages) {
+                    lesson.COURSECONTENT.CourseDetails.stages.forEach(function (item) {
+                        html += "<button class='accordion2'>" + item.name + "</button>";
+
+                        if(item.modules) {
+
+                            if(!item.html)
+                                item.html = "";
+                            
+                            item.modules.forEach(function (item2) {
+                                item.html += "<button class='accordion3'>" + item2.name + " (" + item2.credits + " Credits) </button>";
+                                item.html += "<div class='panel3'><br>" + item2.description + "<br><br></div>";
+                            });
+                        }
+
+                        html += "<div class='panel2'><br>" + item.html + "<br></div>";
+                    });
+                }
+
                 lessonDetails.innerHTML += "<button class='accordion'>Course Details</button>";
-                lessonDetails.innerHTML += "<div class='panel'>" + html + "</div>";
+                lessonDetails.innerHTML += "<div class='panel'><br>" + html + "<br></div>";
             }
 
             if (lesson.COURSECONTENT.EntryRequirements) {
@@ -114,7 +134,7 @@ function lessonClicked(event) {
                     html = lesson.COURSECONTENT.EntryRequirements.html
 
                 lessonDetails.innerHTML += "<button class='accordion'>Entry Requirements</button>";
-                lessonDetails.innerHTML += "<div class='panel'>" + html + "</div>";
+                lessonDetails.innerHTML += "<div class='panel'><br>" + html + "<br></div>";
             }
 
             if (lesson.COURSECONTENT.FeesandFunding) {
@@ -123,7 +143,7 @@ function lessonClicked(event) {
                     html = lesson.COURSECONTENT.FeesandFunding.html
 
                 lessonDetails.innerHTML += "<button class='accordion'>Fees and Funding</button>";
-                lessonDetails.innerHTML += "<div class='panel'>" + html + "</div>";
+                lessonDetails.innerHTML += "<div class='panel'><br>" + html + "<br></div>";
             }
 
             if (lesson.COURSECONTENT.StudentPerks) {
@@ -131,7 +151,7 @@ function lessonClicked(event) {
                 if (lesson.COURSECONTENT.StudentPerks.html)
                     html = lesson.COURSECONTENT.StudentPerks.html
                 lessonDetails.innerHTML += "<button class='accordion'>Student Perks</button>";
-                lessonDetails.innerHTML += "<div class='panel'>" + html + "</div>";
+                lessonDetails.innerHTML += "<div class='panel'><br>" + html + "<br></div>";
             }
 
             if (lesson.COURSECONTENT.IntegratedFoundationYear) {
@@ -139,15 +159,23 @@ function lessonClicked(event) {
                 if (lesson.COURSECONTENT.IntegratedFoundationYear.html)
                     html = lesson.COURSECONTENT.IntegratedFoundationYear.html
                 lessonDetails.innerHTML += "<button class='accordion'>Integrated Foundation Year (IFY)</button>";
-                lessonDetails.innerHTML += "<div class='panel'>" + html + "</div>";
+                lessonDetails.innerHTML += "<div class='panel'><br>" + html + "<br></div>";
             }
 
             if (lesson.COURSECONTENT.FAQs) {
                 html = "";
                 if (lesson.COURSECONTENT.FAQs.html)
-                    html = lesson.COURSECONTENT.FAQs.html
+                    html = lesson.COURSECONTENT.FAQs.html;
+
+                if(lesson.COURSECONTENT.FAQs.questions) {
+                    lesson.COURSECONTENT.FAQs.questions.forEach(function (item) {
+                        html += "<button class='accordion2'>" + item.q + "</button>";
+                        html += "<div class='panel2'><br>" + item.a + "<br><br></div>";
+                    });
+                }
+                
                 lessonDetails.innerHTML += "<button class='accordion'>FAQs</button>";
-                lessonDetails.innerHTML += "<div class='panel'>" + html + "</div>";
+                lessonDetails.innerHTML += "<div class='panel'><br>" + html + "<br></div>";
             }
         }
 
@@ -219,6 +247,7 @@ function lessonClicked(event) {
                 lessonKeys.innerHTML += "<div><span class='roboto-bold'>Location</span>: " + lesson.KEYFACTS.Location + "</div>";
             }
         }
+
     } else {
         lessonDetails.innerHTML = "<p>Το μάθημα δεν βρέθηκε.</p>";
     }
@@ -232,7 +261,35 @@ function lessonClicked(event) {
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
             } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.style.maxHeight = "1000px";
+            }
+        });
+    }
+
+    var acc2 = document.querySelectorAll(".accordion2");
+
+    for (var j = 0; j < acc2.length; j++) {
+        acc2[j].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel2 = this.nextElementSibling;
+            if (panel2.style.maxHeight) {
+                panel2.style.maxHeight = null;
+            } else {
+                panel2.style.maxHeight = "1000px";
+            }
+        });
+    }
+
+    var acc3 = document.querySelectorAll(".accordion3");
+
+    for (var k = 0; k < acc3.length; k++) {
+        acc3[k].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel3 = this.nextElementSibling;
+            if (panel3.style.maxHeight) {
+                panel3.style.maxHeight = null;
+            } else {
+                panel3.style.maxHeight = "1000px";
             }
         });
     }
