@@ -77,11 +77,11 @@ body {
     font-weight: 400;
     font-style: normal;
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 15% 65% 20%;
     grid-template-rows: auto;
-    grid-template-areas: "header header"
-        "nav main"
-        "footer footer";
+    grid-template-areas: "header header header"
+        "nav main lessonKeys"
+        "footer footer footer";
 }
 
 header {
@@ -102,6 +102,14 @@ nav {
 .navHeader {
     padding-left: 1em;
 
+}
+
+.lessonKeys {
+    background-color: #333;
+    color: #fff;
+    margin-left: 1em;
+    padding: 1em;
+    grid-area: lessonKeys;
 }
 
 #lessonsList {
@@ -163,4 +171,37 @@ footer {
     background-color: #555;
     color: whitesmoke;
     border: 2px solid #555;
+}
+
+/* STYLE FROM https://www.w3schools.com/howto/howto_js_accordion.asp */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #ccc;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#currencySelector {
+    padding: 0.5em;
+    float: right;
+    margin-top: -5px;
 }

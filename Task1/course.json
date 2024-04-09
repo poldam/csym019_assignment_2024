@@ -4,8 +4,8 @@
         "title": "Animation BA (Hons)",
         "overview": "The BA Animation degree at the University of Northampton focuses on preparing students for a career in animation, including specialist areas such as motion capture, visual effects, storyboarding, 2D and 3D animation for video games and narrative development. You will be introduced to the key points in the creative process, from initial concepting through to the production of final animations. Animation degree students will also develop the technical skills required to create professional standard animations for a variety of digital media formats, such as film, TV, video games and augmented or virtual reality.",
         "link": "https://www.northampton.ac.uk/courses/animation-ba-hons/",
-        "KEY FACTS": {
-            "UCAS Code": [
+        "KEYFACTS": {
+            "UCASCode": [
                 {
                     "type": "BA",
                     "value": "I710"
@@ -30,7 +30,60 @@
                     "value": "4 - 6 years"
                 }
             ],
-            "Starting": "September"
+            "Starting": "September",
+            "EntryRequirements": "BCC at A Level or, DMM at BTEC",
+            "Fees": {
+                "UK": [
+                    {
+                        "type": "Full Time",
+                        "value": "9250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "Part Time",
+                        "value": "1540",
+                        "extra": "per 20 credit module"
+                    },
+                    {
+                        "type": "Integrated Foundation Year",
+                        "value": "9250",
+                        "extra": ""
+                    }
+                ],
+                "International": [
+                    {
+                        "type": "Full Time",
+                        "value": "15200",
+                        "extra": ""
+                    },
+                    {
+                        "type": "Integrated Foundation Year",
+                        "value": "15200",
+                        "extra": ""
+                    }
+                ]
+            },
+            "Location": "Waterside"
+        },
+        "COURSECONTENT": {
+            "CourseDetails": {
+                "html": "<p>Throughout your BA Animation degree, you will focus on the production of professional standard animation and visual effects for a variety of digital media, such as film, tv, web-based marketing and video games. You will also be exposed to the whole life cycle of animation production from the initial ideas process, through narrative development, to creation of the final production. You will work with industry-trained tutors to ensure you understand the requirements of animation production processes for specific media platforms and markets.<p><p>Studying a degree in Animation at UON will give you the creative and technical software skills, and the industry knowledge required by leading animation and video game studios. You will produce a personal portfolio of your work to reflect industry and professional practice needs, informed by historical and contemporary references.</p><p>We teach our Animation university course in a practical, studio based environment, with hands-on tutorials led by industry-trained tutors who, alongside practising animation professionals, will provide regular feedback on your work.</p><p class='roboto-bold'>Please note the modules shown here relate to the academic year 23/24. The modules relating to the academic year 24/25 will be available from June 2024.</p>"
+            },
+            "EntryRequirements": {
+                "html": "<p>A typical offer to study BA Animation is:</p><ul><li>BCC at A Level or,</li><li>DMM at BTEC/Cambridge Technical or,</li><li>Pass (C and above) at T Level</li></ul><p>All selected applicants will be invited for a portfolio review and discussion. We welcome applications from students with a mix of A levels and BTEC/Cambridge Technical qualifications.</p><p>For more information on how to make an application, please visit our<a href='/undergraduate/how-to-apply/'><strong>How to Apply page</strong>.</a></p><p>For more information on how to apply as an International student, please visit our<a href='/international/how-to-apply/'><strong>How to Apply page</strong>.</a></p><h5>Integrated Foundation Year (IFY) Entry Requirements</h5><p>Admission to the Animation degree foundation course is normally:</p><ul><li>DEE at A Level or,</li><li>MPP at BTEC or,</li><li>Pass (D or E) at T Level</li></ul><p>However, we would also like to hear from you if you have professional or industry experience instead, a range of other qualifications or self-developed subject knowledge that relates to the course you wish to study.</p><h5>English Language Requirements</h5><p>All International and EU students applying for a course with the University of Northampton must meet the following minimum English language requirements:</p><ul><li><strong>IELTS 6.0 (or equivalent) with a minimum of 5.5 in all bands</strong><br>for study at undergraduate level</li></ul><p>For information regarding English language requirements at the University, please see our&nbsp;<a href='/international/english-language-requirements/'><strong>IELTS&nbsp;page</strong>.</a></p><p>If you would like information on making an application,<a href='/international/how-to-apply/'><strong>please see our&nbsp;How to Apply page</strong>.</a></p>"
+            },
+            "FeesandFunding": {
+                "html": "Fees and Funding TODO"
+            },
+            "StudentPerks": {
+                "html": "<p>At the University of Northampton, everything we do, from funded trips to paid internships, is to give you everything you need to make a difference when you leave.</p><p>If you join our full-time BA Animation degree at Northampton, you will receive a laptop when your course begins*. The laptops are built to a bespoke custom specification ideal for use in the seminar room, collaborative group work or studying at home.</p><p>Whatever your ambitions, we’re here to help you to achieve them. We’ll support you to identify the skills you’re learning during your course, find your strengths and secure practical experience so that when it comes to applying for jobs or further study you’ll feel confident in standing out from the crowd. We’ve created the <a href='https://www.northampton.ac.uk/student-life/employment-promise/' target='_blank'><strong>Northampton Employment Promise</strong></a> because we are so confident that if you focus on your studies and complete one of our awards you’ll be highly employable by the time you graduate. Putting you in a great position to secure employment or continue your studies.</p><p>To check out the full list of perks, visit our <a href='https://www.northampton.ac.uk/student-life/university-living-laptops-trips-and-internships/' target='_blank' rel='noopener'><strong>Student Perks page</strong></a> or dedicated <a href='https://www.northampton.ac.uk/student-life/university-living-laptops-trips-and-internships/international-student-study-perks/'><strong>International Perks page</strong></a>.</p><p>*UK fee payers only (see <a href='https://www.northampton.ac.uk/study-perks-terms-and-conditions/'><strong>Terms and Conditions</strong></a> for further details).</p>"
+            },
+            "IntegratedFoundationYear": {
+                "html": "<p>The <a href='https://www.northampton.ac.uk/undergraduate/integrated-foundation-year/'><strong>Integrated Foundation Year (IFY)</strong></a>&nbsp;offers a new and exciting route into studying for a degree, attracting ambitious and driven students who are willing to learn and advance.</p><p>If you have non-standard qualifications or do not quite meet the admissions requirements, we can offer you a fantastic opportunity to study a four year programme which includes an Integrated Foundation Year. The Integrated Foundation Year will help you develop the theoretical/practical and academic skills you need, in order to successfully progress to the full award on the Animation degree course.</p><p>Our four year courses will enable you to successfully follow the degree pathway of your choice while gaining essential study skills. The foundation year of your chosen degree will be studied on a full-time basis and is aimed at supporting the transition to higher education. Years two, three and four are then studied as a standard degree programme.</p>"
+            },
+            "FAQs": {
+                "html": "FAQs TODO"
+            }
         }
     },
     {
