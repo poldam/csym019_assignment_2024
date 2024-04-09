@@ -38,7 +38,9 @@ function setUpLessons(error, lessons) {
             li.addEventListener("click", lessonClicked);
             lessonsList.appendChild(li);
         });
-        // Do something with the loaded JSON data
+
+        if(SELECTEDLESSON)
+            document.getElementById("lesson-" + SELECTEDLESSON).click();
     }
 }
 
@@ -76,6 +78,7 @@ function lessonClicked(event) {
     });
 
     var html = "";
+    var extras = "";
 
     // Display the lesson details
     var lessonDetails = document.getElementById("lessonDetails");
@@ -187,8 +190,12 @@ function lessonClicked(event) {
 
                 if (lesson.KEYFACTS.Fees.UK) {
                     lessonKeys.innerHTML += "<div class='roboto-bold'>Fees UK</div>";
+                    
                     lesson.KEYFACTS.Fees.UK.forEach(function (item) {
-                        lessonKeys.innerHTML += "<div><span class='roboto-medium'>" + item.type + "</span>: " + formatter.format(Math.round(rate*item.value)) + "</div>";
+                        extras = "";
+                        if(item.extra)
+                            extras = item.extra;
+                        lessonKeys.innerHTML += "<div><span class='roboto-medium'>" + item.type + "</span>: " + formatter.format(Math.round(rate*item.value)) + " " + extras + "</div>";
                     });
                 }
 
@@ -196,8 +203,12 @@ function lessonClicked(event) {
 
                 if (lesson.KEYFACTS.Fees.International) {
                     lessonKeys.innerHTML += "<div class='roboto-bold'>Fees International</div>";
+                    
                     lesson.KEYFACTS.Fees.International.forEach(function (item) {
-                        lessonKeys.innerHTML += "<div><span class='roboto-medium'>" + item.type + "</span>: " + formatter.format(Math.round(rate*item.value)) + "</div>";
+                        extras = "";
+                        if(item.extra)
+                            extras = item.extra;
+                        lessonKeys.innerHTML += "<div><span class='roboto-medium'>" + item.type + "</span>: " + formatter.format(Math.round(rate*item.value)) + " " + extras + "</div>";
                     });
                 }
 
@@ -265,8 +276,9 @@ function getRates() {
 var currencySelector = document.getElementById("currencySelector");
 currencySelector.addEventListener("change", currencyChanged);
 
-getRates();
-// Example usage:
+// Uncomment to go live!
+// getRates();
+
 loadAndHandleJSON('./course.json', setUpLessons);
 
 
