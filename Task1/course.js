@@ -80,6 +80,8 @@ function lessonClicked(event) {
 
     var html = "";
     var extras = "";
+    var header = "";
+    var credits = "";
 
     // Display the lesson details
     var lessonDetails = document.getElementById("lessonDetails");
@@ -90,11 +92,28 @@ function lessonClicked(event) {
 
     if (lesson) {
         if (lesson.title)
-            lessonDetails.innerHTML += "<h2>" + lesson.title + "</h2>";
-        if (lesson.overview)
-            lessonDetails.innerHTML += "<p>" + lesson.overview + "</p>";
-        if (lesson.link)
-            lessonDetails.innerHTML += "<p><a class='button roboto-bold' target='_blank' href='" + lesson.link + "'> Read more </a></p>";
+            header += "<h2>" + lesson.title + "</h2>";
+
+        if(lesson.image) {
+            
+            header += "<div class='leftHeader'><div class='square-container'> <img src='" + lesson.image + "' alt='Your Image'> </div>";
+            if (lesson.link)
+                header += "<p><a class='button roboto-bold' target='_blank' href='" + lesson.link + "'> Read more </a></p>";
+            header += "</div>";
+
+            header += "<div class='rightHeader'>";
+            if (lesson.overview)
+                header += "<p>" + lesson.overview + "</p>";
+            header += "</div>";
+        } else {
+            
+            if (lesson.overview)
+                header += "<p>" + lesson.overview + "</p>";
+            if (lesson.link)
+                header += "<p><a class='button roboto-bold' target='_blank' href='" + lesson.link + "'> Read more </a></p>";
+        }
+
+        lessonDetails.innerHTML += header;
 
         if (lesson.COURSECONTENT) {
             lessonDetails.innerHTML += "<hr>";
@@ -111,12 +130,16 @@ function lessonClicked(event) {
 
                         if(item.modules) {
 
-                            if(!item.html)
-                                item.html = "";
-                            
+                            item.html = "";
+                                                        
                             item.modules.forEach(function (item2) {
-                                item.html += "<button class='accordion3'>" + item2.name + " (" + item2.credits + " Credits) </button>";
-                                item.html += "<div class='panel3'><br>" + item2.description + "<br><br></div>";
+                                credits = ""
+                                if(item2.credits) {
+                                    credits = " (" + item2.credits + " Credits)";
+                                }
+
+                                item.html += "<button class='accordion3'>" + item2.name + credits + " </button>";
+                                item.html += "<div class='panel3'><br><div class='gray'><small><span class='roboto-bold'>Module code:</span> " + item2.code + " <span class='roboto-bold'>Status:</span> " + item2.status + " </small></div> <br>" + item2.description + "<br><br></div>";
                             });
                         }
 
@@ -139,8 +162,24 @@ function lessonClicked(event) {
 
             if (lesson.COURSECONTENT.FeesandFunding) {
                 html = "";
-                if (lesson.COURSECONTENT.FeesandFunding.html)
-                    html = lesson.COURSECONTENT.FeesandFunding.html
+                
+                if(lesson.COURSECONTENT.FeesandFunding.title)
+                    html +="<h3>" + lesson.COURSECONTENT.FeesandFunding.title + "</h3>";
+
+                if(lesson.COURSECONTENT.FeesandFunding.text)
+                    html +="<p>" + lesson.COURSECONTENT.FeesandFunding.text + "</p>";
+
+                lesson.COURSECONTENT.FeesandFunding.Fees.forEach(function (item) {
+                    extras = "";
+                    if(item.extra)
+                        extras = item.extra;
+                    html += "<div><span class='roboto-medium'>" + item.type + "</span>: " + formatter.format(Math.round(rate*item.value)) + " " + extras + "</div>";
+                });
+
+                if(lesson.COURSECONTENT.FeesandFunding.AdditionalCosts) {
+                    html +="<h3>Additional Costs</h3>";
+                    html +="<p>" + lesson.COURSECONTENT.FeesandFunding.AdditionalCosts + "</p>";
+                }
 
                 lessonDetails.innerHTML += "<button class='accordion'>Fees and Funding</button>";
                 lessonDetails.innerHTML += "<div class='panel'><br>" + html + "<br></div>";
@@ -261,7 +300,7 @@ function lessonClicked(event) {
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
             } else {
-                panel.style.maxHeight = "1000px";
+                panel.style.maxHeight = "10000px";
             }
         });
     }
@@ -275,7 +314,7 @@ function lessonClicked(event) {
             if (panel2.style.maxHeight) {
                 panel2.style.maxHeight = null;
             } else {
-                panel2.style.maxHeight = "1000px";
+                panel2.style.maxHeight = "10000px";
             }
         });
     }
@@ -289,7 +328,7 @@ function lessonClicked(event) {
             if (panel3.style.maxHeight) {
                 panel3.style.maxHeight = null;
             } else {
-                panel3.style.maxHeight = "1000px";
+                panel3.style.maxHeight = "10000px";
             }
         });
     }

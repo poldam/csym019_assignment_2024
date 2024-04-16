@@ -4,6 +4,7 @@
         "title": "Animation BA (Hons)",
         "overview": "The BA Animation degree at the University of Northampton focuses on preparing students for a career in animation, including specialist areas such as motion capture, visual effects, storyboarding, 2D and 3D animation for video games and narrative development. You will be introduced to the key points in the creative process, from initial concepting through to the production of final animations. Animation degree students will also develop the technical skills required to create professional standard animations for a variety of digital media formats, such as film, TV, video games and augmented or virtual reality.",
         "link": "https://www.northampton.ac.uk/courses/animation-ba-hons/",
+        "image": "https://www.northampton.ac.uk/wp-content/uploads/2022/05/tutor-and-student-discussing-work-on-screen-feature-1400x550.jpg",
         "KEYFACTS": {
             "UCASCode": [
                 {
@@ -71,7 +72,6 @@
                 "stages": [
                     {
                         "name": "STAGE 1",
-                        "html": "",
                         "modules": [
                             {
                                 "name": "Fundamentals of Animation",
@@ -79,6 +79,72 @@
                                 "code": "CSY1070",
                                 "status": "Compulsory",
                                 "description": "This module equips students with the core practical, theoretical and critical skills needed to start animation development. Students will develop core knowledge to support Animation for 2D, 3D, Visual Effects and Games. They will explore different animation methods using traditional techniques."
+                            },
+                            {
+                                "name": "Narrative Development",
+                                "credits": "20",
+                                "code": "CSY1071",
+                                "status": "Compulsory",
+                                "description": "This module explores the fundamentals of storytelling within animated sequences. Students demonstrate their ability to intepret specified requirements, express their ideas for and produce thematical interpretations. Collaborative production techniques will be utilised to generate uniquely emotive products for a specified target audience."
+                            },
+                            {
+                                "name": "3D Animation",
+                                "credits": "20",
+                                "code": "CSY1072",
+                                "status": "Compulsory",
+                                "description": "This module introduces the fundamentals of 3D Animation, utilising industry standard software. Students will develop technical skills and learn how to produce key framed animations and looping sequences. The outcome of this module will be learner proficiency using professional software tools and 3D Animation techniques."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "STAGE 2",
+                        "modules": [
+                            {
+                                "name": "Advanced 3D Animation",
+                                "credits": "20",
+                                "code": "CSY2100",
+                                "status": "Compulsory",
+                                "description": "This module develops the skills and technical knowledge required to produce complex 3D animated sequences. Students create and utilise a variety of assets, creation tools and engines. Open discussions and experimentation with post-production techniques ensure that opportunities to enhance the final quality of a product are explored."
+                            },
+                            {
+                                "name": "VFX Essentials",
+                                "credits": "20",
+                                "code": "CSY2119",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to research and learn the core skills and technical knowledge required to produce visual effects (VFX) for a variety of media. The primary aim is to develop theoretical knowledge and encourage experimentation with simulation processes."
+                            },
+                            {
+                                "name": "Advanced 3D Modelling",
+                                "credits": "",
+                                "code": "CSY2118",
+                                "status": "Compulsory",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "STAGE 3",
+                        "modules": [
+                            {
+                                "name": "Animation Innovation",
+                                "credits": "",
+                                "code": "CSY3070",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Professional Career Development",
+                                "credits": "",
+                                "code": "CSY3071",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Animation Group Project",
+                                "credits": "",
+                                "code": "CSY3072",
+                                "status": "Compulsory",
+                                "description": ""
                             }
                         ]
                     }
@@ -88,7 +154,36 @@
                 "html": "<p>A typical offer to study BA Animation is:</p><ul><li>BCC at A Level or,</li><li>DMM at BTEC/Cambridge Technical or,</li><li>Pass (C and above) at T Level</li></ul><p>All selected applicants will be invited for a portfolio review and discussion. We welcome applications from students with a mix of A levels and BTEC/Cambridge Technical qualifications.</p><p>For more information on how to make an application, please visit our <a href='/undergraduate/how-to-apply/'><strong>How to Apply page</strong>.</a></p><p>For more information on how to apply as an International student, please visit our <a href='/international/how-to-apply/'><strong>How to Apply page</strong>.</a></p><h5>Integrated Foundation Year (IFY) Entry Requirements</h5><p>Admission to the Animation degree foundation course is normally:</p><ul><li>DEE at A Level or,</li><li>MPP at BTEC or,</li><li>Pass (D or E) at T Level</li></ul><p>However, we would also like to hear from you if you have professional or industry experience instead, a range of other qualifications or self-developed subject knowledge that relates to the course you wish to study.</p><h5>English Language Requirements</h5><p>All International and EU students applying for a course with the University of Northampton must meet the following minimum English language requirements:</p><ul><li><strong>IELTS 6.0 (or equivalent) with a minimum of 5.5 in all bands</strong><br>for study at undergraduate level</li></ul><p>For information regarding English language requirements at the University, please see our <a href='/international/english-language-requirements/'><strong>IELTS page</strong>.</a></p><p>If you would like information on making an application, <a href='/international/how-to-apply/'><strong>please see our&nbsp;How to Apply page</strong>.</a></p>"
             },
             "FeesandFunding": {
-                "html": "Fees and Funding TODO"
+                "title": "2024/25 Tuition Fees",
+                "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
+                "Fees": [
+                    {
+                        "type": "UK – Full Time",
+                        "value": "9250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "UK – Part Time",
+                        "value": "1540",
+                        "extra": "per 20 credit module"
+                    },
+                    {
+                        "type": "UK – Integrated Foundation Year",
+                        "value": "9250",
+                        "extra": "as part of a four year programme (subsequent years will be charged at standard BSc rate)"
+                    },
+                    {
+                        "type": "International – Full Time",
+                        "value": "15200",
+                        "extra": ""
+                    },
+                    {
+                        "type": "International – Integrated Foundation Year",
+                        "value": "15200",
+                        "extra": " as part of a four-year programme (subsequent years will be charged at standard BSc rate)"
+                    }
+                ],
+                "AdditionalCosts": "There are no additional costs for our BA Animation university course for students beginning their studies in September 2023. Should this change, applicants and students will be contacted by the university with details of the costs."
             },
             "StudentPerks": {
                 "html": "<p>At the University of Northampton, everything we do, from funded trips to paid internships, is to give you everything you need to make a difference when you leave.</p><p>If you join our full-time BA Animation degree at Northampton, you will receive a laptop when your course begins*. The laptops are built to a bespoke custom specification ideal for use in the seminar room, collaborative group work or studying at home.</p><p>Whatever your ambitions, we’re here to help you to achieve them. We’ll support you to identify the skills you’re learning during your course, find your strengths and secure practical experience so that when it comes to applying for jobs or further study you’ll feel confident in standing out from the crowd. We’ve created the <a href='https://www.northampton.ac.uk/student-life/employment-promise/' target='_blank'><strong>Northampton Employment Promise</strong></a> because we are so confident that if you focus on your studies and complete one of our awards you’ll be highly employable by the time you graduate. Putting you in a great position to secure employment or continue your studies.</p><p>To check out the full list of perks, visit our <a href='https://www.northampton.ac.uk/student-life/university-living-laptops-trips-and-internships/' target='_blank' rel='noopener'><strong>Student Perks page</strong></a> or dedicated <a href='https://www.northampton.ac.uk/student-life/university-living-laptops-trips-and-internships/international-student-study-perks/'><strong>International Perks page</strong></a>.</p><p>*UK fee payers only (see <a href='https://www.northampton.ac.uk/study-perks-terms-and-conditions/'><strong>Terms and Conditions</strong></a> for further details).</p>"
@@ -121,8 +216,65 @@
     },
     {
         "id": 2,
+        "title": "Computer Networks Engineering BSc (Hons)",
+        "overview": "The BSc Computer Networks Engineering degree enables students to develop and apply a range of analytical techniques and problem-solving skills to real-world computer networking scenarios. Students build their professional capabilities independently and as part of a team in a systematic practical manner. These capabilities are applicable to a wide range of professional roles within computer engineering. Through their learning journey, students will study modern networking theories and will devise solutions to real problems. Computer Networks Engineering students will have the opportunity to have a hands-on modern networking lab and access to simulation tools and cloud systems throughout the network engineering course.",
+        "link": "https://www.northampton.ac.uk/courses/computer-networks-engineering-bsc-hons/",
+        "image": "https://www.northampton.ac.uk/wp-content/uploads/2022/09/view-of-student-through-two-screens-1400x550.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Criminology with Psychology BA (Hons)",
+        "overview": "This newly re-developed Criminology with Psychology degree course invites you to combine the understanding of human behaviour, development, thoughts and emotions from psychology and develop this within the context of the study of crime, social order and social control that is central to the study of criminology. The University of Northampton’s Criminology with Psychology course has a particular emphasis on criminal behaviour, law enforcement and crime prevention. It will also equip you with transferable critical and analytical skills that will enhance your employability.",
+        "link": "https://www.northampton.ac.uk/courses/criminology-with-psychology-ba-hons/",
+        "image": "https://www.northampton.ac.uk/wp-content/uploads/2019/09/student-browsing-books-course-feature.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Economics BSc (Hons)",
+        "overview": "Studying the University of Northampton’s BSc Economics degree will enable you to develop excellent problem solving skills that will allow you to solve real world challenges. You will learn to employ different perspectives of the major economic thinkers of the last two centuries to discuss real world issues that are faced by individuals, companies and governments.",
+        "link": "https://www.northampton.ac.uk/courses/economics-bsc-hons/",
+        "image": "https://www.northampton.ac.uk/wp-content/uploads/2016/01/two-students-working-course-feature.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Environmental Science BSc (Hons)",
+        "overview": "The University of Northampton’s BSc Environmental Science degree covers the broad field that encompasses the aspects of ecology and physical science that evaluate environmental issues and propose appropriate solutions. If you have an interest in the environment and in applying scientific principles to help solve environmental problems, this course is for you. This flexible, interdisciplinary BSc environmental sciences course allows you to follow a programme with modules drawn from across the subject of environmental science. You are then able to specialise in particular areas of interest in the second and third year or continue to study a more varied programme.",
+        "link": "https://www.northampton.ac.uk/courses/environmental-science-bsc-hons/",
+        "image": "https://www.northampton.ac.uk/wp-content/uploads/2016/01/geography-and-environmental-science-1400x550.jpg"
+    },
+    {
+        "id": 6,
         "title": "Accounting and Finance (Top-Up) MSc",
         "overview": "Our MSc Accounting and Finance (Top-up) aims to extend and enhance the understanding and competence gained via professional qualifications and to enhance the ability of students to think strategically about management and organisational change within accounting and finance. This programme is designed for AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates and provides a means to support the continuing professional and personal needs of accounting practitioners.",
-        "link": "https://www.northampton.ac.uk/courses/accounting-and-finance-top-up-msc/"
+        "link": "https://www.northampton.ac.uk/courses/accounting-and-finance-top-up-msc/",
+        "image": "https://www.northampton.ac.uk/wp-content/uploads/2023/04/three-students-end-of-book-shelf-1400x550.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Counselling Children and Young People MSc",
+        "overview": "Our Counselling Children and Young People MSc is a multidisciplinary course that aims to promote an advanced level of knowledge and understanding that underpins practice in the area of counselling with children, young people and their families. This postgraduate children counselling course supports you in developing your skills and theoretical knowledge of counselling with children, young people and their families. If you have a particular interest in counselling work with children, then this children’s counselling course is designed with you in mind, allowing you to develop the skills and knowledge needed to pursue a career in counselling.",
+        "link": "https://www.northampton.ac.uk/courses/counselling-children-and-young-people-msc/",
+        "image": "https://www.northampton.ac.uk/wp-content/uploads/2022/05/student-in-one-to-one.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Digital Marketing MSc",
+        "overview": "Digital Marketing MSc explores the exciting and dynamic world of digital marketing. You will investigate the debates around the Virtual Reality, the Metaverse, Artificial Intelligence, Digital Transformation and Digital skills that are framing the world around us. Develop your understanding of marketing, grow your social media skills and use industry data to analyse and interpret the world you work in on this digital marketing Master’s. Build on your general business background and prepare for your career in marketing. Discover marketing concepts and apply your learning and skills with practical industry projects and creative digital tasks. You’ll explore topics including content creation, e-commerce, data insights and analytics, the customer experience, social media marketing, marketing ethics, sustainability, and futurology. Accredited by the Digital Marketing Institute (DMI), this Masters degree is designed to be leading-edge to prepare you as a professional digital marketer for the 21st century workplace.",
+        "link": "https://www.northampton.ac.uk/courses/digital-marketing-msc/",
+        "image": "https://www.northampton.ac.uk/wp-content/uploads/2019/09/student-on-laptop-course-feature.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Financial and Investment Analysis MSc",
+        "overview": "The University of Northampton’s MSc Financial and Investment Analysis will develop you into a specialist investment professional that can take up challenging roles in investment banking, risk management and fund management. This programme will prepare you to write the CFA® professional exams. This finance and investment course has an Industry Placement Option.",
+        "link": "https://www.northampton.ac.uk/courses/financial-and-investment-analysis-msc/",
+        "image": "https://www.northampton.ac.uk/wp-content/uploads/2023/12/student-working-laptop-library-1400x550.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Lift Engineering MSc",
+        "overview": "The University of Northampton’s Lift Engineering MSc course will benefit lift engineers and consultants as well as members of senior management in the lift industry. You will gain an in-depth understanding of advanced technical issues arising in lift design, maintenance and contract management. The programme teaches the skills required in electrical and mechanical science, together with mathematics and other engineering areas associated with the lift industry. This lift engineering master’s degree has been accredited by IMechE under licence from the UK regulator, the Engineering Council. Accreditation is a mark of assurance that the degree meets the standards set by the Engineering Council in the UK Standard for Professional Engineering Competence (UK-SPEC). An accredited degree will provide you with some or all of the underpinning knowledge, understanding and skills for eventual registration as an Incorporated (IEng) or Chartered Engineer (CEng). Some employers recruit preferentially from accredited degrees, and an accredited degree is likely to be recognised by other countries that are signatories to international accords.",
+        "link": "https://www.northampton.ac.uk/courses/lift-engineering-msc/",
+        "image": "https://www.northampton.ac.uk/wp-content/uploads/2022/09/glass-tubes-in-engineering-lab-1400x550.jpg"
     }
 ]

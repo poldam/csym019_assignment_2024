@@ -83,11 +83,20 @@ body {
     font-weight: 400;
     font-style: normal;
     display: grid;
-    grid-template-columns: 15% 65% 20%;
+    grid-template-columns: 15% 85%;
     grid-template-rows: auto;
-    grid-template-areas: "header header header"
-        "nav main lessonKeys"
-        "footer footer footer";
+    grid-template-areas: "header header"
+        "nav main"
+        "footer footer";
+}
+
+.bodyLogin {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+        "main"
+        "footer";
 }
 
 header {
@@ -104,6 +113,10 @@ main {
     padding: 2em 2em;
     padding-top: 1em;
     grid-area: main;
+}
+
+.mainLogin {
+    margin-left: 0;
 }
 
 footer {
@@ -126,52 +139,44 @@ nav {
 
 }
 
-.lessonKeys {
-    background-color: #333;
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.loginForm {
+    display: inline-block;
+    width: 350px;
+    padding: 2em;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.loginForm form {
+    width: 100%;
+}
+
+.logoutLink {
+    float: right;
+    
+}
+
+.logoutLink a {
     color: #fff;
-    margin-left: 1em;
-    padding: 1em;
-    grid-area: lessonKeys;
-}
-
-#lessonsList {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-right: 2%;
-    border-color: whitesmoke;
-    border-style: solid;
-    /*width: 10%;*/
-    background-color: whitesmoke;
-}
-
-.lessonlink {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
     text-decoration: none;
-    cursor: pointer;
 }
-
-/* Change the link color on hover */
-.lessonlink:hover {
-    background-color: #555;
-    color: whitesmoke;
-}
-
-.lessonlinkActive {
-    background-color: #111;
-    color: whitesmoke;
-}
-
-
 
 .button {
-    padding: 0.5em 2em;
+    padding: 1em 1em;
     text-decoration: none;
     background-color: whitesmoke;
     border: 2px solid #555;
     color: #555;
+    width: 200px;
 }
 
 /* Change the link color on hover */
@@ -180,89 +185,16 @@ nav {
     background-color: #555;
     color: whitesmoke;
     border: 2px solid #555;
-}
-
-.imagePlaceholder {
-    display: inline-block;
-    width: 20%;
-}
-
-.descPlaceholder {
-    display: inline-block;
-    width: 80%;
-}
-
-/* STYLE FROM https://www.w3schools.com/howto/howto_js_accordion.asp */
-.accordion, .accordion2, .accordion3 {
-    background-color: #eee;
-    color: #444;
     cursor: pointer;
-    padding: 18px;
+}
+
+input {
+    padding: 1em;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 2em);
+}
+
+.width100 {
     width: 100%;
-    border: 1px solid #ccc;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    font-weight: bold;
-    transition: 0.4s;
-}
-
-.accordion2 {
-    padding: 12px;
-}
-
-.accordion3 {
-    padding: 8px;
-}
-
-.active,
-.accordion:hover, .accordion2:hover, .accordion3:hover {
-    background-color: #ccc;
-}
-
-.panel, .panel2, .panel3 {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-}
-
-.panel2, .panel3 {
-    border: 1px solid #ccc;
-}
-
-#currencySelector {
-    padding: 0.5em;
-    float: right;
-    margin-top: -5px;
-}
-
-.square-container {
-    width: 200px; /* Adjust the width and height as needed */
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-}
-
-.square-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.rightHeader {
-    display: inline-block;
-    width: calc(100% - 230px);
-    vertical-align: top;
-}
-
-.leftHeader {
-    display: inline-block;
-    width: 230px;
-    vertical-align: top;
-}
-
-.gray {
-    color: #444;
 }
