@@ -2,7 +2,7 @@
     $URLPREFIX = "../";
     session_name('CYM019'); 
     session_start();
-    require_once($URLPREFIX.'lib.php');
+    require_once($URLPREFIX.'modules/lib.php');
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
     <title>CSYM019 - TASK 2 - LOGIN SCREEN - POLYVIOS DAMIANAKIS - 23858016</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CSYM019 - ΛΙΣΤΑ ΜΕ ΠΑΝΕΠΙΣΤΗΜΙΑΚΑ ΜΑΘΗΜΑΤΑ">
+    <meta name="description" content="CSYM019 - TASK 2 - LOGIN SCREEN - POLYVIOS DAMIANAKIS - 23858016">
     <meta name="author" content="Polyvios Damianakis">
     <link rel="stylesheet" href="../task2.css">
 </head>
@@ -26,6 +26,7 @@
         <div class="loginForm text-left">
             <h3 class="text-center">Είσοδος Χρήστη</h3>
             <hr>
+            <?= printMessage('errors', 'danger') ?> 
             <form id="loginform" class="user" method="post" action="<?= $URLPREFIX ?>scripts/login.php">
                 <br>
                 <label>Διεύθυνση e-mail </label>

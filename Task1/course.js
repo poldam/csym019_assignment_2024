@@ -3,6 +3,7 @@ var SELECTEDLESSON = 0;
 var SELECTEDCURR = 'euro';
 var USDRATE = 1.27;
 var EURORATE = 1.17;
+
 var RELOADSECONDS = 100;
 
 function loadAndHandleJSON(jsonFile, callback) {
