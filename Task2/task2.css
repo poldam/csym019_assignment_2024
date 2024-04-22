@@ -224,3 +224,25 @@ input {
     background-color: #d1ecf1;
     border-color: #bee5eb;
 }
+
+.menuitem {
+    text-decoration: none;
+    list-style: none;
+    padding: 1em;
+    background-color: #999;
+    color: #111;
+    margin-bottom: 0.5em;
+    width: calc(100% - 2em);
+    display: block;
+}
+
+.activemenuitem {
+    background-color: #111 !important;
+    color: #fff !important;
+}
+
+.menuitem:hover {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+

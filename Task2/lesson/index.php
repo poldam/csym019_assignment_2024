@@ -1,10 +1,10 @@
 <?php
-    $URLPREFIX = "./";
+    $URLPREFIX = "../";
 
     session_name('CYM019'); 
     session_start();
 
-    $PAGE = "dashboard";
+    $PAGE = "lesson";
 
     require_once($URLPREFIX.'modules/lib.php');
 
@@ -30,7 +30,7 @@
 
 <body>
     <header>
-        <h3>CSYM019 - TASK 2 <span class="logoutLink roboto-bold"> <a href="<?= $URLPREFIX."scripts/logout.php" ?>"> Logout </a></span></h3>
+        <h3>CSYM019 - TASK 2 - Lesson Page<span class="logoutLink roboto-bold"> <a href="<?= $URLPREFIX."scripts/logout.php" ?>"> Logout </a></span></h3>
         
     </header>
 
