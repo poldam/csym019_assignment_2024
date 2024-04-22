@@ -19,7 +19,7 @@
 
 <body class="bodyLogin">
     <header>
-        <h3>CSYM019 - TASK 2 </h3>
+        <h3>CSYM019 - TASK 2 - Login Screen</h3>
     </header>
 
     <main id="main" class="mainLogin text-center">
@@ -47,7 +47,7 @@
         </div>
     </main>
 
-    <footer>&copy; CSYM019 2024 - TASK 2 - LOGIN SCREEN - POLYVIOS DAMIANAKIS - 23858016</footer>
+    <footer><?php require_once($URLPREFIX."modules/footer.php"); ?></footer>
 </body>
 <script src="../task2.js"></script>
 

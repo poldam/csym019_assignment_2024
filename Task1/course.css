@@ -104,6 +104,7 @@ main {
     padding: 2em 2em;
     padding-top: 1em;
     grid-area: main;
+    position: relative;
 }
 
 footer {
@@ -266,3 +267,8 @@ nav {
 .gray {
     color: #444;
 }
+
+.oneempaddingleft {
+    padding-left: 1em;
+}
+

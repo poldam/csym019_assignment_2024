@@ -30,7 +30,7 @@
 
 <body>
     <header>
-        <h3>CSYM019 - TASK 2 <span class="logoutLink roboto-bold"> <a href="<?= $URLPREFIX."scripts/logout.php" ?>"> Logout </a></span></h3>
+        <h3>CSYM019 - TASK 2 - Dashboard<span class="logoutLink roboto-bold"> <a href="<?= $URLPREFIX."scripts/logout.php" ?>"> Logout </a></span></h3>
         
     </header>
 
@@ -44,7 +44,7 @@
         <canvas id="demoChart" style="width:100%;max-width:700px;height: 300px;"></canvas>
     </main>
 
-    <footer>&copy; CSYM019 2024 - TASK 2 - POLYVIOS DAMIANAKIS - 23858016</footer>
+    <footer><?php require_once($URLPREFIX."modules/footer.php"); ?></footer>
 </body>
 <script src="./task2.js"></script>
 

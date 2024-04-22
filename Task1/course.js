@@ -96,15 +96,24 @@ function lessonClicked(event) {
             header += "<h2>" + lesson.title + "</h2>";
 
         if(lesson.image) {
-            
-            header += "<div class='leftHeader'><div class='square-container'> <img src='" + lesson.image + "' alt='Your Image'> </div>";
+            header += "<div class='leftHeader'><div class='square-container'> <img src='./images/" + lesson.id + ".png' alt='Your Image'> </div>";
             if (lesson.link)
                 header += "<p><a class='button roboto-bold' target='_blank' href='" + lesson.link + "'> Read more </a></p>";
             header += "</div>";
 
             header += "<div class='rightHeader'>";
             if (lesson.overview)
+                header += "<h4>OVERVIEW</h4>";
                 header += "<p>" + lesson.overview + "</p>";
+
+                if (lesson.highlights) {
+                    header += "<h4>HIGHLIGHTS</h4>";
+                    header += "<ul class='oneempaddingleft'>";
+                    lesson.highlights.forEach(function (item) {
+                        header += "<li>" + item + "</li>";
+                    });
+                    header += "</ul>";
+                }
             header += "</div>";
         } else {
             

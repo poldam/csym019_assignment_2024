@@ -44,7 +44,7 @@
         <canvas id="demoChart" style="width:100%;max-width:700px;height: 300px;"></canvas>
     </main>
 
-    <footer>&copy; CSYM019 2024 - TASK 2 - POLYVIOS DAMIANAKIS - 23858016</footer>
+    <footer><?php require_once($URLPREFIX."modules/footer.php"); ?></footer>
 </body>
 <script src="./task2.js"></script>
 
