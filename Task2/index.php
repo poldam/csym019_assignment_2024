@@ -46,6 +46,6 @@
 
     <footer><?php require_once($URLPREFIX."modules/footer.php"); ?></footer>
 </body>
-<script src="./task2.js"></script>
+<script src="<?= $URLPREFIX ?>task2.js"></script>
 
 </html>

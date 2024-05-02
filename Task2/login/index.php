@@ -28,10 +28,10 @@
             <hr>
             <?= printMessage('errors', 'danger') ?> 
             <form id="loginform" class="user" method="post" action="<?= $URLPREFIX ?>scripts/login.php">
-                <br>
+            
                 <label>Διεύθυνση e-mail </label>
                 <div><input type="email" name="email" placeholder="Εισάγετε το email σας"></div>
-                <br>
+                
                 <label>Κωδικός πρόσβασης </label>
                 <div><input type="password" name="password" placeholder="Εισάγετε τον κωδικό σας"></div>
 
@@ -49,6 +49,6 @@
 
     <footer><?php require_once($URLPREFIX."modules/footer.php"); ?></footer>
 </body>
-<script src="../task2.js"></script>
+<script src="<?= $URLPREFIX ?>task2.js"></script>
 
 </html>

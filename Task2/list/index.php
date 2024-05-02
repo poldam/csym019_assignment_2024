@@ -41,11 +41,11 @@
     </nav>
 
     <main id="main">
-        <canvas id="demoChart" style="width:100%;max-width:700px;height: 300px;"></canvas>
+        <h2>List of Lessons</h2>
     </main>
 
     <footer><?php require_once($URLPREFIX."modules/footer.php"); ?></footer>
 </body>
-<script src="./task2.js"></script>
+<script src="<?= $URLPREFIX ?>task2.js"></script>
 
 </html>

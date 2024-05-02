@@ -41,11 +41,87 @@
     </nav>
 
     <main id="main">
-        <canvas id="demoChart" style="width:100%;max-width:700px;height: 300px;"></canvas>
+        <?php if(!empty($_GET['action']) && $_GET['action'] == 'insert') { ?>
+            <div>
+                <h2> Εισαγωγή Μαθήματος</h2>
+                <form>
+                    <label>Τίτλος Μαθήματος (έως 150 χαρακτήρες)</label>
+                    <div><input type="text" name="title" placeholder="Εισάγετε τον Τίτλο του Μαθήματος"></div>
+
+                    <label>Overview (έως 500 χαρακτήρες) </label>
+                    <div><textarea type="text" name="overview" placeholder="Εισάγετε το Overview του Μαθήματος"></textarea></div>
+
+                    <div class="col33">
+                        <label>Level </label>
+                        <div>
+                            <select name="level">
+                                <?php 
+                                    foreach($LESSON_LESSON_LEVELS as $k => $v) {
+                                        echo "<option value='".$k."'>".$v."</option>";
+                                    }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col33">
+                        <label>Starting </label>
+                        <div>
+                            <select name="starting">
+                                <?php 
+                                    foreach($LESSON_STARTING as $k => $v) {
+                                        echo "<option value='".$k."'>".$v."</option>";
+                                    }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col33">
+                        <label>Location </label>
+                        <div>
+                            <input type="text" name="location" placeholder="Εισάγετε το Location του Μαθήματος">
+                        </div>
+                    </div>
+
+                    <label>Course Details (έως 500 χαρακτήρες) </label>
+                    <div><textarea type="text" name="courseDetails" placeholder="Εισάγετε το Course Details του Μαθήματος"></textarea></div>
+
+                    <label>Entry Requirements (KEYS Section)</label>
+                    <div><input type="text" name="entryReqsKeys" placeholder="Εισάγετε τα Entry Requirements του Μαθήματος (KEYS Section)"></div>
+
+                    <label>Entry Requirements (έως 500 χαρακτήρες) </label>
+                    <div><textarea type="text" name="entryReqs" placeholder="Εισάγετε τα Entry Requirements του Μαθήματος (FULL)"></textarea></div>
+
+                    <label>Fees Header (έως 500 χαρακτήρες) </label>
+                    <div><textarea type="text" name="feesHeader" placeholder="Εισάγετε το Fees Header του Μαθήματος"></textarea></div>
+
+                    <label>Fees Footer (έως 500 χαρακτήρες) </label>
+                    <div><textarea type="text" name="feesFooter" placeholder="Εισάγετε τα Fees Footer του Μαθήματος"></textarea></div>
+
+                    <label>Student Perks (έως 500 χαρακτήρες) </label>
+                    <div><textarea type="text" name="studentPerks" placeholder="Εισάγετε τα Student perks του Μαθήματος"></textarea></div>
+
+                    <label>Integrated Foundation Year (IFY) (έως 500 χαρακτήρες) </label>
+                    <div><textarea type="text" name="IFY" placeholder="Εισάγετε το IFY του Μαθήματος"></textarea></div>
+            
+                </form>
+            </div>
+        <?php } else if (!empty($_GET['id'])) { ?>
+
+            <?php
+                $lessonid = $_GET['id'];
+            ?>
+            <div>
+                <h2> Επεξεργασία Μαθήματος (<?= $lessonid ?>) </h2>
+
+                <span class="button button-danger" id="deleteLesson"> Διαγραφή Μαθήματος</span>
+            </div>
+        <?php } ?>
     </main>
 
     <footer><?php require_once($URLPREFIX."modules/footer.php"); ?></footer>
 </body>
-<script src="./task2.js"></script>
+<script src="<?= $URLPREFIX ?>task2.js"></script>
 
 </html>

@@ -169,27 +169,27 @@
                 "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
                 "Fees": [
                     {
-                        "type": "UK – Full Time",
+                        "type": "UK - Full Time",
                         "value": "9250",
                         "extra": ""
                     },
                     {
-                        "type": "UK – Part Time",
+                        "type": "UK - Part Time",
                         "value": "1540",
                         "extra": "per 20 credit module"
                     },
                     {
-                        "type": "UK – Integrated Foundation Year",
+                        "type": "UK - Integrated Foundation Year",
                         "value": "9250",
                         "extra": "as part of a four year programme (subsequent years will be charged at standard BSc rate)"
                     },
                     {
-                        "type": "International – Full Time",
+                        "type": "International - Full Time",
                         "value": "15200",
                         "extra": ""
                     },
                     {
-                        "type": "International – Integrated Foundation Year",
+                        "type": "International - Integrated Foundation Year",
                         "value": "15200",
                         "extra": " as part of a four-year programme (subsequent years will be charged at standard BSc rate)"
                     }
