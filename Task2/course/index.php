@@ -4,7 +4,7 @@
     session_name('CYM019'); 
     session_start();
 
-    $PAGE = "lesson";
+    $PAGE = "course";
 
     require_once($URLPREFIX.'modules/lib.php');
 
@@ -30,7 +30,7 @@
 
 <body>
     <header>
-        <h3>CSYM019 - TASK 2 - Lesson Page<span class="logoutLink roboto-bold"> <a href="<?= $URLPREFIX."scripts/logout.php" ?>"> Logout </a></span></h3>
+        <h3>CSYM019 - TASK 2 - Course Page<span class="logoutLink roboto-bold"> <a href="<?= $URLPREFIX."scripts/logout.php" ?>"> Logout </a></span></h3>
         
     </header>
 
@@ -43,9 +43,9 @@
     <main id="main">
         <?php if(!empty($_GET['action']) && $_GET['action'] == 'insert') { ?>
             <div>
-                <h2> Εισαγωγή Μαθήματος</h2>
+                <h2> Insert Course</h2>
                 <form>
-                    <label>Τίτλος Μαθήματος (έως 150 χαρακτήρες)</label>
+                    <label>Course Title (έως 150 χαρακτήρες)</label>
                     <div><input type="text" name="title" placeholder="Εισάγετε τον Τίτλο του Μαθήματος"></div>
 
                     <label>Overview (έως 500 χαρακτήρες) </label>
@@ -107,15 +107,61 @@
             
                 </form>
             </div>
-        <?php } else if (!empty($_GET['id'])) { ?>
+        <?php } else if (!empty($_GET['action']) && $_GET['action'] == 'edit' && !empty($_GET['id'])) { ?>
 
             <?php
                 $lessonid = $_GET['id'];
             ?>
             <div>
-                <h2> Επεξεργασία Μαθήματος (<?= $lessonid ?>) </h2>
+                <h2> Course Edit (<?= $lessonid ?>) </h2>
 
-                <span class="button button-danger" id="deleteLesson"> Διαγραφή Μαθήματος</span>
+                <span class="button button-info mr-30"> <a href="../course?action=view&id=<?= $lessonid ?>"> View Course </a></span>
+                <span class="button button-danger" id="deleteLesson"> Delete Course</span>
+            </div>
+        <?php } else if (!empty($_GET['action']) && $_GET['action'] == 'view' && !empty($_GET['id'])) { ?>
+
+            <?php
+                $lessonid = $_GET['id'];
+            ?>
+            <div>
+                <h2> Course View (<?= $lessonid ?>) </h2>
+
+                <div class="col50">
+                    <?php
+                        $stmt =  $MYSQL_CONNECTION->prepare("SELECT * FROM lessons where id = :id");
+                        $stmt->bindParam(':id', $lessonid);
+                        $stmt->execute();
+                        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+                        if ($row) { ?>
+                            <h3><?= $row['title']?></h3>
+                            <p><?= $row['overview'] ?></p>
+
+                            <?php
+                                $stmt2 = $MYSQL_CONNECTION->prepare("SELECT * FROM highlights WHERE lessonid = :id");
+                                $stmt2->bindParam(':id', $lessonid);
+                                $stmt2->execute();
+                                echo "<h3>HIGHLIGHTS</h3>";
+                                echo "<ul>";
+                                while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
+                                    echo "<li>".$row2['text']."</li>";
+                                }
+                                echo "</ul>";
+                            ?>
+                        <?php
+                        } else {
+                            echo "<div class='alert alert-danger'>COURSE NOT FOUND!</div>";
+                        }
+                    ?>
+                    
+                </div>
+                <div class="col50">
+
+                </div>
+                <div class="mt-30">
+                    <span class="button button-edit mr-30"> <a href="../course?action=edit&id=<?= $lessonid ?>"> Edit Course </a></span> 
+                    <span class="button button-danger" id="deleteLesson"> Delete Course</span>
+                <div>
             </div>
         <?php } ?>
     </main>

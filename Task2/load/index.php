@@ -109,6 +109,36 @@
                         $id = $MYSQL_CONNECTION->lastInsertId();
                     }
 
+                    ######### DURATIONS
+                    $stmt2 = $MYSQL_CONNECTION->prepare("DELETE FROM codes WHERE lessonid = :lessonid");
+                    $stmt2->bindParam(':lessonid', $id);
+                    $stmt2->execute();
+
+                    foreach($lesson['KEYFACTS']['UCASCode'] as $d) {
+                        $codetype = array_search($d['type'], $LESSON_CODE_TYPES);
+                        $value = substr($d['value'], 0, 45);
+                        $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO codes (lessonid, codetype, `value`) VALUES (:lessonid, :codetype, :value)");
+                        $stmt2->bindParam(':lessonid', $id);   
+                        $stmt2->bindParam(':codetype', $codetype);
+                        $stmt2->bindParam(':value', $value);
+                        $stmt2->execute();
+                    }
+
+                    ######### DURATIONS
+                    $stmt2 = $MYSQL_CONNECTION->prepare("DELETE FROM durations WHERE lessonid = :lessonid");
+                    $stmt2->bindParam(':lessonid', $id);
+                    $stmt2->execute();
+
+                    foreach($lesson['KEYFACTS']['Duration'] as $d) {
+                        $durationtype = array_search($d['type'], $LESSON_DURATION_TYPES);
+                        $value = substr($d['value'], 0, 45);
+                        $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO durations (lessonid, durationtype, `value`) VALUES (:lessonid, :durationtype, :value)");
+                        $stmt2->bindParam(':lessonid', $id);   
+                        $stmt2->bindParam(':durationtype', $durationtype);
+                        $stmt2->bindParam(':value', $value);
+                        $stmt2->execute();
+                    }
+
                     ######### HIGHLIGHTS
                     $stmt2 = $MYSQL_CONNECTION->prepare("DELETE FROM highlights WHERE lessonid = :lessonid");
                     $stmt2->bindParam(':lessonid', $id);
@@ -123,15 +153,6 @@
                     }
                     #################################
                     ######### FEES
-                    // $LESSON_FEE_REGIONS = [
-                    //     1 => "UK",
-                    //     2 => "International"
-                    // ];
-                    // $LESSON_FEE_TYPES = [
-                    //     1 => "Full Time",
-                    //     2 => "Part Time",
-                    //     3 => "Integrated Foundation Year"
-                    // ];
                     $stmt2 = $MYSQL_CONNECTION->prepare("DELETE FROM fees WHERE lessonid = :lessonid");
                     $stmt2->bindParam(':lessonid', $id);
                     $stmt2->execute();
