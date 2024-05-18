@@ -1365,14 +1365,19 @@
                 ]
             },
             "EntryRequirements": {
-                "html": "<p>If you have successfully completed professional qualifications such as AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates then you will be eligible to apply for this course. Please note that some professional qualifications must be awarded on the basis of exams passes (without exemptions) in order to be accepted for entry onto this course. International equivalents may be accepted such as OTHM Level 7 Diploma in Accounting and Finance (RQF). English Language Requirements All International and EU students applying for a course with us must meet the following minimum English language requirements: Minimum standard – IELTS 6.5 (or equivalent) for study at postgraduate level. For information regarding English language requirements at the University, please see our IELTS page.</p>"
+                "html": "<p>If you have successfully completed professional qualifications such as AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates then you will be eligible to apply for this course. Please note that some professional qualifications must be awarded on the basis of exams passes (without exemptions) in order to be accepted for entry onto this course. International equivalents may be accepted such as OTHM Level 7 Diploma in Accounting and Finance (RQF). English Language Requirements All International and EU students applying for a course with us must meet the following minimum English language requirements: Minimum standard - IELTS 6.5 (or equivalent) for study at postgraduate level. For information regarding English language requirements at the University, please see our IELTS page.</p>"
             },
             "FeesandFunding": {
                 "title": "2024/25 Tuition Fees",
                 "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
                 "Fees": [
                     {
-                        "type": "Distance Learning",
+                        "type": "UK - Distance Learning",
+                        "value": "2425",
+                        "extra": ""
+                    },
+                    {
+                        "type": "International - Distance Learning",
                         "value": "2425",
                         "extra": ""
                     }
@@ -1492,19 +1497,19 @@
                 ]
             },
             "EntryRequirements": {
-                "html": "<p>You will need to hold a first or second class bachelors’ degree in order to be eligible to apply for this children and young people counselling course. Voluntary or professional experience of work with children and young people is desirable, but not essential. Applicants are advised to mention any relevant experience related to the counselling children degree programme within the last 5 years with their personal statement. Applicants are required to provide a reference with their application.</p><p>If you have successfully completed professional qualifications such as AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates then you will be eligible to apply for this course. Please note that some professional qualifications must be awarded on the basis of exams passes (without exemptions) in order to be accepted for entry onto this course. International equivalents may be accepted such as OTHM Level 7 Diploma in Accounting and Finance (RQF). English Language Requirements All International and EU students applying for a course with us must meet the following minimum English language requirements: Minimum standard – IELTS 6.5 (or equivalent) for study at postgraduate level. For information regarding English language requirements at the University, please see our IELTS page.</p>"
+                "html": "<p>You will need to hold a first or second class bachelors’ degree in order to be eligible to apply for this children and young people counselling course. Voluntary or professional experience of work with children and young people is desirable, but not essential. Applicants are advised to mention any relevant experience related to the counselling children degree programme within the last 5 years with their personal statement. Applicants are required to provide a reference with their application.</p><p>If you have successfully completed professional qualifications such as AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates then you will be eligible to apply for this course. Please note that some professional qualifications must be awarded on the basis of exams passes (without exemptions) in order to be accepted for entry onto this course. International equivalents may be accepted such as OTHM Level 7 Diploma in Accounting and Finance (RQF). English Language Requirements All International and EU students applying for a course with us must meet the following minimum English language requirements: Minimum standard - IELTS 6.5 (or equivalent) for study at postgraduate level. For information regarding English language requirements at the University, please see our IELTS page.</p>"
             },
             "FeesandFunding": {
                 "title": "2024/25 Tuition Fees",
                 "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
                 "Fees": [
                     {
-                        "type": "UK – Part Time / Year 1",
+                        "type": "UK - Part Time / Year 1",
                         "value": "4140",
                         "extra": "(90 Credits)"
                     },
                     {
-                        "type": "UK – Part Time / Year 2",
+                        "type": "UK - Part Time / Year 2",
                         "value": "4140",
                         "extra": "(90 Credits)"
                     }
@@ -1653,38 +1658,38 @@
                                 "credits": "20",
                                 "code": "",
                                 "status": "Compulsory",
-                                "description": "What will the Digital Future bring or look like. Learn about Hype cycles, Futurology – and the study of research & development, Trend research, conduct Vertical dives – e.g. into healthcare martech or explore a Topical dive into a digital feature that is a discussion point of the moment– e.g. Artificial Intelligence, Blockchain, wearables, and perhaps for your future – Meet the PhD"
+                                "description": "What will the Digital Future bring or look like. Learn about Hype cycles, Futurology - and the study of research & development, Trend research, conduct Vertical dives - e.g. into healthcare martech or explore a Topical dive into a digital feature that is a discussion point of the moment- e.g. Artificial Intelligence, Blockchain, wearables, and perhaps for your future - Meet the PhD"
                             },
                             {
                                 "name": "Digital Project or Dissertation",
                                 "credits": "40",
                                 "code": "",
                                 "status": "Compulsory",
-                                "description": "You will have the option to undertake a dissertation – a piece of individual, original research OR choose to take a practitioner-focused digital marketing project"
+                                "description": "You will have the option to undertake a dissertation - a piece of individual, original research OR choose to take a practitioner-focused digital marketing project"
                             }
                         ]
                     }
                 ]
             },
             "EntryRequirements": {
-                "html": "<p>If you have successfully completed professional qualifications such as AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates then you will be eligible to apply for this course. Please note that some professional qualifications must be awarded on the basis of exams passes (without exemptions) in order to be accepted for entry onto this course. International equivalents may be accepted such as OTHM Level 7 Diploma in Accounting and Finance (RQF). English Language Requirements All International and EU students applying for a course with us must meet the following minimum English language requirements: Minimum standard – IELTS 6.5 (or equivalent) for study at postgraduate level. For information regarding English language requirements at the University, please see our IELTS page.</p>"
+                "html": "<p>If you have successfully completed professional qualifications such as AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates then you will be eligible to apply for this course. Please note that some professional qualifications must be awarded on the basis of exams passes (without exemptions) in order to be accepted for entry onto this course. International equivalents may be accepted such as OTHM Level 7 Diploma in Accounting and Finance (RQF). English Language Requirements All International and EU students applying for a course with us must meet the following minimum English language requirements: Minimum standard - IELTS 6.5 (or equivalent) for study at postgraduate level. For information regarding English language requirements at the University, please see our IELTS page.</p>"
             },
             "FeesandFunding": {
                 "title": "2024/25 Tuition Fees",
                 "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
                 "Fees": [
                     {
-                        "type": "UK Full Time",
+                        "type": "UK - Full Time",
                         "value": "8250",
                         "extra": ""
                     },
                     {
-                        "type": "UK Part Time",
+                        "type": "UK - Part Time",
                         "value": "920",
                         "extra": "per 20 credit module"
                     },
                     {
-                        "type": "International – Full Time",
+                        "type": "International - Full Time",
                         "value": "16995",
                         "extra": ""
                     }
@@ -1833,24 +1838,24 @@
                 ]
             },
             "EntryRequirements": {
-                "html": "<p>If you have successfully completed professional qualifications such as AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates then you will be eligible to apply for this course. Please note that some professional qualifications must be awarded on the basis of exams passes (without exemptions) in order to be accepted for entry onto this course. International equivalents may be accepted such as OTHM Level 7 Diploma in Accounting and Finance (RQF). English Language Requirements All International and EU students applying for a course with us must meet the following minimum English language requirements: Minimum standard – IELTS 6.5 (or equivalent) for study at postgraduate level. For information regarding English language requirements at the University, please see our IELTS page.</p>"
+                "html": "<p>If you have successfully completed professional qualifications such as AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates then you will be eligible to apply for this course. Please note that some professional qualifications must be awarded on the basis of exams passes (without exemptions) in order to be accepted for entry onto this course. International equivalents may be accepted such as OTHM Level 7 Diploma in Accounting and Finance (RQF). English Language Requirements All International and EU students applying for a course with us must meet the following minimum English language requirements: Minimum standard - IELTS 6.5 (or equivalent) for study at postgraduate level. For information regarding English language requirements at the University, please see our IELTS page.</p>"
             },
             "FeesandFunding": {
                 "title": "2024/25 Tuition Fees",
                 "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
                 "Fees": [
                     {
-                        "type": "UK Full Time",
+                        "type": "UK - Full Time",
                         "value": "8250",
                         "extra": ""
                     },
                     {
-                        "type": "International – Full Time",
+                        "type": "International - Full Time",
                         "value": "16995",
                         "extra": ""
                     },
                     {
-                        "type": "Year 2 Placement Fee",
+                        "type": "UK - Year 2 Placement Fee",
                         "value": "1100",
                         "extra": "(for placements starting in September 2025 or January 2026)"
                     }
@@ -1986,22 +1991,22 @@
                 "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
                 "Fees": [
                     {
-                        "type": "UK – Part Time",
+                        "type": "UK - Part Time",
                         "value": "920",
                         "extra": " per 20 Credit Module"
                     },
                     {
-                        "type": "UK – Postgraduate Certificate in Advanced Clinical Practice",
+                        "type": "UK - Postgraduate Certificate in Advanced Clinical Practice",
                         "value": "2760",
                         "extra": "(60 Credits, 1 Year)"
                     },
                     {
-                        "type": "UK – Postgraduate Diploma in Advanced Clinical Practice",
+                        "type": "UK - Postgraduate Diploma in Advanced Clinical Practice",
                         "value": "5520",
                         "extra": "(120 Credits, 2 Years)"
                     },
                     {
-                        "type": "UK – MSc Advanced Clinical Practice (Top Up)",
+                        "type": "UK - MSc Advanced Clinical Practice (Top Up)",
                         "value": "2760",
                         "extra": "(60 Credits, 1 Year)"
                     }

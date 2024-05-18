@@ -18,7 +18,7 @@ catch (PDOException $pe) {
 $LESSON_STATUS = [
     1 => "Compulsory",
     2 => "Optional",
-    3 => "Designated"
+    3 => "Designate"
 ];
 
 $LESSON_CODE_TYPES = [
@@ -71,7 +71,16 @@ $LESSON_FEE_TYPES = [
     7 => "MSc (Top Up)",
     8 => "MSc: Year 1",
     9 => "MSc: Year 2",
-    10 => "MSc: Year 3"
+    10 => "MSc: Year 3",
+    11 => "Year 1",
+    12 => "Year 2",
+    13 => "Postgraduate Certificate in Advanced Clinical Practice",
+    14 => "Postgraduate Diploma in Advanced Clinical Practice",
+    15 => "MSc Advanced Clinical Practice",
+    16 => "MSc Advanced Clinical Practice (Top Up)",
+    17 => "Part Time / Year 1",
+    18 => "Part Time / Year 2",
+    19 => "Year 2 Placement Fee"
 ];
 
 $LESSON_STAGES = [

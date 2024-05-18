@@ -41,10 +41,16 @@
     </nav>
 
     <main id="main">
+        <?php
+        //deleteresult=success
+            if(!empty($_GET) && !empty($_GET['deleteresult']) && $_GET['deleteresult'] == 'success') {
+                echo '<div class="alert alert-success"> Course was successfully deleted. </div>';
+            }
+        ?>
         <h2>COURSE LIST</h2>
         <table>
             <tr>
-                <th> <input type="checkbox" id="allcheckboxes" class="" /> </th>
+                <th> <input type="checkbox" id="allcheckboxes" class="course-checkbox" /> </th>
                 <th>ID</th>
                 <th>TITLE</th>
                 <th>LEVEL</th>
@@ -83,7 +89,7 @@
                             echo "<td>";
                                 echo '<span class="buttonTable button-info"> <a href="../course/?action=view&id='.$row['id'].'" target="_blank"> VIEW </a> </span>';
                                 echo '<span class="buttonTable button-edit"> <a href="../course/?action=edit&id='.$row['id'].'" target="_blank">EDIT </a></span>';
-                                echo '<span class="buttonTable button-danger" id="course-'.$row['id'].'">DELETE</span>';
+                                echo '<span class="buttonTable button-danger" id="course-'.$row['id'].'"><a href="../course?action=delete&id='.$row['id'].'">DELETE</a></span>';
                             echo "</td>";
                         echo "</tr>";
                     }
@@ -98,6 +104,45 @@
 
     <footer><?php require_once($URLPREFIX."modules/footer.php"); ?></footer>
 </body>
-<script src="<?= $URLPREFIX ?>task2.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const selectAllCheckbox = document.getElementById('allcheckboxes');
+        const rowCheckboxes = document.querySelectorAll('.course-checkbox');
+
+        // Add event listener to the select-all checkbox
+        selectAllCheckbox.addEventListener('change', function() {
+            rowCheckboxes.forEach(checkbox => {
+                checkbox.checked = this.checked;
+                const row = checkbox.closest('tr');
+                if (this.checked) {
+                    row.classList.add('selected');
+                } else {
+                    row.classList.remove('selected');
+                }
+            });
+        });
+
+        // Add event listeners to each row checkbox
+        rowCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const row = this.closest('tr');
+                if (this.checked) {
+                    row.classList.add('selected');
+                } else {
+                    row.classList.remove('selected');
+                }
+
+                // If any row checkbox is unchecked, uncheck the select-all checkbox
+                if (!this.checked) {
+                    selectAllCheckbox.checked = false;
+                } else {
+                    // If all row checkboxes are checked, check the select-all checkbox
+                    const allChecked = Array.from(rowCheckboxes).every(cb => cb.checked);
+                    selectAllCheckbox.checked = allChecked;
+                }
+            });
+        });
+    });
+</script>
 
 </html>

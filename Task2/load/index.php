@@ -122,7 +122,7 @@
                         $id = $MYSQL_CONNECTION->lastInsertId();
                     }
 
-                    ######### DURATIONS
+                    ######### UCASCode
                     $stmt2 = $MYSQL_CONNECTION->prepare("DELETE FROM codes WHERE lessonid = :lessonid");
                     $stmt2->bindParam(':lessonid', $id);
                     $stmt2->execute();
@@ -176,14 +176,21 @@
 
                     foreach($lesson['COURSECONTENT']['FeesandFunding']['Fees'] as $fee) {
                         $temp = explode("-", $fee['type']);
-
-                        if(count($temp) > 1) {
+                        
+                        if($temp && count($temp) > 1) {
                             $region = array_search(trim($temp[0]), $LESSON_FEE_REGIONS);
                             $feestype = array_search(trim($temp[1]), $LESSON_FEE_TYPES);
+                            // echo "<br>Region: $region<br>";
+                            // echo "<br>Feestype: $feestype<br>";
                         } else {
                             $feestype = array_search(trim($temp[0]), $LESSON_FEE_TYPES);
                         }
 
+                        // if($id == 7) {
+                        //     var_dump($fee['type']);
+                        //     var_dump($feestype);
+                        //     print("444444444444444444444444");
+                        // }
                         $extras = substr($fee['extra'], 0, 145);
                         $value = (float) $fee['value'];
 
@@ -251,7 +258,7 @@
 
                     #################################
 
-                    echo "<br>Record updated/inserted successfully!<br>";
+                    echo "Record updated/inserted successfully!<br><br>";
                 } catch(PDOException $e) {
                     echo "Error: " . $e->getMessage();
                 }
