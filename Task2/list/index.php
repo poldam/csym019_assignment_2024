@@ -81,8 +81,8 @@
                             echo "<td><div title='".$row['overview']."'>".substr($row['overview'], 0, 100)."</div></td>";
                             echo "<td> ".$credits." </td>";
                             echo "<td>";
-                                echo '<span class="buttonTable button-info"> <a href="../course/?action=view&id='.$row['id'].'"> VIEW </a> </span>';
-                                echo '<span class="buttonTable button-edit"> <a href="../course/?action=edit&id='.$row['id'].'">EDIT </a></span>';
+                                echo '<span class="buttonTable button-info"> <a href="../course/?action=view&id='.$row['id'].'" target="_blank"> VIEW </a> </span>';
+                                echo '<span class="buttonTable button-edit"> <a href="../course/?action=edit&id='.$row['id'].'" target="_blank">EDIT </a></span>';
                                 echo '<span class="buttonTable button-danger" id="course-'.$row['id'].'">DELETE</span>';
                             echo "</td>";
                         echo "</tr>";

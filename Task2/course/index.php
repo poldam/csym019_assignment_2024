@@ -156,7 +156,25 @@
                     
                 </div>
                 <div class="col50">
+                    <?php if ($row) { 
+                        echo "<h3>KEY FACTS</h3>";
 
+                        echo "<div class='roboto-bold'>UCAS Code</div>";
+                        $stmt2 = $MYSQL_CONNECTION->prepare("SELECT * FROM codes WHERE lessonid = :id");
+                        $stmt2->bindParam(':id', $lessonid);
+                        $stmt2->execute();
+                        
+                        while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
+                            echo "<div><span class='roboto-bold'>".$LESSON_CODE_TYPES[$row2['codetype']].": </span> ".$row2['value']."</div>";
+                        }
+
+                        echo "<hr>";
+
+                        echo "<div><span class='roboto-bold'>Level: </span> ".$LESSON_LESSON_LEVELS[$row['level']]."</div>";
+
+                        echo "<hr>";
+                        
+                    } ?>
                 </div>
                 <div class="mt-30">
                     <span class="button button-edit mr-30"> <a href="../course?action=edit&id=<?= $lessonid ?>"> Edit Course </a></span> 

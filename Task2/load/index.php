@@ -53,20 +53,34 @@
 
             foreach($lessons as $lesson) {
                 $id = (int) $lesson['id'];
-                print($lesson['title']."<br>");
+                echo  "Processing: ".$lesson['title']."<br>";
 
                 $title = substr($lesson['title'], 0, 150);
                 $overview = substr($lesson['overview'], 0, 4000);
                 $level = array_search($lesson['KEYFACTS']['Level'], $LESSON_LESSON_LEVELS); 
                 $starting = array_search($lesson['KEYFACTS']['Starting'], $LESSON_STARTING);
-                $entryrequirementsforkeys = substr($lesson['KEYFACTS']["EntryRequirements"], 0, 500);
+
+                $entryrequirementsforkeys = "";
+                if(!empty($lesson['KEYFACTS']["EntryRequirements"]))
+                    $entryrequirementsforkeys = substr($lesson['KEYFACTS']["EntryRequirements"], 0, 500);
+
                 $location = substr($lesson['KEYFACTS']["Location"], 0, 45);
                 $courseDetails = substr($lesson['COURSECONTENT']['CourseDetails']['html'], 0, 2500);
-                $entryReqsFull = substr($lesson['COURSECONTENT']['EntryRequirements']['html'], 0, 2500);
+
+                $entryReqsFull = "";
+                if(!empty($lesson['COURSECONTENT']['EntryRequirements']))
+                    $entryReqsFull = substr($lesson['COURSECONTENT']['EntryRequirements']['html'], 0, 2500);
                 $feesHeader = substr($lesson['COURSECONTENT']['FeesandFunding']['text'], 0, 500);
-                $feesFooter = substr($lesson['COURSECONTENT']['FeesandFunding']['AdditionalCosts'], 0, 500);
-                $studentPerks = substr($lesson['COURSECONTENT']["StudentPerks"]['html'], 0, 2500);
-                $IFY = substr($lesson['COURSECONTENT']["IntegratedFoundationYear"]['html'], 0, 2500);
+
+                $feesFooter = "";
+                if(!empty($lesson['COURSECONTENT']['FeesandFunding']['AdditionalCosts']))
+                    $feesFooter = substr($lesson['COURSECONTENT']['FeesandFunding']['AdditionalCosts'], 0, 500);
+                $studentPerks = "";
+                if(!empty($lesson['COURSECONTENT']["StudentPerks"]))
+                    $studentPerks = substr($lesson['COURSECONTENT']["StudentPerks"]['html'], 0, 2500);
+                $IFY = "";
+                if(!empty($lesson['COURSECONTENT']["IntegratedFoundationYear"]))
+                    $IFY = substr($lesson['COURSECONTENT']["IntegratedFoundationYear"]['html'], 0, 2500);
                 
 
                 try {
@@ -84,7 +98,6 @@
                         $stmt2->bindParam(':id', $id);
                         
                     } else {
-                        print("Row does not exist, perform an INSERT");
                         $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO lessons (title, overview, `level`, `starting`, entryrequirementsforkeys, `location`, courseDetails, entryReqsFull, feesHeader, feesFooter, studentPerks, IFY) 
                                                 VALUES (:title, :overview, :level, :starting, :entryrequirementsforkeys, :location, :courseDetails, :entryReqsFull, :feesHeader, :feesFooter, :studentPerks, :IFY) ");
                     }
@@ -114,14 +127,16 @@
                     $stmt2->bindParam(':lessonid', $id);
                     $stmt2->execute();
 
-                    foreach($lesson['KEYFACTS']['UCASCode'] as $d) {
-                        $codetype = array_search($d['type'], $LESSON_CODE_TYPES);
-                        $value = substr($d['value'], 0, 45);
-                        $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO codes (lessonid, codetype, `value`) VALUES (:lessonid, :codetype, :value)");
-                        $stmt2->bindParam(':lessonid', $id);   
-                        $stmt2->bindParam(':codetype', $codetype);
-                        $stmt2->bindParam(':value', $value);
-                        $stmt2->execute();
+                    if(!empty($lesson['KEYFACTS']['UCASCode'])) {
+                        foreach($lesson['KEYFACTS']['UCASCode'] as $d) {
+                            $codetype = array_search($d['type'], $LESSON_CODE_TYPES);
+                            $value = substr($d['value'], 0, 45);
+                            $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO codes (lessonid, codetype, `value`) VALUES (:lessonid, :codetype, :value)");
+                            $stmt2->bindParam(':lessonid', $id);   
+                            $stmt2->bindParam(':codetype', $codetype);
+                            $stmt2->bindParam(':value', $value);
+                            $stmt2->execute();
+                        }
                     }
 
                     ######### DURATIONS
@@ -161,9 +176,14 @@
 
                     foreach($lesson['COURSECONTENT']['FeesandFunding']['Fees'] as $fee) {
                         $temp = explode("-", $fee['type']);
-                        
-                        $region = array_search(trim($temp[0]), $LESSON_FEE_REGIONS);
-                        $feestype = array_search(trim($temp[1]), $LESSON_FEE_TYPES);
+
+                        if(count($temp) > 1) {
+                            $region = array_search(trim($temp[0]), $LESSON_FEE_REGIONS);
+                            $feestype = array_search(trim($temp[1]), $LESSON_FEE_TYPES);
+                        } else {
+                            $feestype = array_search(trim($temp[0]), $LESSON_FEE_TYPES);
+                        }
+
                         $extras = substr($fee['extra'], 0, 145);
                         $value = (float) $fee['value'];
 
@@ -181,15 +201,17 @@
                     $stmt2->bindParam(':lessonid', $id);
                     $stmt2->execute();
 
-                    foreach($lesson['COURSECONTENT']["FAQs"]['questions'] as $faq) {
-                        $q = substr($faq['q'], 0, 300);
-                        $a = substr($faq['a'], 0, 1000);
+                    if(!empty($lesson['COURSECONTENT']["FAQs"]['questions'])) {
+                        foreach($lesson['COURSECONTENT']["FAQs"]['questions'] as $faq) {
+                            $q = substr($faq['q'], 0, 300);
+                            $a = substr($faq['a'], 0, 1000);
 
-                        $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO faqs (lessonid, `question`, `answer`) VALUES (:lessonid, :q, :a)");
-                        $stmt2->bindParam(':lessonid', $id);   
-                        $stmt2->bindParam(':q', $q);
-                        $stmt2->bindParam(':a', $a);
-                        $stmt2->execute();
+                            $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO faqs (lessonid, `question`, `answer`) VALUES (:lessonid, :q, :a)");
+                            $stmt2->bindParam(':lessonid', $id);   
+                            $stmt2->bindParam(':q', $q);
+                            $stmt2->bindParam(':a', $a);
+                            $stmt2->execute();
+                        }
                     }
                     #################################
                     #########SUBJECTS
@@ -210,7 +232,6 @@
                             $row = $stmt2->fetch(PDO::FETCH_ASSOC);
         
                             if ($row) {
-                                echo "Update Lesson <br>";
                                 $stmt2 = $MYSQL_CONNECTION->prepare("UPDATE subjects SET lessonid = :lessonid, title = :title, `status` = :status, code = :code, credits = :code, stage = :stage, `description` = :description WHERE lessonid = :lessonid AND code = :code");
                                 $stmt2->bindParam(':code', $code);   
                             } else {
@@ -230,12 +251,12 @@
 
                     #################################
 
-                    echo "<br>Record updated/inserted successfully";
+                    echo "<br>Record updated/inserted successfully!<br>";
                 } catch(PDOException $e) {
                     echo "Error: " . $e->getMessage();
                 }
 
-                break;
+                // break;
             }
 
             // var_dump($subjects);

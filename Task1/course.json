@@ -4,7 +4,7 @@
         "title": "Animation BA (Hons)",
         "overview": "The BA Animation degree at the University of Northampton focuses on preparing students for a career in animation, including specialist areas such as motion capture, visual effects, storyboarding, 2D and 3D animation for video games and narrative development. You will be introduced to the key points in the creative process, from initial concepting through to the production of final animations. Animation degree students will also develop the technical skills required to create professional standard animations for a variety of digital media formats, such as film, TV, video games and augmented or virtual reality.",
         "link": "https://www.northampton.ac.uk/courses/animation-ba-hons/",
-        "image": "https://www.northampton.ac.uk/wp-content/uploads/2022/05/tutor-and-student-discussing-work-on-screen-feature-1400x550.jpg",
+        "image": "has",
         "highlights": [
             "Up to date workstation hardware and software, including Wacom Cintiq Pros.",
             "Opportunities to take part in live projects and competitions for BA animation students.",
@@ -230,62 +230,1783 @@
         "title": "Computer Networks Engineering BSc (Hons)",
         "overview": "The BSc Computer Networks Engineering degree enables students to develop and apply a range of analytical techniques and problem-solving skills to real-world computer networking scenarios. Students build their professional capabilities independently and as part of a team in a systematic practical manner. These capabilities are applicable to a wide range of professional roles within computer engineering. Through their learning journey, students will study modern networking theories and will devise solutions to real problems. Computer Networks Engineering students will have the opportunity to have a hands-on modern networking lab and access to simulation tools and cloud systems throughout the network engineering course.",
         "link": "https://www.northampton.ac.uk/courses/computer-networks-engineering-bsc-hons/",
-        "image": "https://www.northampton.ac.uk/wp-content/uploads/2022/09/view-of-student-through-two-screens-1400x550.jpg"
+        "image": "has",
+        "highlights": [
+            "Progression courses available on the Computer Networks Engineering course",
+            "Student Support Initiative",
+            "Students will have the opportunity to join the world’s largest professional body at discount rates and join the UON IEEE Student Branch.",
+            "The chance to attend the annual UON IoT Workshop with guest speakers and presenters from the local, national and international industry.",
+            "HP laptop and software included with this course for eligible students* (*see Eligibility criteria and Terms and Conditions)"
+        ],
+        "KEYFACTS": {
+            "UCASCode": [
+                {
+                    "type": "BSc",
+                    "value": "I120"
+                },
+                {
+                    "type": "BSc with Foundation",
+                    "value": "I121"
+                }
+            ],
+            "Level": "Undergraduate",
+            "Duration": [
+                {
+                    "type": "Full Time",
+                    "value": "3 years"
+                },
+                {
+                    "type": "Full Time Foundation",
+                    "value": "4 years"
+                },
+                {
+                    "type": "Part Time",
+                    "value": "4 - 6 years"
+                }
+            ],
+            "Starting": "September",
+            "EntryRequirements": "BCC at A Level or, DMM at BTEC",
+            "Fees": {
+                "UK": [
+                    {
+                        "type": "Full Time",
+                        "value": "9250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "Part Time",
+                        "value": "1540",
+                        "extra": "per 20 credit module"
+                    },
+                    {
+                        "type": "Integrated Foundation Year",
+                        "value": "9250",
+                        "extra": ""
+                    }
+                ],
+                "International": [
+                    {
+                        "type": "Full Time",
+                        "value": "15200",
+                        "extra": ""
+                    },
+                    {
+                        "type": "Integrated Foundation Year",
+                        "value": "15200",
+                        "extra": ""
+                    }
+                ]
+            },
+            "Location": "Waterside"
+        },
+        "COURSECONTENT": {
+            "CourseDetails": {
+                "html": "<p>The University of Northampton’s Computer Networks Engineering degree gives you the opportunity to explore different ideas and develop innovative solutions to current issues in the computing industry. This three-year network engineering course will give you an insight into the computing industry, investigating the wide-reaching influences that computers and computing technology have on the world. As you explore these influences, we will help you to find your ideal path for a career in Computing.</p><strong>IoT Workshop</strong><p>Computer networking engineering BSc students will have the opportunity to attend the annual UON IoT Workshop with guest speakers and presenters from the local, national and international industry. This is a great opportunity for the students to meet and work with colleagues from different year groups.</p><strong>Year 1</strong><p>During your first year of the computer network engineering degree, you will study common computer science modules, such as Communication Networks, Computer Systems, Software Engineering Fundamentals, Mathematics for Computer Science, Web Development, Problem Solving & Programming. These modules will help you build a foundation for more advanced topics in subsequent years.</p><strong>Year 2</strong><p>In your second year, you will continue your journey with the core Communication Networks Engineering modules such as Computer Communications, Digital Communications, Microprocessors and Internet of Things, Mobile Application Development, Cloud Computing and Bid Data etc. There will also be a group project where you will be a part of a small team; you will be tasked to design and implement a solution of decent quality for a given task. This will help you develop not only technical skills but also key soft skills such as teamwork, effective communication, leadership, etc.</p><strong>Year 3</strong><p>In your final year of study, you will further enhance your Computer Networks Engineering knowledge/skills. This will be done by completing high-level modules such as Cloud and Advanced Network Technologies, Cybersecurity and Applied Cryptography and Advanced AI and Applications etc. You are also expected to complete an independent dissertation on a topic of your choice in the field of Computer Science (with some guidance from an assigned supervisor). This benchmarking module will allow you to showcase your overall knowledge/skills learnt from the course.</strong></p><p><strong>Please note the modules shown here relate to the academic year 23/24. The modules relating to the academic year 24/25 will be available from June 2024.",
+                "stages": []
+            },
+            "EntryRequirements": {
+                "html": "<p>A typical offer to study BA Animation is:</p><ul><li>BCC at A Level or,</li><li>DMM at BTEC/Cambridge Technical or,</li><li>Pass (C and above) at T Level</li></ul><p>All selected applicants will be invited for a portfolio review and discussion. We welcome applications from students with a mix of A levels and BTEC/Cambridge Technical qualifications.</p><p>For more information on how to make an application, please visit our <a href='/undergraduate/how-to-apply/'><strong>How to Apply page</strong>.</a></p><p>For more information on how to apply as an International student, please visit our <a href='/international/how-to-apply/'><strong>How to Apply page</strong>.</a></p><h5>Integrated Foundation Year (IFY) Entry Requirements</h5><p>Admission to the Animation degree foundation course is normally:</p><ul><li>DEE at A Level or,</li><li>MPP at BTEC or,</li><li>Pass (D or E) at T Level</li></ul><p>However, we would also like to hear from you if you have professional or industry experience instead, a range of other qualifications or self-developed subject knowledge that relates to the course you wish to study.</p><h5>English Language Requirements</h5><p>All International and EU students applying for a course with the University of Northampton must meet the following minimum English language requirements:</p><ul><li><strong>IELTS 6.0 (or equivalent) with a minimum of 5.5 in all bands</strong><br>for study at undergraduate level</li></ul><p>For information regarding English language requirements at the University, please see our <a href='/international/english-language-requirements/'><strong>IELTS page</strong>.</a></p><p>If you would like information on making an application, <a href='/international/how-to-apply/'><strong>please see our&nbsp;How to Apply page</strong>.</a></p>"
+            },
+            "FeesandFunding": {
+                "title": "2024/25 Tuition Fees",
+                "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
+                "Fees": [
+                    {
+                        "type": "UK - Full Time",
+                        "value": "9250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "UK - Part Time",
+                        "value": "1540",
+                        "extra": "per 20 credit module"
+                    },
+                    {
+                        "type": "UK - Integrated Foundation Year",
+                        "value": "9250",
+                        "extra": "as part of a four year programme (subsequent years will be charged at standard BSc rate)"
+                    },
+                    {
+                        "type": "International - Full Time",
+                        "value": "15200",
+                        "extra": ""
+                    },
+                    {
+                        "type": "International - Integrated Foundation Year",
+                        "value": "15200",
+                        "extra": " as part of a four-year programme (subsequent years will be charged at standard BSc rate)"
+                    }
+                ],
+                "AdditionalCosts": "There are no additional costs for our BA Animation university course for students beginning their studies in September 2023. Should this change, applicants and students will be contacted by the university with details of the costs."
+            },
+            "StudentPerks": {
+                "html": "<p>At the University of Northampton, everything we do, from funded trips to paid internships, is to give you everything you need to make a difference when you leave.</p><p>If you join our full-time BA Animation degree at Northampton, you will receive a laptop when your course begins*. The laptops are built to a bespoke custom specification ideal for use in the seminar room, collaborative group work or studying at home.</p><p>Whatever your ambitions, we’re here to help you to achieve them. We’ll support you to identify the skills you’re learning during your course, find your strengths and secure practical experience so that when it comes to applying for jobs or further study you’ll feel confident in standing out from the crowd. We’ve created the <a href='https://www.northampton.ac.uk/student-life/employment-promise/' target='_blank'><strong>Northampton Employment Promise</strong></a> because we are so confident that if you focus on your studies and complete one of our awards you’ll be highly employable by the time you graduate. Putting you in a great position to secure employment or continue your studies.</p><p>To check out the full list of perks, visit our <a href='https://www.northampton.ac.uk/student-life/university-living-laptops-trips-and-internships/' target='_blank' rel='noopener'><strong>Student Perks page</strong></a> or dedicated <a href='https://www.northampton.ac.uk/student-life/university-living-laptops-trips-and-internships/international-student-study-perks/'><strong>International Perks page</strong></a>.</p><p>*UK fee payers only (see <a href='https://www.northampton.ac.uk/study-perks-terms-and-conditions/'><strong>Terms and Conditions</strong></a> for further details).</p>"
+            },
+            "IntegratedFoundationYear": {
+                "html": "<p>The <a href='https://www.northampton.ac.uk/undergraduate/integrated-foundation-year/'><strong>Integrated Foundation Year (IFY)</strong></a>&nbsp;offers a new and exciting route into studying for a degree, attracting ambitious and driven students who are willing to learn and advance.</p><p>If you have non-standard qualifications or do not quite meet the admissions requirements, we can offer you a fantastic opportunity to study a four year programme which includes an Integrated Foundation Year. The Integrated Foundation Year will help you develop the theoretical/practical and academic skills you need, in order to successfully progress to the full award on the Animation degree course.</p><p>Our four year courses will enable you to successfully follow the degree pathway of your choice while gaining essential study skills. The foundation year of your chosen degree will be studied on a full-time basis and is aimed at supporting the transition to higher education. Years two, three and four are then studied as a standard degree programme.</p>"
+            },
+            "FAQs": {
+                "html": "",
+                "questions": [
+                    {
+                        "q": "What is Computer Networks Engineering?",
+                        "a": "Computer Networks Engineering is the backbone of modern communication and digital connectivity. It’s like the architects of the digital world, specialising in the creation and maintenance of seamless data highways. Just as an architect plans the blueprint for a building, network engineers determine network structures, choose the right technology components, and define the rules that govern smooth data flow. Their expertise in network protocols and standards ensures everything works together seamlessly. Moreover, they’re the digital guardians, protecting private / business data from prying eyes and ensuring its safety. In today’s tech-driven and fully connected world, Computer Networks Engineering is an essential component to keep the digital world turning smoothly and securely."
+                    },
+                    {
+                        "q": "How will I learn on Computer Networks Engineering?",
+                        "a": "Learning Computer Networks Engineering involves a structured approach and a combination of theoretical knowledge and practical experience. You will start by building a strong foundation in computer science and data structures, as they are fundamental to networking. Furthermore, you will familiarise yourself with the most important networking concepts, such as the OSI model, TCP/IP, routing, and subnetting both in theory and in practice. Our modern, fully equipped lab, ready to accommodate groups of 40 at a time, enables a hands-on practical experience which is crucial for this type of work. You will be working both individually and in groups to develop your skills while feeling part of a wider community in both network monitoring and troubleshooting but also in modern network architecture practises."
+                    },
+                    {
+                        "q": "How long is the Computer Networks Engineering course?",
+                        "a": "<p>The Computer Networks Engineering course duration is three years in the Full-Time mode, while in the Part-Time mode, it extends to four to six years, allowing you greater flexibility in managing your study pace. To successfully complete the course and earn your degree, you are required to accumulate a total of 360 credits. Please note that in any given year, you can take a maximum of 120 credits. This credit structure ensures a balanced and manageable workload for you, enabling you to progress steadily through the program while maintaining academic excellence.</p><p>The workload for each academic semester is relatively equivalent across the modules, however minor variations do exist. The engagement to different modules may also vary however, attendance to the lectures and workshops is mandatory. Typically, you will need to physically attend classes on our state-of-the-art academic facilities at least a couple of days per week. Furthermore, online activities will be requested by the tutors accumulating to a total of 12 hours of sessions engagement per week.</p>"
+                    }
+                ]
+            }
+        }
     },
     {
         "id": 3,
         "title": "Criminology with Psychology BA (Hons)",
         "overview": "This newly re-developed Criminology with Psychology degree course invites you to combine the understanding of human behaviour, development, thoughts and emotions from psychology and develop this within the context of the study of crime, social order and social control that is central to the study of criminology. The University of Northampton’s Criminology with Psychology course has a particular emphasis on criminal behaviour, law enforcement and crime prevention. It will also equip you with transferable critical and analytical skills that will enhance your employability.",
         "link": "https://www.northampton.ac.uk/courses/criminology-with-psychology-ba-hons/",
-        "image": "https://www.northampton.ac.uk/wp-content/uploads/2019/09/student-browsing-books-course-feature.jpg"
+        "image": "has",
+        "highlights": [
+            "Every Criminology with Psychology student receives an undergraduate membership to the British Society of Criminology (BSC) for the entirety of their degree. Benefits of the membership include access to e-bulletins and newsletters, access to free BSC seminars and events, discounted rates to attend BSC events and many more. Check out the full Member Benefits list.",
+            "Flexible module choices to tailor your Criminology with Psychology degree to your needs",
+            "Multi-disciplinary approach to criminology and psychology",
+            "Guest speakers from criminology and psychology backgrounds",
+            "Use of dedicated psychology laboratories and computer suites",
+            "Guaranteed paid internship with the Northampton Employment Promise.",
+            "HP Laptop and software included with this course for eligible students. (See eligibility criteria, terms and conditions apply)"
+        ],
+        "KEYFACTS": {
+            "UCASCode": [
+                {
+                    "type": "BA",
+                    "value": "C8M9"
+                },
+                {
+                    "type": "BA with Foundation",
+                    "value": "CM89"
+                }
+            ],
+            "Level": "Undergraduate",
+            "Duration": [
+                {
+                    "type": "Full Time",
+                    "value": "3 years"
+                },
+                {
+                    "type": "Full Time Foundation",
+                    "value": "4 years"
+                },
+                {
+                    "type": "Part Time",
+                    "value": "4 - 6 years"
+                }
+            ],
+            "Starting": "September",
+            "EntryRequirements": "BCC at A Level or, DMM at BTEC",
+            "Fees": {
+                "UK": [
+                    {
+                        "type": "Full Time",
+                        "value": "9250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "Part Time",
+                        "value": "1540",
+                        "extra": "per 20 credit module"
+                    },
+                    {
+                        "type": "Integrated Foundation Year",
+                        "value": "9250",
+                        "extra": ""
+                    }
+                ],
+                "International": [
+                    {
+                        "type": "Full Time",
+                        "value": "15200",
+                        "extra": ""
+                    },
+                    {
+                        "type": "Integrated Foundation Year",
+                        "value": "15200",
+                        "extra": ""
+                    }
+                ]
+            },
+            "Location": "Waterside"
+        },
+        "COURSECONTENT": {
+            "CourseDetails": {
+                "html": "<p>The University of Northampton’s BA (Hons) Criminology with Psychology course will cover many of the criminological theories and research methodologies relating to the study of crime but will also incorporate some psychological dimensions. The course is designed for those who have a criminological curiosity but are keen to maintain and advance some of their psychological understanding.</p><p>The curriculum and the modules offered cover all aspects of criminological enquiry. The progression path means that each year of study the students in this programme will be studying 4 criminology and 2 psychology modules, leading up to year three when they complete their Criminology with Psychology dissertation utilising knowledge from the previous two years.</p><p>The focus is primarily criminological and all students on the course will be student members of the British Society of Criminology. All students will become familiar with ethical protocols and codes of conduct in applying criminology in social settings.</p><p>This Criminology with Psychology course does not offer a graduate basis for chartered membership in the BPS, and it is not appropriate for those who wish to work solely in psychology.</p>",
+                "stages": [
+                    {
+                        "name": "STAGE 1",
+                        "modules": [
+                            {
+                                "name": "Crime and Society",
+                                "credits": "20",
+                                "code": "CRI1002",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Research Methods for Criminologists",
+                                "credits": "20",
+                                "code": "CRI1011",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "The Science of Crime and Criminals",
+                                "credits": "20",
+                                "code": "CRI1007",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Becoming a Criminologist",
+                                "credits": "20",
+                                "code": "CRI1008",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Introduction to Psychology",
+                                "credits": "20",
+                                "code": "PSY1003",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Psychology for Life",
+                                "credits": "20",
+                                "code": "PSY1012",
+                                "status": "Compulsory",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "STAGE 2",
+                        "modules": [
+                            {
+                                "name": "Research Methods for Criminology",
+                                "credits": "20",
+                                "code": "CRI2004",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Crime and Justice",
+                                "credits": "20",
+                                "code": "CRI2001",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Advanced Criminological Theory",
+                                "credits": "",
+                                "code": "CRI2009",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Criminology, Ethics and Professional Practice",
+                                "credits": "20",
+                                "code": "CRI2010",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Development and Society",
+                                "credits": "20",
+                                "code": "PSY2030",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Personality & the Fundamentals of Psychology",
+                                "credits": "",
+                                "code": "PSY2031",
+                                "status": "Compulsory",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "STAGE 3",
+                        "modules": [
+                            {
+                                "name": "Criminology & Psychology Dissertation",
+                                "credits": "40",
+                                "code": "CRI4004",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Crime and Punishment",
+                                "credits": "20",
+                                "code": "CRI3001",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "The Psychology of Mental Health",
+                                "credits": "20",
+                                "code": "PSY3004",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+
+                            {
+                                "name": "Forensic Psychology",
+                                "credits": "20",
+                                "code": "PSY3016",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Critiquing Criminalistics",
+                                "credits": "20",
+                                "code": "CRI3007",
+                                "status": "Designate",
+                                "description": ""
+                            },
+                            {
+                                "name": "Criminality Across the Lifespan",
+                                "credits": "20",
+                                "code": "CRI3010",
+                                "status": "Designate",
+                                "description": ""
+                            },
+                            {
+                                "name": "Global Perspectives of Crime",
+                                "credits": "20",
+                                "code": "CRI3011",
+                                "status": "Designate",
+                                "description": ""
+                            },
+                            {
+                                "name": "Social Injustices",
+                                "credits": "20",
+                                "code": "CRI3012",
+                                "status": "Designate",
+                                "description": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            "EntryRequirements": {
+                "html": "<p>A typical offer to study BA Animation is:</p><ul><li>BCC at A Level or,</li><li>DMM at BTEC/Cambridge Technical or,</li><li>Pass (C and above) at T Level</li></ul><p>All selected applicants will be invited for a portfolio review and discussion. We welcome applications from students with a mix of A levels and BTEC/Cambridge Technical qualifications.</p><p>For more information on how to make an application, please visit our <a href='/undergraduate/how-to-apply/'><strong>How to Apply page</strong>.</a></p><p>For more information on how to apply as an International student, please visit our <a href='/international/how-to-apply/'><strong>How to Apply page</strong>.</a></p><h5>Integrated Foundation Year (IFY) Entry Requirements</h5><p>Admission to the Animation degree foundation course is normally:</p><ul><li>DEE at A Level or,</li><li>MPP at BTEC or,</li><li>Pass (D or E) at T Level</li></ul><p>However, we would also like to hear from you if you have professional or industry experience instead, a range of other qualifications or self-developed subject knowledge that relates to the course you wish to study.</p><h5>English Language Requirements</h5><p>All International and EU students applying for a course with the University of Northampton must meet the following minimum English language requirements:</p><ul><li><strong>IELTS 6.0 (or equivalent) with a minimum of 5.5 in all bands</strong><br>for study at undergraduate level</li></ul><p>For information regarding English language requirements at the University, please see our <a href='/international/english-language-requirements/'><strong>IELTS page</strong>.</a></p><p>If you would like information on making an application, <a href='/international/how-to-apply/'><strong>please see our&nbsp;How to Apply page</strong>.</a></p>"
+            },
+            "FeesandFunding": {
+                "title": "2024/25 Tuition Fees",
+                "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
+                "Fees": [
+                    {
+                        "type": "UK - Full Time",
+                        "value": "9250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "UK - Part Time",
+                        "value": "1540",
+                        "extra": "per 20 credit module"
+                    },
+                    {
+                        "type": "UK - Integrated Foundation Year",
+                        "value": "9250",
+                        "extra": "as part of a four year programme (subsequent years will be charged at standard BSc rate)"
+                    },
+                    {
+                        "type": "International - Full Time",
+                        "value": "15200",
+                        "extra": ""
+                    },
+                    {
+                        "type": "International - Integrated Foundation Year",
+                        "value": "15200",
+                        "extra": " as part of a four-year programme (subsequent years will be charged at standard BSc rate)"
+                    }
+                ],
+                "AdditionalCosts": "There are no additional costs for our BA Animation university course for students beginning their studies in September 2023. Should this change, applicants and students will be contacted by the university with details of the costs."
+            },
+            "StudentPerks": {
+                "html": "<p>At the University of Northampton, everything we do, from funded trips to paid internships, is to give you everything you need to make a difference when you leave.</p><p>If you join our full-time BA Animation degree at Northampton, you will receive a laptop when your course begins*. The laptops are built to a bespoke custom specification ideal for use in the seminar room, collaborative group work or studying at home.</p><p>Whatever your ambitions, we’re here to help you to achieve them. We’ll support you to identify the skills you’re learning during your course, find your strengths and secure practical experience so that when it comes to applying for jobs or further study you’ll feel confident in standing out from the crowd. We’ve created the <a href='https://www.northampton.ac.uk/student-life/employment-promise/' target='_blank'><strong>Northampton Employment Promise</strong></a> because we are so confident that if you focus on your studies and complete one of our awards you’ll be highly employable by the time you graduate. Putting you in a great position to secure employment or continue your studies.</p><p>To check out the full list of perks, visit our <a href='https://www.northampton.ac.uk/student-life/university-living-laptops-trips-and-internships/' target='_blank' rel='noopener'><strong>Student Perks page</strong></a> or dedicated <a href='https://www.northampton.ac.uk/student-life/university-living-laptops-trips-and-internships/international-student-study-perks/'><strong>International Perks page</strong></a>.</p><p>*UK fee payers only (see <a href='https://www.northampton.ac.uk/study-perks-terms-and-conditions/'><strong>Terms and Conditions</strong></a> for further details).</p>"
+            },
+            "IntegratedFoundationYear": {
+                "html": "<p>The <a href='https://www.northampton.ac.uk/undergraduate/integrated-foundation-year/'><strong>Integrated Foundation Year (IFY)</strong></a>&nbsp;offers a new and exciting route into studying for a degree, attracting ambitious and driven students who are willing to learn and advance.</p><p>If you have non-standard qualifications or do not quite meet the admissions requirements, we can offer you a fantastic opportunity to study a four year programme which includes an Integrated Foundation Year. The Integrated Foundation Year will help you develop the theoretical/practical and academic skills you need, in order to successfully progress to the full award on the Animation degree course.</p><p>Our four year courses will enable you to successfully follow the degree pathway of your choice while gaining essential study skills. The foundation year of your chosen degree will be studied on a full-time basis and is aimed at supporting the transition to higher education. Years two, three and four are then studied as a standard degree programme.</p>"
+            },
+            "FAQs": {
+                "html": "",
+                "questions": [
+                    {
+                        "q": "How will I be assessed on the Criminology with Psychology degree?",
+                        "a": "There will be a selection of assessments covering the wider spectrum of ability, including a variety of written assessments, oral presentation and poster activities, examinations and other year long projects, including the dissertation."
+                    },
+                    {
+                        "q": "Are there any special features?",
+                        "a": "There are modules unique at different levels to this degree that allow students to explore research and undertake their dissertation in a Criminology/Psychology combined perspective."
+                    },
+                    {
+                        "q": "How will I be taught?",
+                        "a": "The bulk of the teaching is face to face but there will be online instructions and material on our VLA (NILE) for students to work independently to enhance and advance their learning"
+                    }
+                ]
+            }
+        }
     },
     {
         "id": 4,
         "title": "Economics BSc (Hons)",
         "overview": "Studying the University of Northampton’s BSc Economics degree will enable you to develop excellent problem solving skills that will allow you to solve real world challenges. You will learn to employ different perspectives of the major economic thinkers of the last two centuries to discuss real world issues that are faced by individuals, companies and governments.",
         "link": "https://www.northampton.ac.uk/courses/economics-bsc-hons/",
-        "image": "https://www.northampton.ac.uk/wp-content/uploads/2016/01/two-students-working-course-feature.jpg"
+        "image": "has",
+        "highlights": [
+            "Access to Bloomberg Finance Lab Facilities for Economics BSc degree students.",
+            "Optional work placement year.",
+            "Local and international study trips available.",
+            "First modern university in England to introduce CORE.",
+            "Free membership to Society of Professional Economists.",
+            "HP laptop and software included with this course for eligible student. Eligibility criteria and terms and conditions apply."
+        ],
+        "KEYFACTS": {
+            "UCASCode": [
+                {
+                    "type": "BSc",
+                    "value": "L101"
+                },
+                {
+                    "type": "BSc with Foundation",
+                    "value": "L102"
+                }
+            ],
+            "Level": "Undergraduate",
+            "Duration": [
+                {
+                    "type": "Full Time",
+                    "value": "3 years"
+                },
+                {
+                    "type": "Full Time Foundation",
+                    "value": "4 years"
+                },
+                {
+                    "type": "Part Time",
+                    "value": "4 - 6 years"
+                }
+            ],
+            "Starting": "September",
+            "EntryRequirements": "BCC at A Level or, DMM at BTEC",
+            "Fees": {
+                "UK": [
+                    {
+                        "type": "Full Time",
+                        "value": "9250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "Part Time",
+                        "value": "1540",
+                        "extra": "per 20 credit module"
+                    },
+                    {
+                        "type": "Integrated Foundation Year",
+                        "value": "9250",
+                        "extra": ""
+                    }
+                ],
+                "International": [
+                    {
+                        "type": "Full Time",
+                        "value": "15200",
+                        "extra": ""
+                    },
+                    {
+                        "type": "Integrated Foundation Year",
+                        "value": "15200",
+                        "extra": ""
+                    }
+                ]
+            },
+            "Location": "Waterside"
+        },
+        "COURSECONTENT": {
+            "CourseDetails": {
+                "html": "<p>This BSc Economics degree course has been designed to contribute towards achieving the following United Nations Sustainable Development Goals: SDG10 of Reduced Inequalities and SDG12 of Responsible Consumption and Production.</p><p>The University of Northampton is the first modern university in England to introduce CORE, a problem-motivated and interactive way to learn economics.</p><p>Unlike traditional economics education that start with simple models and a tenuous link to reality, CORE starts with reality and uses suitable economic tools. CORE combines different perspectives by organising the whole curriculum on the key themes of market power, imperfect information and social interactions. CORE is regarded by many employers as the cutting-edge approach to economics higher education.</p><p>This Economics BSc degree provides a solid understanding of both economic theory and the quantitative methods economists use in empirical analysis. You will be introduced to real world issues currently faced by individuals, companies and governments and their possible solution from the different perspectives of the major economic thinkers of the last two centuries. The BSc economics degree is intended for those who are considering practising as an Economist in the future, in careers such as economic research, econometrics, forecasting as well as management finance and accountancy. It also provides an excellent basis for pursuing the study of economics at postgraduate level.</p><p>You will benefit from staff who are experts in their areas, which include:</p><ul><li>Banking and Finance Economics</li><li>Behavioural Finance</li><li>Monetary Economics</li><li>Econometrics</li><li>International Economics</li><li>Development Economics</li><li>Health Economics</li><li>Economic History</li><li>The Informal Economy</li></ul>",
+                "stages": [
+                    {
+                        "name": "STAGE 1",
+                        "modules": [
+                            {
+                                "name": "International Development: Social and Cultural Issues and Debates",
+                                "credits": "20",
+                                "code": "DEV1001",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to introduce students to key social and cultural issues related to international development. Students taking this module will develop their understanding of issues such as gender, migration, and religion. By the end of the module students will be able to confidently debate and discuss the challenges of international development from different theoretical perspectives within the field."
+                            },
+                            {
+                                "name": "Introduction to Key Economic Thinkers",
+                                "credits": "20",
+                                "code": "ECN1014",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to introduce students to a range of key economic thinkers from the history of economic thought, especially thinkers that have either played a leading role in shaping economics as we know it today, or whose theories are still discussed today in relation to specific economic phenomena, such as economic crises. It will also introduce a range of different schools of thought, and will assess how economics as a discipline has changed over time. The module is designed to give students a solid theoretical platform on which to develop a critical perspective in the level 5 module ECN2011."
+                            },
+                            {
+                                "name": "Data and Mathematics For Economists",
+                                "credits": "20",
+                                "code": "ECN1019",
+                                "status": "Compulsory",
+                                "description": "This module provides an introduction to the mathematical concepts which are of key importance in economics for single and joint degree programmes. It aims to enable students whose background in mathematics is less rigorous to develop the understanding of essential mathematical techniques used in economics. The module also aims to introduce students to the use of data, descriptive statistics, correlation and simple regression analysis. The objective is to provide sufficient background to allow students to understand more advanced techniques used in Part 2 and Part 3 modules."
+                            },
+                            {
+                                "name": "The Economy 1",
+                                "credits": "20",
+                                "code": "ECN1021",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to provide students with a comprehensive understanding of the threshold concepts in economics."
+                            },
+                            {
+                                "name": "The Economy 2",
+                                "credits": "20",
+                                "code": "ECN1022",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to provide students with a comprehensive understanding of economics that can be used to understand and engage with problem solving in a wide range of contexts."
+                            },
+                            {
+                                "name": "Analysing the Real-World Economic Statistics",
+                                "credits": "20",
+                                "code": "ECN1024",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to equip students with skills needed to develop technical analysis of economics related data, and demonstrate how these are applied in real world examples. It aims to introduce students to the use of Microsoft Excel, R and other statistical software that are essential for data manipulation and analysis."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "STAGE 2",
+                        "modules": [
+                            {
+                                "name": "Intermediate Microeconomics",
+                                "credits": "20",
+                                "code": "ECN2013",
+                                "status": "Compulsory",
+                                "description": "This module is designed to enable students to use the principles of economics acquired on the first-year undergraduate programme to develop a more analytic and critical understanding of microeconomics. The emphasis will be on showing how such understanding can lead to improved application of economic ideas particularly in policy making."
+                            },
+                            {
+                                "name": "Intermediate Macroeconomics",
+                                "credits": "20",
+                                "code": "ECN2018",
+                                "status": "Compulsory",
+                                "description": "The module gives those students who have already studied Economics at an introductory level the opportunity to consider in some depth the (new to them) key intermediate macroeconomic models which have influenced macroeconomic theorizing and policy making over the last one hundred years. The emphasis will be on showing how an appreciation of such models can lead to improved application of economic ideas in the process of making economic policy."
+                            },
+                            {
+                                "name": "Research Methods for Economists",
+                                "credits": "20",
+                                "code": "ECN2019",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to develop students? understanding of the analysis of quantitative and qualitative data. The focus of the module is to help students to develop a toolkit of econometric techniques so that they can model economic problems with increasing rigour. The module also provides students with a thorough grounding in research methods, focusing in particular on the application of research methods and skills which have direct bearing on the development of their independent learning at both levels 5 and 6."
+                            },
+                            {
+                                "name": "Game Theory",
+                                "credits": "20",
+                                "code": "ECN2022",
+                                "status": "Designate",
+                                "description": "The purpose of this module is to equip students with the game-theoretic tools to analyse real world strategic situations. They will be able to analyse situations in business and politics with strategic complementarity or strategic substitutability."
+                            },
+                            {
+                                "name": "Economic Perspectives",
+                                "credits": "20",
+                                "code": "ECN2023",
+                                "status": "Compulsory",
+                                "description": "This module examines competing schools of economic thought. Students criticallly assess the underlying assumptions and mathematical framework of mainstream economics, and the degree to which it aids understanding of economic phenomena. Students apply different schools of thought to current economic issues, and contrast the insights with those of mainstream economics."
+                            },
+                            {
+                                "name": "Careers in Economics",
+                                "credits": "10",
+                                "code": "ECN2024",
+                                "status": "Compulsory",
+                                "description": "This module exposes students to economics-related career opportunities, as well as provides them the opportunity to critically reflect on these opportunities and requisite skills. In addition, students will gain valuable insight into the sources of, opportunities and requirements for employment in Economics-related jobs and the challenges and rewards that such a career presents."
+                            },
+                            {
+                                "name": "Economic Growth and Inequality",
+                                "credits": "20",
+                                "code": "ECN2025",
+                                "status": "Designate",
+                                "description": "This module introduces students to more complex areas of theory in the economics of economic growth and international development, with a focus on income and wealth disparities within and between countries, as well as groups of countries and regions. The module will also apply these theories to specific sectors and/or development issues."
+                            },
+                            {
+                                "name": "Behavioural Economics",
+                                "credits": "10",
+                                "code": "ECN2026",
+                                "status": "Compulsory",
+                                "description": "In this module students explore incorporating psychological and experimental insights to gain a view of bigger social processes, for example altruism, cooperation, and trust. Students also consider the possibility of incorporating these aspects into policy design to impact on human behaviour."
+                            },
+                            {
+                                "name": "Learning Through Work (WBL)",
+                                "credits": "20",
+                                "code": "HRM2042",
+                                "status": "Designate",
+                                "description": "The purpose of this module is to provide the learner with the opportunity to examine and analyse the specific characteristics or behaviours, employability and job-related skills and knowledge required to be a successful and effective employee in their particular business sector/type of organisation."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "STAGE 3",
+                        "modules": [
+                            {
+                                "name": "International Money and Finance",
+                                "credits": "20",
+                                "code": "ACC3007",
+                                "status": "Designate",
+                                "description": "The purpose of this module is to appraise the increasingly important aspect of multinational financial management in dynamic international business. It critically analyses the attractions and limitations of doing business in a global market, identifying the additional inherent risks that global market exposure produces and strategies in managing the global firm."
+                            },
+                            {
+                                "name": "Econometrics",
+                                "credits": "20",
+                                "code": "ECN3013",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to provide students with statistical, interpretive and practical skills they need to move seamlessly into graduate workforce by using advanced econometrics techniques. Also, to equip students with skills to manipulate data, evaluate, estimate and model business problems, functions and phenomena."
+                            },
+                            {
+                                "name": "International Trade, Cooperation and Bargaining",
+                                "credits": "20",
+                                "code": "ECN3020",
+                                "status": "Designate",
+                                "description": "This module explores key questions and issues of the international economy, including bargaining over climate change, raw material prices, as well as human and labour rights. Furthermore, students examine patterns of international trade and globalisation including barriers to trade and strategic trade policy."
+                            },
+
+                            {
+                                "name": "Advanced Applied Macroeconomics",
+                                "credits": "20",
+                                "code": "ECN3021",
+                                "status": "Compulsory",
+                                "description": "This module provides students with the opportunity to explore modern macroeconomic theory, policy and practice. The module will equip students with skills needed to analyse macroeconomic behaviour and policies. In addition, the module enables students to analyse topical debates in the theory of economic policy."
+                            },
+                            {
+                                "name": "Advanced Applied Microeconomics",
+                                "credits": "20",
+                                "code": "ECN3022",
+                                "status": "Compulsory",
+                                "description": "This module provides students with the opportunity to explore modern macroeconomic theory, policy and practice. The module will equip students with skills needed to analyse macroeconomic behaviour and policies. In addition, the module enables students to analyse topical debates in the theory of economic policy."
+                            },
+                            {
+                                "name": "Economics Dissertation",
+                                "credits": "40",
+                                "code": "ECN4001",
+                                "status": "Compulsory",
+                                "description": "This module is designed to provide students with the skills to be able critically analyse key debates/theories/views associated with the chosen topic. Students must choose to research, analyse and discuss a `contemporary issue in economics?. Students will be expected to look at the topic chosen from an economics perspective while possibly incorporating other areas (politics or business, for example) into the discussion. The dissertation represents a significant final element of study where students can develop their own academic and intellectual interests. The module also allows students to develop their skills in research and independent work. The dissertation allows students to draw together different aspects of their study. They will have been required to select the topic and do the initial proposal as part of the Level 5 Research Methods for Economists module. The dissertation, therefore, represents a continuation of that work."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "EntryRequirements": {
+                "html": "<p>A typical offer to study BA Animation is:</p><ul><li>BCC at A Level or,</li><li>DMM at BTEC/Cambridge Technical or,</li><li>Pass (C and above) at T Level</li></ul><p>All selected applicants will be invited for a portfolio review and discussion. We welcome applications from students with a mix of A levels and BTEC/Cambridge Technical qualifications.</p><p>For more information on how to make an application, please visit our <a href='/undergraduate/how-to-apply/'><strong>How to Apply page</strong>.</a></p><p>For more information on how to apply as an International student, please visit our <a href='/international/how-to-apply/'><strong>How to Apply page</strong>.</a></p><h5>Integrated Foundation Year (IFY) Entry Requirements</h5><p>Admission to the Animation degree foundation course is normally:</p><ul><li>DEE at A Level or,</li><li>MPP at BTEC or,</li><li>Pass (D or E) at T Level</li></ul><p>However, we would also like to hear from you if you have professional or industry experience instead, a range of other qualifications or self-developed subject knowledge that relates to the course you wish to study.</p><h5>English Language Requirements</h5><p>All International and EU students applying for a course with the University of Northampton must meet the following minimum English language requirements:</p><ul><li><strong>IELTS 6.0 (or equivalent) with a minimum of 5.5 in all bands</strong><br>for study at undergraduate level</li></ul><p>For information regarding English language requirements at the University, please see our <a href='/international/english-language-requirements/'><strong>IELTS page</strong>.</a></p><p>If you would like information on making an application, <a href='/international/how-to-apply/'><strong>please see our&nbsp;How to Apply page</strong>.</a></p>"
+            },
+            "FeesandFunding": {
+                "title": "2024/25 Tuition Fees",
+                "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
+                "Fees": [
+                    {
+                        "type": "UK - Full Time",
+                        "value": "9250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "UK - Part Time",
+                        "value": "1540",
+                        "extra": "per 20 credit module"
+                    },
+                    {
+                        "type": "UK - Integrated Foundation Year",
+                        "value": "9250",
+                        "extra": "as part of a four year programme (subsequent years will be charged at standard BSc rate)"
+                    },
+                    {
+                        "type": "International - Full Time",
+                        "value": "15200",
+                        "extra": ""
+                    },
+                    {
+                        "type": "International - Integrated Foundation Year",
+                        "value": "15200",
+                        "extra": " as part of a four-year programme (subsequent years will be charged at standard BSc rate)"
+                    }
+                ],
+                "AdditionalCosts": "There are no additional costs for our BA Animation university course for students beginning their studies in September 2023. Should this change, applicants and students will be contacted by the university with details of the costs."
+            },
+            "StudentPerks": {
+                "html": "<p>At the University of Northampton, everything we do, from funded trips to paid internships, is to give you everything you need to make a difference when you leave.</p><p>If you join our full-time BA Animation degree at Northampton, you will receive a laptop when your course begins*. The laptops are built to a bespoke custom specification ideal for use in the seminar room, collaborative group work or studying at home.</p><p>Whatever your ambitions, we’re here to help you to achieve them. We’ll support you to identify the skills you’re learning during your course, find your strengths and secure practical experience so that when it comes to applying for jobs or further study you’ll feel confident in standing out from the crowd. We’ve created the <a href='https://www.northampton.ac.uk/student-life/employment-promise/' target='_blank'><strong>Northampton Employment Promise</strong></a> because we are so confident that if you focus on your studies and complete one of our awards you’ll be highly employable by the time you graduate. Putting you in a great position to secure employment or continue your studies.</p><p>To check out the full list of perks, visit our <a href='https://www.northampton.ac.uk/student-life/university-living-laptops-trips-and-internships/' target='_blank' rel='noopener'><strong>Student Perks page</strong></a> or dedicated <a href='https://www.northampton.ac.uk/student-life/university-living-laptops-trips-and-internships/international-student-study-perks/'><strong>International Perks page</strong></a>.</p><p>*UK fee payers only (see <a href='https://www.northampton.ac.uk/study-perks-terms-and-conditions/'><strong>Terms and Conditions</strong></a> for further details).</p>"
+            },
+            "IntegratedFoundationYear": {
+                "html": "<p>The <a href='https://www.northampton.ac.uk/undergraduate/integrated-foundation-year/'><strong>Integrated Foundation Year (IFY)</strong></a>&nbsp;offers a new and exciting route into studying for a degree, attracting ambitious and driven students who are willing to learn and advance.</p><p>If you have non-standard qualifications or do not quite meet the admissions requirements, we can offer you a fantastic opportunity to study a four year programme which includes an Integrated Foundation Year. The Integrated Foundation Year will help you develop the theoretical/practical and academic skills you need, in order to successfully progress to the full award on the Animation degree course.</p><p>Our four year courses will enable you to successfully follow the degree pathway of your choice while gaining essential study skills. The foundation year of your chosen degree will be studied on a full-time basis and is aimed at supporting the transition to higher education. Years two, three and four are then studied as a standard degree programme.</p>"
+            },
+            "FAQs": {
+                "html": "",
+                "questions": [
+                    {
+                        "q": "Do I need an A-Level in Maths to study BSc Economics?",
+                        "a": "No, you do not need an A- Level in Maths to study on the Economics degree at the University of Northampton. We start teaching from the beginning, so we will teach you all the fundamental skills you need to know."
+                    },
+                    {
+                        "q": "What is the schedule for the Economics degree course?",
+                        "a": "This economics course can be studied full-time over three years or over four years with an optional work placement year or foundation year. We also offer a flexible part-time option."
+                    },
+                    {
+                        "q": "How will I be assessed?",
+                        "a": "We use a range of assessment methods on our courses. On the Economics BSc course, you will encounter individual and group written work,  presentations and exams as well as extended project work."
+                    },
+                    {
+                        "q": "Are there any specific teaching tools for Economics?",
+                        "a": "We have the Bloomberg Suite, which is the number one technology that is being used in industry, for example by Analysts and Stock Brokers to get all the latest information. As a Student at the University of Northampton you can complete the Bloomberg qualification for free, which will really boost your CV!"
+                    },
+                    {
+                        "q": "Who are the Student Support Team?",
+                        "a": "The Student Experience Support Team are a team of previous graduates of the University of Northampton, they are here to support all Faculty of Business and Law students by offering a friendly listening ear and ensuring students are aware of the numerous support systems that the University has to offer. The team provide confidential 1-1 meetings in person and online where they will signpost the students to the relevant support teams to ensure they are aware of the support available for them throughout their studies. You can follow the Student Experience Support Team to see the services they offer."
+                    }
+                ]
+            }
+        }
     },
     {
         "id": 5,
         "title": "Environmental Science BSc (Hons)",
         "overview": "The University of Northampton’s BSc Environmental Science degree covers the broad field that encompasses the aspects of ecology and physical science that evaluate environmental issues and propose appropriate solutions. If you have an interest in the environment and in applying scientific principles to help solve environmental problems, this course is for you. This flexible, interdisciplinary BSc environmental sciences course allows you to follow a programme with modules drawn from across the subject of environmental science. You are then able to specialise in particular areas of interest in the second and third year or continue to study a more varied programme.",
         "link": "https://www.northampton.ac.uk/courses/environmental-science-bsc-hons/",
-        "image": "https://www.northampton.ac.uk/wp-content/uploads/2016/01/geography-and-environmental-science-1400x550.jpg"
+        "image": "has",
+        "highlights": [
+            "This course is accredited by The Institution of Environmental Sciences",
+            "The University of Northampton is proud to work in partnership with RECOUP",
+            "Opportunities for visits, fieldwork and overseas travel on the environmental science degree",
+            "Guaranteed paid internship with the Northampton Employment Promise.",
+            "You can now join the conversation online with our UON Environmental Science team on Instagram: @northamptonenvgeo"
+        ],
+        "KEYFACTS": {
+            "UCASCode": [
+                {
+                    "type": "BSc",
+                    "value": "F750"
+                },
+                {
+                    "type": "BSc with Foundation",
+                    "value": "F751"
+                }
+            ],
+            "Level": "Undergraduate",
+            "Duration": [
+                {
+                    "type": "Full Time",
+                    "value": "3 years"
+                },
+                {
+                    "type": "Full Time Foundation",
+                    "value": "4 years"
+                },
+                {
+                    "type": "Part Time",
+                    "value": "4 years"
+                }
+            ],
+            "Starting": "September",
+            "EntryRequirements": "BCC at A Level or, DMM at BTEC",
+            "Fees": {
+                "UK": [
+                    {
+                        "type": "Full Time",
+                        "value": "9250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "Part Time",
+                        "value": "1540",
+                        "extra": "per 20 credit module"
+                    },
+                    {
+                        "type": "Integrated Foundation Year",
+                        "value": "9250",
+                        "extra": ""
+                    }
+                ],
+                "International": [
+                    {
+                        "type": "Full Time",
+                        "value": "15200",
+                        "extra": ""
+                    },
+                    {
+                        "type": "Integrated Foundation Year",
+                        "value": "15200",
+                        "extra": ""
+                    }
+                ]
+            },
+            "Location": "Waterside"
+        },
+        "COURSECONTENT": {
+            "CourseDetails": {
+                "html": "<p>This Environmental Science course has been designed to contribute towards achieving the following United Nations Sustainable Development Goals:</p><p><strong>SDG7: Affordable and Clean Energy and SDG13: Climate Action, SDG11: Sustainable Cities and Communities, SDG12: Responsible Consumption and Production and SDG15: Life on Land</strong></p><p>This Environmental Science BSc (Hons) degree provides you with the opportunity to develop your knowledge of environmental science and to recognise its relevance to society at national and global levels. You will learn how environmental science can be used to help understand both natural and human-caused environmental change and the role that individuals, organisations, and governments play in addressing such issues.</p><strong>Partnerships and Accreditation</strong><p>This Environmental Science programme is accredited by The Institution of Environmental Sciences.</p><p>The University of Northampton are also proud to work in partnership with RECOUP. RECOUP works in collaboration with all stakeholders to promote, develop, stimulate and increase the levels of plastics recycling within the UK.</p><strong>Course Details</strong><p>This flexible, interdisciplinary course allows you to follow a programme with modules drawn from across the subject of environmental science. You are then able to specialise in particular areas of interest in the second and third year or continue to study a more varied programme.</p><p>You will undertake a wide variety of activities and encounter new challenges that help support your theoretical learning. The need for accuracy, critical evaluation, and the ability to research solutions and apply them in new ways, as well as being able to communicate findings to a variety of audiences, are vital skills for environmental scientists.</p><p>You will examine research design and methodology in relation to field and laboratory work including data collection and quantitative analysis techniques. Statistical tools will be used and developed throughout the course to ensure that you are confident and are able to apply appropriate procedures for different sets of data.</p><p>We use field and lab based activities to ensure that you develop a range of scientific concepts and theories that are transferable and sought after in a variety of employment areas.</p>",
+                "stages": [
+                    {
+                        "name": "STAGE 1",
+                        "modules": [
+                            {
+                                "name": "Introduction to Ecology",
+                                "credits": "20",
+                                "code": "ENV1002",
+                                "status": "Compulsory",
+                                "description": "This module provides an introduction to the science of ecology. It considers fundamental ecological concepts and principles and focuses on individuals, populations, interactions (between species), communities and ecosystems."
+                            },
+                            {
+                                "name": "Life on Earth",
+                                "credits": "20",
+                                "code": "ENV1126",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to introduce students to the diversity of life on earth and to the concept of geologic time. Students will explore the major events in earth?s history, and how scientific facts are determined such as the age of the earth and the relationship between organisms."
+                            },
+                            {
+                                "name": "Environmental Pollution",
+                                "credits": "20",
+                                "code": "ENV1127",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to enable students to explore a range of contemporary and emerging issues and impacts related to pollution. Students will develop an awareness through global perpectives in line with sustainable development goals."
+                            },
+                            {
+                                "name": "Lab and Field Skills",
+                                "credits": "20",
+                                "code": "ENV1128",
+                                "status": "Compulsory",
+                                "description": "This module provides students with specialist training in environmental and ecological practical techniques. Students will acquire the skills necessary to plan, conduct and report on environmental science investigations in both laboratory and field environments. Students will apply these skills on a residential field trip."
+                            },
+                            {
+                                "name": "The Physical Environment",
+                                "credits": "20",
+                                "code": "GEO1107",
+                                "status": "Compulsory",
+                                "description": "The Physical Environment provides an introduction tothe physical environment of Planet Earth. Students will examine processes which operate in the atmosphere, like the development of clouds and tainfall, those that occur at the Earth's surface, such as weathering and erosion and how, combined with geology and tectonics how these processes interact to produce environments and landscapes."
+                            },
+                            {
+                                "name": "Geohazards",
+                                "credits": "20",
+                                "code": "GEO1108",
+                                "status": "Compulsory",
+                                "description": "This module provides an overview of the main causes of and responses to a broad range of natural hazards, introduces the key principles, concepts and terminology associated with the analysis of hazard and risk from geophysical events and explains the nature of a range of geohazards using recent case studies."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "STAGE 2",
+                        "modules": [
+                            {
+                                "name": "Biogeography",
+                                "credits": "20",
+                                "code": "ENV2103",
+                                "status": "Compulsory",
+                                "description": "Biogeography combines ecology and geography to help us understand global patterns of biodiversity. `It is the study of distributions of organisms, habitats and biomes, both past and present, and of related patterns of variation over the earth in the numbers and kinds of living things' (Brown & Lomolino, 1998)."
+                            },
+                            {
+                                "name": "Fieldwork Module",
+                                "credits": "20",
+                                "code": "ENV2124",
+                                "status": "Compulsory",
+                                "description": "This module provides opportunities for a range of ecological and environmental field-based investigations. Students will be involved in more in-depth fieldwork activities than a standard module would allow. Data analysis, scientific reporting skills and specialist practical skills are developed, as are collaborative working skills as students work in teams to collect data in the field and to report on research. This module includes a residential field trip (e.g. Slapton Ley, Devon)."
+                            },
+                            {
+                                "name": "Adaptations to Life on Land, in Water and Air",
+                                "credits": "20",
+                                "code": "ENV2138",
+                                "status": "Designate",
+                                "description": "The purpose of this ecology-oriented module is to enable students to explore behavioural, physiological and molecular mechanisms of adaptation to environmental stress. They will also examine the mechanisms that organisms can utilise to respond to changes occurring on varying timescales and over a wide range of geographic areas."
+                            },
+                            {
+                                "name": "Terrestrial and Aquatic Ecosystems",
+                                "credits": "20",
+                                "code": "ENV2140",
+                                "status": "Designate",
+                                "description": "The purpose of this module is to explore the fundamentals of a range of terrestrial and freshwater ecosystems. Students will develop an understanding of the distinct characteristics that define these environments, evaluate factors that threaten them and explore principles of conservation."
+                            },
+                            {
+                                "name": "Impacts of Pollution",
+                                "credits": "20",
+                                "code": "ENV2142",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to enable students to investigate a range of impacts related to soil, water and air pollution to enhance deeper knowledge and understanding into their effects on the environment both locally and globally."
+                            },
+                            {
+                                "name": "Weather and Climate",
+                                "credits": "20",
+                                "code": "GEO2111",
+                                "status": "Designate",
+                                "description": "Weather and Climate explores the fundamental processes occurin in the atmospher. We examine the flow of energy, principles of cloud formation and rainfall, the importance of air movement and the development of weather systems such as storms. The module explains why weather and climate varies in time and in space at a number of geographical scales."
+                            },
+                            {
+                                "name": "Geographic Information Systems",
+                                "credits": "20",
+                                "code": "GEO2131",
+                                "status": "Compulsory",
+                                "description": "This module will introduce students to the theory and use of Geographic Information Systems (GIS) for storing, maniplating, analysing and visualisating data. Students will gain experience: (i) using GIS for real world problem solving; (ii) applying GIS processes; and (iii) communicating geographic information to target groups."
+                            },
+                            {
+                                "name": "Environmental Law and Justice",
+                                "credits": "20",
+                                "code": "LAW2044",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to allow students to develop an awareness and understanding of the underpinning philosophies behind environmental laws on land and at sea, as well as of the ways in which environmental policy is implemented and enforced through legal measures."
+                            }
+                        ]
+                    },
+                    {
+                        "name": "STAGE 3",
+                        "modules": [
+                            {
+                                "name": "Sustainable Development: Land Use and Planning",
+                                "credits": "20",
+                                "code": "ENV3013",
+                                "status": "Designate",
+                                "description": "This module explores social, economic and environmental issues associated with land use. Ethical consumerism will be linked to contemporary land use. Techniques for the evaluation of landscapes (including GIS) will be introduced and the effectiveness of policies and legislation that aim to facilitate sustainable development will be critically evaluated and discussed."
+                            },
+                            {
+                                "name": "Landscape and Restoration Ecology",
+                                "credits": "20",
+                                "code": "ENV3014",
+                                "status": "Designate",
+                                "description": "This module addresses high-level ecological concepts and principles relating to the role of spatial and temporal aspects of landscapes and their fauna, flora and cultural components (including workshops using GIS). The ways in which ecosystems are damaged by human activity and the potential for restoration are also considered."
+                            },
+                            {
+                                "name": "Biodiversity and Conservation",
+                                "credits": "20",
+                                "code": "ENV3021",
+                                "status": "Designate",
+                                "description": "This module deals with theoretical aspects of measuring biodiversity and understanding patterns of its distribution. It also considers more practical elements in terms of the practice of wildlife conservation including the evaluation and assessment of biodiversity for conservation.."
+                            },
+
+                            {
+                                "name": "Career Planning and Placement",
+                                "credits": "20",
+                                "code": "ENV3131",
+                                "status": "Compulsory",
+                                "description": "The module involves a work placement (to take place before starting the final year) to help familiarisation with workplace practices and to help to reflect upon skills needed. The module helps students to refine career aspirations and engage in career action planning via developing skills of analysis, synthesis and reflection."
+                            },
+                            {
+                                "name": "Sustainable Manufacture",
+                                "credits": "20",
+                                "code": "ENV3134",
+                                "status": "Designate",
+                                "description": "This module is intended to provide an introduction to how sustainability and sustainable development affect the way in which engineering must in future be practised. It will address the need to live within constraints and to ensure more fairness in access to limited resources, which lies at the heart of the concepts of sustainability and sustainable development. It will provide tools, knowledge and case studies to enable students to assess and devise mathods to improve the environmental performance of products."
+                            },
+                            {
+                                "name": "Sustainable Resource Management",
+                                "credits": "20",
+                                "code": "ENV3143",
+                                "status": "Designate",
+                                "description": "This module equips students with the skills, knowledge and tools to enable the critical evaluation of the role of Circular Economy and issues related to sustainable development goals and resource management across a range of products, services, activities and behaviour."
+                            },
+
+                            {
+                                "name": "Research Project and Dissertation in the Environmental Sciences",
+                                "credits": "40",
+                                "code": "ENV3143",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to provide students with the opportunity to carry out an independent student-led, supervisor-supported investigation in a specific area related to their main field of study within their programme, and to communicate their findings in the form of a written dissertation."
+                            },
+                            {
+                                "name": "Communicating Climate Change",
+                                "credits": "20",
+                                "code": "GEO3108",
+                                "status": "Designate",
+                                "description": "Climate change is regarded as the greatest environmental problem. It is a complex scientific topic that can affect all aspects of environmental and human systems. It is essential that debate and policy is driven by informed specialists and not by the media or political agenda. In this module we explore all aspects of the climate change issue."
+                            },
+                            {
+                                "name": "Water Resource Management",
+                                "credits": "20",
+                                "code": "GEO3124",
+                                "status": "Designate",
+                                "description": "The purpose of this module is to enhance students? employability through the development of key employability skills. Students participate in career planning activities and reflect on their experiences."
+                            },
+                            {
+                                "name": "Monitoring the Earth's Surface",
+                                "credits": "20",
+                                "code": "GEO3140",
+                                "status": "Designate",
+                                "description": "The module explores techniques used to document and understand changes occurring at the Earth?s surface with a focus on the role of geospatial technology. In this practical module students learn to use industry-standard survey instruments and software to generate and analyse geographical data."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "EntryRequirements": {
+                "html": "<p>A typical offer to study BA Animation is:</p><ul><li>BCC at A Level or,</li><li>DMM at BTEC/Cambridge Technical or,</li><li>Pass (C and above) at T Level</li></ul><p>All selected applicants will be invited for a portfolio review and discussion. We welcome applications from students with a mix of A levels and BTEC/Cambridge Technical qualifications.</p><p>For more information on how to make an application, please visit our <a href='/undergraduate/how-to-apply/'><strong>How to Apply page</strong>.</a></p><p>For more information on how to apply as an International student, please visit our <a href='/international/how-to-apply/'><strong>How to Apply page</strong>.</a></p><h5>Integrated Foundation Year (IFY) Entry Requirements</h5><p>Admission to the Animation degree foundation course is normally:</p><ul><li>DEE at A Level or,</li><li>MPP at BTEC or,</li><li>Pass (D or E) at T Level</li></ul><p>However, we would also like to hear from you if you have professional or industry experience instead, a range of other qualifications or self-developed subject knowledge that relates to the course you wish to study.</p><h5>English Language Requirements</h5><p>All International and EU students applying for a course with the University of Northampton must meet the following minimum English language requirements:</p><ul><li><strong>IELTS 6.0 (or equivalent) with a minimum of 5.5 in all bands</strong><br>for study at undergraduate level</li></ul><p>For information regarding English language requirements at the University, please see our <a href='/international/english-language-requirements/'><strong>IELTS page</strong>.</a></p><p>If you would like information on making an application, <a href='/international/how-to-apply/'><strong>please see our&nbsp;How to Apply page</strong>.</a></p>"
+            },
+            "FeesandFunding": {
+                "title": "2024/25 Tuition Fees",
+                "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
+                "Fees": [
+                    {
+                        "type": "UK - Full Time",
+                        "value": "9250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "UK - Part Time",
+                        "value": "1540",
+                        "extra": "per 20 credit module"
+                    },
+                    {
+                        "type": "UK - Integrated Foundation Year",
+                        "value": "9250",
+                        "extra": "as part of a four year programme (subsequent years will be charged at standard BSc rate)"
+                    },
+                    {
+                        "type": "International - Full Time",
+                        "value": "15200",
+                        "extra": ""
+                    },
+                    {
+                        "type": "International - Integrated Foundation Year",
+                        "value": "15200",
+                        "extra": " as part of a four-year programme (subsequent years will be charged at standard BSc rate)"
+                    }
+                ],
+                "AdditionalCosts": "There are no additional costs for our BA Animation university course for students beginning their studies in September 2023. Should this change, applicants and students will be contacted by the university with details of the costs."
+            },
+            "StudentPerks": {
+                "html": "<p>At the University of Northampton, everything we do, from funded trips to paid internships, is to give you everything you need to make a difference when you leave.</p><p>If you join our full-time BA Animation degree at Northampton, you will receive a laptop when your course begins*. The laptops are built to a bespoke custom specification ideal for use in the seminar room, collaborative group work or studying at home.</p><p>Whatever your ambitions, we’re here to help you to achieve them. We’ll support you to identify the skills you’re learning during your course, find your strengths and secure practical experience so that when it comes to applying for jobs or further study you’ll feel confident in standing out from the crowd. We’ve created the <a href='https://www.northampton.ac.uk/student-life/employment-promise/' target='_blank'><strong>Northampton Employment Promise</strong></a> because we are so confident that if you focus on your studies and complete one of our awards you’ll be highly employable by the time you graduate. Putting you in a great position to secure employment or continue your studies.</p><p>To check out the full list of perks, visit our <a href='https://www.northampton.ac.uk/student-life/university-living-laptops-trips-and-internships/' target='_blank' rel='noopener'><strong>Student Perks page</strong></a> or dedicated <a href='https://www.northampton.ac.uk/student-life/university-living-laptops-trips-and-internships/international-student-study-perks/'><strong>International Perks page</strong></a>.</p><p>*UK fee payers only (see <a href='https://www.northampton.ac.uk/study-perks-terms-and-conditions/'><strong>Terms and Conditions</strong></a> for further details).</p>"
+            },
+            "IntegratedFoundationYear": {
+                "html": "<p>The <a href='https://www.northampton.ac.uk/undergraduate/integrated-foundation-year/'><strong>Integrated Foundation Year (IFY)</strong></a>&nbsp;offers a new and exciting route into studying for a degree, attracting ambitious and driven students who are willing to learn and advance.</p><p>If you have non-standard qualifications or do not quite meet the admissions requirements, we can offer you a fantastic opportunity to study a four year programme which includes an Integrated Foundation Year. The Integrated Foundation Year will help you develop the theoretical/practical and academic skills you need, in order to successfully progress to the full award on the Animation degree course.</p><p>Our four year courses will enable you to successfully follow the degree pathway of your choice while gaining essential study skills. The foundation year of your chosen degree will be studied on a full-time basis and is aimed at supporting the transition to higher education. Years two, three and four are then studied as a standard degree programme.</p>"
+            },
+            "FAQs": {
+                "html": "",
+                "questions": [
+                    {
+                        "q": "How will I be taught on the Environmental Science BSc degree?",
+                        "a": "Face-to-face sessions are organised as interactive classes with discussion and activities. For some modules on BSc Environmental Science, there are computer based workshops (GIS and statistics) and field and laboratory based activities.  Classes are supported by online and technology-enhanced learning to ensure you have the best possible study experience to achieve your potential."
+                    },
+                    {
+                        "q": "How many hours per week of teaching/personal tutoring?",
+                        "a": "Environmental Science students typically have 12 hours contact time per week, in addition to 20-25 hours per week of independent study. Students are encouraged to meet with staff on a one-to-one basis to get additional study support, and also receive timetabled personal tutor meetings each term."
+                    },
+                    {
+                        "q": "How will I be assessed?",
+                        "a": "Each module generally has two items of assessment. Assignments are designed to develop your skills, as well as test your knowledge and understanding. There is a range of written assignments, including reports and essays. You may also be asked to analyse data or reflect on your learning. In some written assignments you will be tasked with writing in a style appropriate to a particular audience. Presentations, debates and discussions are used to assess your verbal communication skills. There are no formal examinations, but there are a small number of class-based tests. A detailed set of instructions is provided for every assignment. Students are encouraged to meet with academic staff to get one-to-one support."
+                    },
+                    {
+                        "q": "What careers can I go into from studying this course?",
+                        "a": "The BSc Environmental Science degree equips students with a broad knowledge base and a wide range of skills that are attractive for many careers requiring graduate skills. Our graduates gain employment in range of sectors such as planning, consultancy, biodiversity and ecology related careers, waste and resource management, contaminated land, sustainability, environmental consultancy, education, energy, charities, and local government. Opportunities to network with graduates are incorporated into the programme."
+                    },
+                    {
+                        "q": "Are there any study trips on the Environmental Science degree?",
+                        "a": "Fieldwork is a key and an integral part of the environmental sciences degree. It not only provides you the opportunity to work with specific equipment but also helps you develop transferable skills. Many of our modules include part- or full-day field trips. In addition, we often conduct fieldwork on and around campus. There are 2 compulsory UK residential trips, one in Year 1 (3 day) and one in year 2 (5-day). Recent field courses have taken place at FSC field centres in Slapton, Devon and Preston Montford. Students have covered a wide variety of techniques such as bat surveys, biological monitoring, water quality, coring techniques, rocky shore ecology and studying past environments and geology. Other optional field trips may be available to you throughout your degree. We fund travel and accommodation costs on compulsory study trips. There are additional fees for optional trips."
+                    }
+                ]
+            }
+        }
     },
     {
         "id": 6,
         "title": "Accounting and Finance (Top-Up) MSc",
         "overview": "Our MSc Accounting and Finance (Top-up) aims to extend and enhance the understanding and competence gained via professional qualifications and to enhance the ability of students to think strategically about management and organisational change within accounting and finance. This programme is designed for AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates and provides a means to support the continuing professional and personal needs of accounting practitioners.",
         "link": "https://www.northampton.ac.uk/courses/accounting-and-finance-top-up-msc/",
-        "image": "https://www.northampton.ac.uk/wp-content/uploads/2023/04/three-students-end-of-book-shelf-1400x550.jpg"
+        "image": "has",
+        "highlights": [
+            "Converts professional qualifications like ACCA into an MSc/MA.",
+            "Networking opportunities with other professionals.",
+            "Distance learning is supported worldwide."
+        ],
+        "KEYFACTS": {
+            "Level": "Postgraduate",
+            "Duration": [
+                {
+                    "type": "Distance Learning",
+                    "value": "1 year"
+                }
+            ],
+            "Starting": "September",
+            "EntryRequirements": "BCC at A Level or, DMM at BTEC",
+            "Fees": {
+                "UK": [
+                    {
+                        "type": "Distance Learning",
+                        "value": "2425",
+                        "extra": ""
+                    }
+                ],
+                "International": [
+                    {
+                        "type": "Distance Learning",
+                        "value": "2425",
+                        "extra": ""
+                    }
+                ]
+            },
+            "Location": "Distance Learning"
+        },
+        "COURSECONTENT": {
+            "CourseDetails": {
+                "html": "<p>This programme will broaden your specialist knowledge previously gained at a professional level, turning leading qualifications like ACCA into a recognised masters degree. In particular the module, ‘Accounting & finance research project’ guides you to research into the key challenges accounting and finance professionals face in the industry. This module aims to equip accounting and finance professionals with the necessary skills to undertake independent project work within a business context. The Research Methods element provides you with an introduction to research, types of research methodology, formulating and planning a research project, data collection, analysis and presentation of research findings based upon an actual industry specific or corporate focused topic.</p>",
+                "stages": [
+                    {
+                        "name": "STAGE 1",
+                        "modules": [
+                            {
+                                "name": "Dissertation and Research Methods",
+                                "credits": "60",
+                                "code": "FINM025",
+                                "status": "Compulsory",
+                                "description": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            "EntryRequirements": {
+                "html": "<p>If you have successfully completed professional qualifications such as AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates then you will be eligible to apply for this course. Please note that some professional qualifications must be awarded on the basis of exams passes (without exemptions) in order to be accepted for entry onto this course. International equivalents may be accepted such as OTHM Level 7 Diploma in Accounting and Finance (RQF). English Language Requirements All International and EU students applying for a course with us must meet the following minimum English language requirements: Minimum standard – IELTS 6.5 (or equivalent) for study at postgraduate level. For information regarding English language requirements at the University, please see our IELTS page.</p>"
+            },
+            "FeesandFunding": {
+                "title": "2024/25 Tuition Fees",
+                "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
+                "Fees": [
+                    {
+                        "type": "Distance Learning",
+                        "value": "2425",
+                        "extra": ""
+                    }
+                ],
+                "AdditionalCosts": "There are no additional costs for our BA Animation university course for students beginning their studies in September 2023. Should this change, applicants and students will be contacted by the university with details of the costs."
+            },
+            "FAQs": {
+                "html": "",
+                "questions": [
+                    {
+                        "q": "What is distance learning?",
+                        "a": "Face-to-face sessions are organised as interactive classes with discussion and activities. For some modules on BSc Environmental Science, there are computer based workshops (GIS and statistics) and field and laboratory based activities.  Classes are supported by online and technology-enhanced learning to ensure you have the best possible study experience to achieve your potential."
+                    },
+                    {
+                        "q": "How will I be assessed?",
+                        "a": "Environmental Science students typically have 12 hours contact time per week, in addition to 20-25 hours per week of independent study. Students are encouraged to meet with staff on a one-to-one basis to get additional study support, and also receive timetabled personal tutor meetings each term."
+                    },
+                    {
+                        "q": "What are the special features of this course?",
+                        "a": "Each module generally has two items of assessment. Assignments are designed to develop your skills, as well as test your knowledge and understanding. There is a range of written assignments, including reports and essays. You may also be asked to analyse data or reflect on your learning. In some written assignments you will be tasked with writing in a style appropriate to a particular audience. Presentations, debates and discussions are used to assess your verbal communication skills. There are no formal examinations, but there are a small number of class-based tests. A detailed set of instructions is provided for every assignment. Students are encouraged to meet with academic staff to get one-to-one support."
+                    }
+                ]
+            }
+        }
     },
     {
         "id": 7,
         "title": "Counselling Children and Young People MSc",
         "overview": "Our Counselling Children and Young People MSc is a multidisciplinary course that aims to promote an advanced level of knowledge and understanding that underpins practice in the area of counselling with children, young people and their families. This postgraduate children counselling course supports you in developing your skills and theoretical knowledge of counselling with children, young people and their families. If you have a particular interest in counselling work with children, then this children’s counselling course is designed with you in mind, allowing you to develop the skills and knowledge needed to pursue a career in counselling.",
         "link": "https://www.northampton.ac.uk/courses/counselling-children-and-young-people-msc/",
-        "image": "https://www.northampton.ac.uk/wp-content/uploads/2022/05/student-in-one-to-one.jpg"
+        "image": "has",
+        "highlights": [
+            "On this children and young people counselling course there are opportunities to develop your practical and professional counselling skills.",
+            "Exploration of eco-systemic perspective integrating Systemic Family Therapy, CBT, and Creative therapies.",
+            "A chance to attend the CAMH conference.",
+            "Excellent teaching staff who teach with an integrated approach to counselling with children and young people, imparting their experience from their personal practice.",
+            "Face-to-face client placement.",
+            "Credits can count towards a professional body accreditation with UKCP or BACP."
+        ],
+        "KEYFACTS": {
+            "Level": "Postgraduate",
+            "Duration": [
+                {
+                    "type": "Part Time",
+                    "value": "2 years"
+                }
+            ],
+            "Starting": "September",
+            "EntryRequirements": "BCC at A Level or, DMM at BTEC",
+            "Fees": {
+                "UK": [
+                    {
+                        "type": "Year 1",
+                        "value": "4140",
+                        "extra": "(90 Credits)"
+                    },
+                    {
+                        "type": "Year 2",
+                        "value": "4140",
+                        "extra": "(90 Credits)"
+                    }
+                ]
+            },
+            "Location": "Waterside"
+        },
+        "COURSECONTENT": {
+            "CourseDetails": {
+                "html": "<p>This children counselling masters degree has been designed to contribute towards achieving the following United Nations Sustainable Development Goal: SDG3 Good Health and Wellbeing. This Masters in Children Counselling course provides you with opportunities for you to enhance your employability and skills are structured into the course to allow you to develop your self-awareness, reflect upon your practice and to benefit from the supervisory relationship. Our CAMH conference (see highlight video below) is an excellent example of the extra opportunities that are available as part of the course. Our experienced counselling children course team includes specific expertise in CBT, systemic family therapy, Creative therapies, Play therapy and Gestalt approaches. Our teaching staff are able to teach you an integrated approach to counselling with children and young people, imparting their experience from their personal practice. The child counselling course is led by specialists in the field of counselling with a variety of specialisms and backgrounds. Throughout your study, you will also be supported by practitioners from similar professions (e.g. psychology, social work, nursing, psychiatric nursing, law and psychiatry). You will study alongside practitioners from health, social or voluntary services who work with children and young people, as well as graduates of psychology and other social and behavioural sciences, allowing you to learn from each other’s experiences as well as course materials. You have the option to graduate with a Postgraduate Diploma in Counselling with Children and Young People or you can complete all of the modules needed to be awarded an MSc in Counselling Children and Young People. To count towards a professional body registration, such as with BACP, you will need to undertake a supervised placement practice of a minimum of 100 hours as well as a minimum 40 hours of personal therapy with an approved and BACP or UKCP accredited counsellor or therapist. A student membership of the British Association for Counselling and Psychotherapy (BACP), a professional indemnity insurance and a Disclosure and Barring Service (DBS) check are also mandatory for this course. Please note the modules shown here relate to the academic year 23/24. The modules relating to the academic year 24/25 will be available from June 2024.</p>",
+                "stages": [
+                    {
+                        "name": "STAGE 1",
+                        "modules": [
+                            {
+                                "name": "Understanding Mental Health in Children and Young People",
+                                "credits": "30",
+                                "code": "PSYM062",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to enable an in depth understanding of children and young people?s mental health in their social and family context, offering a critical perspective on diagnosis and treatment, and a nuanced analysis of cognitive-emotional, social and behavioral development."
+                            },
+                            {
+                                "name": "Counselling with Children, Young People and Families",
+                                "credits": "30",
+                                "code": "PSYM066",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to provide students with opportunities to develop advanced counselling skills, associated with evidence based approaches suitable for counselling with CYP."
+                            },
+                            {
+                                "name": "Counselling Children and Young People in Practice",
+                                "credits": "30",
+                                "code": "PSYM066",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is:To offer students opportunities for the practical application of knowledge and skills. To support students in creating a network or professional relationships and build opportunities for career development and employability.To help students build a consistent model of counselling with CYP and families."
+                            },
+                            {
+                                "name": "Qualitative and Quantitative Research Methods",
+                                "credits": "10",
+                                "code": "PSYM085",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to provide students with the opportunity and resources to develop a critical understanding of research methods so that they can evaluate research they read and/or propose research of an acceptable standard."
+                            },
+                            {
+                                "name": "Dissertation and Research Methods",
+                                "credits": "50",
+                                "code": "PSYM086",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is ?To build on basic research methods skills from modules PSYM085 or PSYM102. The module is designed to develop advanced research skills enabling students to autonomously formulate and conduct an empirical research project in a field relevant to individual masters programs under supervision."
+                            },
+                            {
+                                "name": "Fundamental Skills for Working with Children, Young People and Families",
+                                "credits": "30",
+                                "code": "PSYM111",
+                                "status": "Compulsory",
+                                "description": "The purpose of this module is to equip students with the core skills needed for working with children, young people and their families in CAMH related contexts, enabling students to appreciate the complexity of counselling with CYP."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "EntryRequirements": {
+                "html": "<p>You will need to hold a first or second class bachelors’ degree in order to be eligible to apply for this children and young people counselling course. Voluntary or professional experience of work with children and young people is desirable, but not essential. Applicants are advised to mention any relevant experience related to the counselling children degree programme within the last 5 years with their personal statement. Applicants are required to provide a reference with their application.</p><p>If you have successfully completed professional qualifications such as AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates then you will be eligible to apply for this course. Please note that some professional qualifications must be awarded on the basis of exams passes (without exemptions) in order to be accepted for entry onto this course. International equivalents may be accepted such as OTHM Level 7 Diploma in Accounting and Finance (RQF). English Language Requirements All International and EU students applying for a course with us must meet the following minimum English language requirements: Minimum standard – IELTS 6.5 (or equivalent) for study at postgraduate level. For information regarding English language requirements at the University, please see our IELTS page.</p>"
+            },
+            "FeesandFunding": {
+                "title": "2024/25 Tuition Fees",
+                "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
+                "Fees": [
+                    {
+                        "type": "UK – Part Time / Year 1",
+                        "value": "4140",
+                        "extra": "(90 Credits)"
+                    },
+                    {
+                        "type": "UK – Part Time / Year 2",
+                        "value": "4140",
+                        "extra": "(90 Credits)"
+                    }
+                ],
+                "AdditionalCosts": "40 hours of personal therapy (average cost is £30-50/hour, although there is high variability across the market). Clinical supervision in compliance with BACP recommended ratio (this might or might not fall on the students, as some placements offer free supervision to trainees, but we cannot predict which ones. This has always been clarified during interviews). DBS clearance."
+            },
+            "FAQs": {
+                "html": "",
+                "questions": [
+                    {
+                        "q": "How is the children counselling course structured?",
+                        "a": "You will ordinarily be required to attend classes for 1-2 days per week (once per week in Year 1 and 2 days per week in year 2, when the research methods and dissertation modules run). A typical teaching day runs from 9am to 5pm. Depending on which group you are allocated to, the core classes will be taught either on Wednesdays or Thursdays. In the second year, you will need to attend research methods and dissertation classes on Wednesdays and Thursdays.."
+                    },
+                    {
+                        "q": "What is child and adolescent counselling?",
+                        "a": "Child and adolescent counselling is an area of counselling that enables people to explore the issues that young people face within their behaviour, their mental health and overall well-being. The therapeutic processes and practices employed, including play therapy in child counselling, can be effective in helping young people to express their feelings in a safe and constructive environment."
+                    },
+                    {
+                        "q": "How do I become a child counsellor?",
+                        "a": "A postgraduate counselling children degree which specialises in counselling practices for children and young people will best equip you with the essential and most relevant knowledge required to gain a career in this field. In order to step into this profession, you will need the appropriate certification, relevant professional experience and the necessary skills."
+                    },
+                    {
+                        "q": "Will the university provide me with a placement?",
+                        "a": "You will need to find your own placement. However, our team is highly committed in supporting you throughout. We are engaged in maintaining and expanding partnerships with placement agencies all over the UK. We have two dedicated placement coordinators who can offer you guidance in evaluating your options."
+                    },
+                    {
+                        "q": "Do I need to have my placement at Northampton?",
+                        "a": "No. You can have your placement virtually anywhere in the world, including, of course other areas of the UK, provided that BACP and course requirements are met by the placement. An audit is carried out with all placement agencies to ensure the quality of the placement experience."
+                    },
+                    {
+                        "q": "How will I learn?",
+                        "a": "Teaching methods that are used on our Counselling Children and Young People course include lectures, workshops, one-to-one tutorials, private study, online activities, group work and role play scenarios."
+                    },
+                    {
+                        "q": "How will I be assessed?",
+                        "a": "Our assessment strategy is designed to include a broad range of assessment methods, in order to ensure that you have the maximum opportunity to demonstrate that you have met the learning outcomes for the course. Assessment methods include: essays, case studies, self-reflective log books, critical reviews, video recorded role plays and oral presentations.."
+                    },
+                    {
+                        "q": "Is the course accredited, and what difference does it make for me?",
+                        "a": "The counselling children course is not currently accredited. However, the course is designed to meet the requirements that the BACP has set for counselling courses, therefore it provides you with the opportunity of progressing towards individual applications for personal accreditation. Please be mindful that course accreditation and personal accreditation are two completely different matters."
+                    },
+                    {
+                        "q": "What happens when I finish the course?",
+                        "a": "You will be awarded both a Master of Science and a Professional Qualification for Counselling with Children and Young People."
+                    },
+                    {
+                        "q": "Who can I counsel when I have completed the qualification?",
+                        "a": "You can counsel virtually any client between 5 and 24. You will not be able to counsel adults. Although you will be trained in conducting interviews with parents in light of your commitment to work with children, this does not qualify you as an adult counsellor."
+                    }
+                ]
+            }
+        }
     },
     {
         "id": 8,
         "title": "Digital Marketing MSc",
         "overview": "Digital Marketing MSc explores the exciting and dynamic world of digital marketing. You will investigate the debates around the Virtual Reality, the Metaverse, Artificial Intelligence, Digital Transformation and Digital skills that are framing the world around us. Develop your understanding of marketing, grow your social media skills and use industry data to analyse and interpret the world you work in on this digital marketing Master’s. Build on your general business background and prepare for your career in marketing. Discover marketing concepts and apply your learning and skills with practical industry projects and creative digital tasks. You’ll explore topics including content creation, e-commerce, data insights and analytics, the customer experience, social media marketing, marketing ethics, sustainability, and futurology. Accredited by the Digital Marketing Institute (DMI), this Masters degree is designed to be leading-edge to prepare you as a professional digital marketer for the 21st century workplace.",
         "link": "https://www.northampton.ac.uk/courses/digital-marketing-msc/",
-        "image": "https://www.northampton.ac.uk/wp-content/uploads/2019/09/student-on-laptop-course-feature.jpg"
+        "image": "has",
+        "highlights": [
+            "Digital Marketing Institute (DMI) accreditation means students can become a certified Digital Marketing Professional",
+            "Practitioner-based content and assessment ensures relevant digital marketing competencies are at the heart of the course content",
+            "Extended Project option for digital marketing specialisation / work context",
+            "This course is eligible for the UON Graduate Discount Scheme"
+        ],
+        "KEYFACTS": {
+            "Level": "Postgraduate",
+            "Duration": [
+                {
+                    "type": "Full Time",
+                    "value": "1 year"
+                },
+                {
+                    "type": "Part Time",
+                    "value": "2 years"
+                }
+            ],
+            "Starting": "September",
+            "Fees": {
+                "UK": [
+                    {
+                        "type": "Full Time",
+                        "value": "8250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "Part Time",
+                        "value": "920",
+                        "extra": "(per 20 credits)"
+                    }
+                ],
+                "International": [
+                    {
+                        "type": "Full Time",
+                        "value": "16995",
+                        "extra": ""
+                    }
+                ]
+            },
+            "Location": "Waterside"
+        },
+        "COURSECONTENT": {
+            "CourseDetails": {
+                "html": "<p>This Masters course explores the exciting and dynamic world of digital marketing. You will investigate the debates around the Virtual Reality, the Metaverse, Artificial Intelligence, Digital Transformation and Digital skills that are framing the world around us.</p><p>Accredited by the Digital Marketing Institute (DMI), this Masters will also allow you to be certified as a Certified Digital Marketing Professional. Membership of the DMI is Included in the course fee and gives you access to a wealth of study materials and rich content via the DMI student online portal.</p>",
+                "stages": [
+                    {
+                        "name": "STAGE 1",
+                        "modules": [
+                            {
+                                "name": "Strategic Digital Marketing",
+                                "credits": "20",
+                                "code": "",
+                                "status": "Compulsory",
+                                "description": "This module addresses topic around  Digital Marketing Strategy, Search Engine Optimisation (SEO) & website optimisation. Investigate the world of YouTube and Display Advertising, evaluate effectiveness using Analytics with Google Analytics"
+                            },
+                            {
+                                "name": "Social Media & Content Creation",
+                                "credits": "20",
+                                "code": "",
+                                "status": "Compulsory",
+                                "description": "Learn about the growth of social channels and gain an overview into the background of how social content and networks have developed. Explore issues around Disintermediation & reintermediation. Take part in debates and discussions around Ethics, the Creator Economy and how you can create your own effective content and be a Content Creator within the digital landscape as it is today"
+                            },
+                            {
+                                "name": "Digital Diversity",
+                                "credits": "20",
+                                "code": "",
+                                "status": "Compulsory",
+                                "description": "Investigate bridging the digital divide and how the digital environment can be designed for inclusion for all users. Learn about Regulation & codes of conduct and issues around Digital discrimination. How can digital marketers and managers plan for a more inclusive digital workforce"
+                            },
+                            {
+                                "name": "The Professional Digital Marketer",
+                                "credits": "20",
+                                "code": "",
+                                "status": "Compulsory",
+                                "description": "This module is designed to prepare you to be a digital marketing professional for the modern workplace, or enhance your career if you already work in digital marketing. You will investigate the importance of Career goal setting, examine your Digital footprint audit, take part in Web portfolio designing and experience the importance of Network optimisation. You will also explore using AI effectively"
+                            },
+                            {
+                                "name": "E-Commerce",
+                                "credits": "20",
+                                "code": "",
+                                "status": "Compulsory",
+                                "description": "Gain an overview of the e-commerce industry and trends. Understand digital consumer segments and the Online buying journey consumers take. Examine digital marketing models and concepts and the role of personalisation within e-commerce. Learn the practical realities and importance of analysing and forecasting online performance"
+                            },
+                            {
+                                "name": "Digital Futures",
+                                "credits": "20",
+                                "code": "",
+                                "status": "Compulsory",
+                                "description": "What will the Digital Future bring or look like. Learn about Hype cycles, Futurology – and the study of research & development, Trend research, conduct Vertical dives – e.g. into healthcare martech or explore a Topical dive into a digital feature that is a discussion point of the moment– e.g. Artificial Intelligence, Blockchain, wearables, and perhaps for your future – Meet the PhD"
+                            },
+                            {
+                                "name": "Digital Project or Dissertation",
+                                "credits": "40",
+                                "code": "",
+                                "status": "Compulsory",
+                                "description": "You will have the option to undertake a dissertation – a piece of individual, original research OR choose to take a practitioner-focused digital marketing project"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "EntryRequirements": {
+                "html": "<p>If you have successfully completed professional qualifications such as AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates then you will be eligible to apply for this course. Please note that some professional qualifications must be awarded on the basis of exams passes (without exemptions) in order to be accepted for entry onto this course. International equivalents may be accepted such as OTHM Level 7 Diploma in Accounting and Finance (RQF). English Language Requirements All International and EU students applying for a course with us must meet the following minimum English language requirements: Minimum standard – IELTS 6.5 (or equivalent) for study at postgraduate level. For information regarding English language requirements at the University, please see our IELTS page.</p>"
+            },
+            "FeesandFunding": {
+                "title": "2024/25 Tuition Fees",
+                "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
+                "Fees": [
+                    {
+                        "type": "UK Full Time",
+                        "value": "8250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "UK Part Time",
+                        "value": "920",
+                        "extra": "per 20 credit module"
+                    },
+                    {
+                        "type": "International – Full Time",
+                        "value": "16995",
+                        "extra": ""
+                    }
+                ],
+                "AdditionalCosts": "There are no additional costs for our BA Animation university course for students beginning their studies in September 2023. Should this change, applicants and students will be contacted by the university with details of the costs."
+            },
+            "FAQs": {
+                "html": "",
+                "questions": [
+                    {
+                        "q": "How will I be assessed?",
+                        "a": "A variety of individual and group-based assessments are used. This includes blogs, e-portfolios, consultancy reports, presentations, posters,  podcast scripts, projects, client briefs, and digital content creation."
+                    },
+                    {
+                        "q": "Are there any special features for this Digital Marketing course?",
+                        "a": "Input from industry professionals including guest speakers, live client projects, making pitches to real clients and agency staff."
+                    }
+                ]
+            }
+        }
     },
     {
         "id": 9,
         "title": "Financial and Investment Analysis MSc",
         "overview": "The University of Northampton’s MSc Financial and Investment Analysis will develop you into a specialist investment professional that can take up challenging roles in investment banking, risk management and fund management. This programme will prepare you to write the CFA® professional exams. This finance and investment course has an Industry Placement Option.",
         "link": "https://www.northampton.ac.uk/courses/financial-and-investment-analysis-msc/",
-        "image": "https://www.northampton.ac.uk/wp-content/uploads/2023/12/student-working-laptop-library-1400x550.jpg"
+        "image": "has",
+        "highlights": [
+            "Industry Placement Option available for the Financial and Investment Analysis MSc degree.",
+            "Hands-on application of skills learnt through simulated trading via the Bloomberg terminals.",
+            "Exemptions are available from main professional bodies ACCA and CIMA"
+        ],
+        "KEYFACTS": {
+            "Level": "Postgraduate",
+            "Duration": [
+                {
+                    "type": "Full Time",
+                    "value": "1 year"
+                }
+            ],
+            "Starting": "September",
+            "Fees": {
+                "UK": [
+                    {
+                        "type": "Full Time",
+                        "value": "8250",
+                        "extra": ""
+                    }
+                ],
+                "International": [
+                    {
+                        "type": "Full Time",
+                        "value": "16995",
+                        "extra": ""
+                    }
+                ]
+            },
+            "Location": "Waterside"
+        },
+        "COURSECONTENT": {
+            "CourseDetails": {
+                "html": "<p>MSc Financial and Investment Analysis provides in-depth theoretical and practical skills for specialist roles in the finance and investment industry. You will develop analytical and critical skills which enables you to tackle simulated real-life problems and challenges in the finance industry. Grounded in ethical and responsible approaches, this programme is aligned to investment and risk management professional bodies and responds to the demands and challenges of the dynamic financial services industry.</p>",
+                "stages": [
+                    {
+                        "name": "STAGE 1",
+                        "modules": [
+                            {
+                                "name": "Advanced Financial Reporting & Analysis",
+                                "credits": "20",
+                                "code": "FINM073",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Portfolio Management",
+                                "credits": "20",
+                                "code": "FINM065",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Ethics and Professional Standards                                ",
+                                "credits": "20",
+                                "code": "FINM066",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Advanced Corporate Finance",
+                                "credits": "20",
+                                "code": "FINM067",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Equity Investments",
+                                "credits": "20",
+                                "code": "FINM068",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Fixed Income Investments",
+                                "credits": "20",
+                                "code": "FINM069",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Quantitative Methods",
+                                "credits": "20",
+                                "code": "FINM070",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Derivatives",
+                                "credits": "20",
+                                "code": "FINM071",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Alternative Investments",
+                                "credits": "20",
+                                "code": "FINM072",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Career Futures: Employability Skills",
+                                "credits": "0",
+                                "code": "HRMM072",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Work-Based Project",
+                                "credits": "60",
+                                "code": "HRMM074",
+                                "status": "Compulsory",
+                                "description": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            "EntryRequirements": {
+                "html": "<p>If you have successfully completed professional qualifications such as AIA, ACA, ACCA, CIMA, ICAP or CPA Australia graduates then you will be eligible to apply for this course. Please note that some professional qualifications must be awarded on the basis of exams passes (without exemptions) in order to be accepted for entry onto this course. International equivalents may be accepted such as OTHM Level 7 Diploma in Accounting and Finance (RQF). English Language Requirements All International and EU students applying for a course with us must meet the following minimum English language requirements: Minimum standard – IELTS 6.5 (or equivalent) for study at postgraduate level. For information regarding English language requirements at the University, please see our IELTS page.</p>"
+            },
+            "FeesandFunding": {
+                "title": "2024/25 Tuition Fees",
+                "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
+                "Fees": [
+                    {
+                        "type": "UK Full Time",
+                        "value": "8250",
+                        "extra": ""
+                    },
+                    {
+                        "type": "International – Full Time",
+                        "value": "16995",
+                        "extra": ""
+                    },
+                    {
+                        "type": "Year 2 Placement Fee",
+                        "value": "1100",
+                        "extra": "(for placements starting in September 2025 or January 2026)"
+                    }
+                ],
+                "AdditionalCosts": "There are no additional costs for our BA Animation university course for students beginning their studies in September 2023. Should this change, applicants and students will be contacted by the university with details of the costs."
+            },
+            "FAQs": {
+                "html": "",
+                "questions": [
+                    {
+                        "q": "How will I learn on the Financial and Investment Analysis MSc?",
+                        "a": "Typically you will have 10 hours (approx) of contact time with your tutors in the first semester and 12 hours (approx) in the second semester. Overall you will spend 108 hours per module in self-directed study (reading and research).."
+                    },
+                    {
+                        "q": "How will I be assessed?",
+                        "a": "The financial investment analysis course uses a combination of assessment methods including reports, case studies, time constrained tests and examinations, plus your dissertation."
+                    }
+                ]
+            }
+        }
     },
     {
         "id": 10,
-        "title": "Lift Engineering MSc",
-        "overview": "The University of Northampton’s Lift Engineering MSc course will benefit lift engineers and consultants as well as members of senior management in the lift industry. You will gain an in-depth understanding of advanced technical issues arising in lift design, maintenance and contract management. The programme teaches the skills required in electrical and mechanical science, together with mathematics and other engineering areas associated with the lift industry. This lift engineering master’s degree has been accredited by IMechE under licence from the UK regulator, the Engineering Council. Accreditation is a mark of assurance that the degree meets the standards set by the Engineering Council in the UK Standard for Professional Engineering Competence (UK-SPEC). An accredited degree will provide you with some or all of the underpinning knowledge, understanding and skills for eventual registration as an Incorporated (IEng) or Chartered Engineer (CEng). Some employers recruit preferentially from accredited degrees, and an accredited degree is likely to be recognised by other countries that are signatories to international accords.",
-        "link": "https://www.northampton.ac.uk/courses/lift-engineering-msc/",
-        "image": "https://www.northampton.ac.uk/wp-content/uploads/2022/09/glass-tubes-in-engineering-lab-1400x550.jpg"
+        "title": "Advanced Clinical Practice MSc",
+        "overview": "The University of Northampton’s MSc Advanced Clinical Practice course aims to equip healthcare professionals with advanced clinical skills and knowledge needed to lead and develop complex evidence-based clinical decisions, whilst enhancing service delivery and improving health outcomes within Practice. Linked to the four pillars of ‘Advanced Practice’; clinical, education, leadership and research; students studying for their masters in advanced clinical practice will also benefit from learning with specialists from a range of healthcare settings, whilst ensuring patient safety and ethical practice.",
+        "link": "https://www.northampton.ac.uk/courses/advanced-clinical-practice-msc/",
+        "image": "has",
+        "highlights": [
+            "Accredited Programme with Centre of Advancing Practice",
+            "Work-based learning",
+            "Inter-professional learning",
+            "Professional body recordable prescribing qualification"
+        ],
+        "KEYFACTS": {
+            "Level": "Postgraduate",
+            "Duration": [
+                {
+                    "type": "Part Time",
+                    "value": "3-5 year"
+                }
+            ],
+            "Starting": "September",
+            "Fees": {
+                "UK": [
+                    {
+                        "type": "PGCert",
+                        "value": "2760",
+                        "extra": ""
+                    },
+                    {
+                        "type": "PGDip",
+                        "value": "5520",
+                        "extra": ""
+                    },{
+                        "type": "MSc (Top Up)",
+                        "value": "2760",
+                        "extra": ""
+                    },{
+                        "type": "MSc: Year 1",
+                        "value": "2760",
+                        "extra": ""
+                    },{
+                        "type": "MSc: Year 2",
+                        "value": "2760",
+                        "extra": ""
+                    },{
+                        "type": "MSc: Year 3",
+                        "value": "2760",
+                        "extra": ""
+                    }
+                ]
+            },
+            "Location": "Waterside"
+        },
+        "COURSECONTENT": {
+            "CourseDetails": {
+                "html": "<p>Advanced clinical practitioners (ACPs) enhance capacity and capability within teams by supporting existing and more established roles. They improve clinical continuity, provide more patient-focused care, enhance the inter-professional team and help to provide safe, accessible and high-quality care for patients (HEE, 2017).</p><p>The University of Northampton’s MSc in Advanced Clinical Practice course is designed in a systematic manner using a modular approach which enables it to be flexible enough to respond to the needs of stakeholders whilst recognising that students studying this programme will also be employed within practice settings.  Programme design ensures that the four pillars of advanced practice are developed and met by the end of the programme.</p>",
+                "stages": [
+                    {
+                        "name": "STAGE 1",
+                        "modules": [
+                            {
+                                "name": "Advanced Assessment and Clinical Reasoning",
+                                "credits": "40",
+                                "code": "NURM080",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Diagnostic Reasoning for Practice",
+                                "credits": "20",
+                                "code": "NURM081",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Independent and Supplementary Prescribing                                ",
+                                "credits": "40",
+                                "code": "NURM114",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Educating and Influencing Others in Healthcare",
+                                "credits": "20",
+                                "code": "NURM079",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Advanced Professional Projects",
+                                "credits": "40",
+                                "code": "NURM110",
+                                "status": "Compulsory",
+                                "description": ""
+                            },
+                            {
+                                "name": "Research Dissemination",
+                                "credits": "40",
+                                "code": "NURM144",
+                                "status": "Compulsory",
+                                "description": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            "EntryRequirements": {
+                "html": "<p>Applicants must hold an appropriate healthcare or bachelor’s degree with honours. Current professional body registration (UK registered). Employment within a relevant health and social care related environment. Nurses, midwives, allied health professionals and pharmacists with current professional body registrations are encouraged to apply. Students who do not have a relevant Bachelor degree must satisfy the University that by virtue of their professional standing, qualification and/or training that they are fit to register for, and to benefit them from, their proposed programme of study. Evidence of recent level 6 study is required. Please note that for NURM114, additional PSRB criteria apply for studying this module. For further information regarding the award and its associated modules, please contact Laura Elliott, Programme Lead, via advancedpractice@northampton.ac.uk.</p>"
+            },
+            "FeesandFunding": {
+                "title": "2024/25 Tuition Fees",
+                "text": "Fees quoted relate to study in the Academic Year 24/25 only and may be subject to inflationary increases in future years.",
+                "Fees": [
+                    {
+                        "type": "UK – Part Time",
+                        "value": "920",
+                        "extra": " per 20 Credit Module"
+                    },
+                    {
+                        "type": "UK – Postgraduate Certificate in Advanced Clinical Practice",
+                        "value": "2760",
+                        "extra": "(60 Credits, 1 Year)"
+                    },
+                    {
+                        "type": "UK – Postgraduate Diploma in Advanced Clinical Practice",
+                        "value": "5520",
+                        "extra": "(120 Credits, 2 Years)"
+                    },
+                    {
+                        "type": "UK – MSc Advanced Clinical Practice (Top Up)",
+                        "value": "2760",
+                        "extra": "(60 Credits, 1 Year)"
+                    }
+                ]
+            }
+        }
     }
 ]

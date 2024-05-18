@@ -17,18 +17,23 @@ catch (PDOException $pe) {
 
 $LESSON_STATUS = [
     1 => "Compulsory",
-    2 => "Optional"
+    2 => "Optional",
+    3 => "Designated"
 ];
 
 $LESSON_CODE_TYPES = [
     1 => "BA",
-    2 => "BA with Foundation"
+    2 => "BA with Foundation",
+    3 => "BSc",
+    4 => "BSc with Foundation",
+    5 => ""
 ];
 
 $LESSON_DURATION_TYPES = [
     1 => "Full Time",
     2 => "Full Time Foundation",
-    3 => "Part Time"
+    3 => "Part Time",
+    4 => "Distance Learning"
 ];
 
 $LESSON_FEE_REGIONS = [
@@ -59,7 +64,14 @@ $LESSON_STARTING = [
 $LESSON_FEE_TYPES = [
     1 => "Full Time",
     2 => "Part Time",
-    3 => "Integrated Foundation Year"
+    3 => "Integrated Foundation Year",
+    4 => "Distance Learning",
+    5 => "PGCert",
+    6 => "PGDip",
+    7 => "MSc (Top Up)",
+    8 => "MSc: Year 1",
+    9 => "MSc: Year 2",
+    10 => "MSc: Year 3"
 ];
 
 $LESSON_STAGES = [

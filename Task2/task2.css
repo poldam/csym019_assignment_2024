@@ -238,11 +238,13 @@ textarea {
 .col33 {
     width: 33%;
     display: inline-block;
+    vertical-align: top;
 }
 
 .col50 {
     width: 49.5%;
     display: inline-block;
+    vertical-align: top;
 }
 
 .width100 {
