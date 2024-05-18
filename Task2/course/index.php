@@ -268,25 +268,33 @@
                         <br></div>
                     <?php } ?>
 
-                    <button class="accordion"> FAQs </button>
-                        <div class="panel"> <br>
+                    
                         <?php 
                             {
                                 $stmt2 = $MYSQL_CONNECTION->prepare("SELECT * FROM faqs WHERE lessonid = :id");
                                 $stmt2->bindParam(':id', $lessonid);
                                 $stmt2->execute();
+
+                                $first = true;
                                 
                                 while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
+                                    if($first) {
+                                        echo '<button class="accordion"> FAQs </button>';
+                                        echo '<div class="panel"> <br>';
+                                        $first = false;
+                                    }
+
                                     echo '<button class="accordion2">'.$row2['question'].'</button>';
                                     echo '<div class="panel2"> <br>';
                                     echo $row2['answer'];
                                     echo '<br><br></div>';
                                 }
-    
+
+                                if(!$first) {
+                                    echo '<br></div>';
+                                }
                             }
                         ?>
-                        <br></div>
-                    
                 </div>
                 <div class="col50">
                     <?php if ($row) { 
