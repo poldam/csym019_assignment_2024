@@ -42,6 +42,10 @@
 
     <main id="main">
         <?php 
+            if(!empty($_POST)) {
+                debug($_POST);
+            }
+
             if(!empty($_GET['action']) && $_GET['action'] == 'delete' && !empty($_GET['id'])) { 
                 $id = $_GET['id'];
 
@@ -83,71 +87,270 @@
 
 
             } else if(!empty($_GET['action']) && $_GET['action'] == 'insert') { ?>
-            <div>
                 <h2> Insert Course</h2>
-                <form>
-                    <label>Course Title (έως 150 χαρακτήρες)</label>
-                    <div><input type="text" name="title" placeholder="Εισάγετε τον Τίτλο του Μαθήματος"></div>
-
-                    <label>Overview (έως 500 χαρακτήρες) </label>
-                    <div><textarea type="text" name="overview" placeholder="Εισάγετε το Overview του Μαθήματος"></textarea></div>
-
-                    <div class="col33">
-                        <label>Level </label>
-                        <div>
-                            <select name="level">
-                                <?php 
-                                    foreach($LESSON_LESSON_LEVELS as $k => $v) {
-                                        echo "<option value='".$k."'>".$v."</option>";
-                                    }
-                                ?>
-                            </select>
-                        </div>
+                <form method="POST" action="./">
+                    <div class="tabs">
+                        <div class="tab active" onclick="openTab(event, 'tab1')">Βασικές Πληροφορίες</div>
+                        <div class="tab" onclick="openTab(event, 'tab2')">Πρόσθετα</div>
+                        <div class="tab" onclick="openTab(event, 'tab3')">Course Modules</div>
                     </div>
 
-                    <div class="col33">
-                        <label>Starting </label>
-                        <div>
-                            <select name="starting">
-                                <?php 
-                                    foreach($LESSON_STARTING as $k => $v) {
-                                        echo "<option value='".$k."'>".$v."</option>";
-                                    }
-                                ?>
-                            </select>
+                    <div id="tab1" class="tab-content active">
+                        <div class="col50">
+                            
+                            <label>Course Title (έως 150 χαρακτήρες)</label>
+                            <div><input type="text" name="title" placeholder="Εισάγετε τον Τίτλο του Μαθήματος"></div>
+
+                            <label>Overview (έως 500 χαρακτήρες) </label>
+                            <div><textarea type="text" name="overview" placeholder="Εισάγετε το Overview του Μαθήματος"></textarea></div>
+
+                            <div class="col33">
+                                <label>Level </label>
+                                <div>
+                                    <select name="level">
+                                        <?php 
+                                            foreach($LESSON_LESSON_LEVELS as $k => $v) {
+                                                echo "<option value='".$k."'>".$v."</option>";
+                                            }
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col33">
+                                <label>Starting </label>
+                                <div>
+                                    <select name="starting">
+                                        <?php 
+                                            foreach($LESSON_STARTING as $k => $v) {
+                                                echo "<option value='".$k."'>".$v."</option>";
+                                            }
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col33">
+                                <label>Location </label>
+                                <div>
+                                    <input type="text" name="location" placeholder="Εισάγετε το Location του Μαθήματος">
+                                </div>
+                            </div>
+
+                            <label>Course Details (έως 500 χαρακτήρες) </label>
+                            <div><textarea type="text" name="courseDetails" placeholder="Εισάγετε το Course Details του Μαθήματος"></textarea></div>
+
+                            <label>Entry Requirements (KEYS Section)</label>
+                            <div><input type="text" name="entryReqsKeys" placeholder="Εισάγετε τα Entry Requirements του Μαθήματος (KEYS Section)"></div>
+
+                            <label>Entry Requirements (έως 500 χαρακτήρες) </label>
+                            <div><textarea type="text" name="entryReqs" placeholder="Εισάγετε τα Entry Requirements του Μαθήματος (FULL)"></textarea></div>
+                        </div>
+                        <div class="col50">
+                            <label>Fees Header (έως 500 χαρακτήρες) </label>
+                            <div><textarea type="text" name="feesHeader" placeholder="Εισάγετε το Fees Header του Μαθήματος"></textarea></div>
+
+                            <label>Fees Footer (έως 500 χαρακτήρες) </label>
+                            <div><textarea type="text" name="feesFooter" placeholder="Εισάγετε τα Fees Footer του Μαθήματος"></textarea></div>
+
+                            <label>Student Perks (έως 500 χαρακτήρες) </label>
+                            <div><textarea type="text" name="studentPerks" placeholder="Εισάγετε τα Student perks του Μαθήματος"></textarea></div>
+
+                            <label>Integrated Foundation Year (IFY) (έως 500 χαρακτήρες) </label>
+                            <div><textarea type="text" name="IFY" placeholder="Εισάγετε το IFY του Μαθήματος"></textarea></div>
                         </div>
                     </div>
+                    <div id="tab2" class="tab-content">
+                        <div class="col50">
+                            <h3>Fees </h3>
+                            <div id="fees-container">
+                                <div class="fee-template">
+                                    <div class="text-right"><button type="button" class="remove-fee-button button-danger"> Διαγραφή </button></div>
+                                    <div class="col24">
+                                        <label>Region </label>
+                                        <div>
+                                            <select name="feeregion[]">
+                                                <?php 
+                                                    foreach($LESSON_FEE_REGIONS as $k => $v) {
+                                                        echo "<option value='".$k."'>".$v."</option>";
+                                                    }
+                                                ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col24">
+                                        <label>Fee Type </label>
+                                        <div>
+                                            <select name="feetype[]">
+                                                <?php 
+                                                    foreach($LESSON_FEE_TYPES as $k => $v) {
+                                                        echo "<option value='".$k."'>".$v."</option>";
+                                                    }
+                                                ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col24">
+                                        <label>Price</label>
+                                        <div><input type="number" step="1" name="feevalue[]" min="0" max="100" value="20"></div>
+                                    </div>
+                                    <div class="col24">
+                                        <label>Extras (έως 200 χαρακτήρες)</label>
+                                        <div><input type="text" name="feeextra[]" placeholder="Εισάγετε τον Τίτλο του Module"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button-edit" type="button" id="add-fee-button">Add Fee</button>
+                            </div>
+                            <hr>
 
-                    <div class="col33">
-                        <label>Location </label>
-                        <div>
-                            <input type="text" name="location" placeholder="Εισάγετε το Location του Μαθήματος">
+                            <h3>Course Codes </h3>
+                            <div id="codes-container">
+                                <div class="code-template">
+                                    <div class="text-right"><button type="button" class="remove-code-button button-danger"> Διαγραφή </button></div>
+                                    <div class="col50">
+                                        <label>Code Type </label>
+                                        <div>
+                                            <select name="codetype[]">
+                                                <?php 
+                                                    foreach($LESSON_CODE_TYPES as $k => $v) {
+                                                        echo "<option value='".$k."'>".$v."</option>";
+                                                    }
+                                                ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col50">
+                                        <label>Code (έως 45 χαρακτήρες)</label>
+                                        <div><input type="text" name="codevalue[]" placeholder="Εισάγετε τον Κωδικό του Course"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button-edit" type="button" id="add-code-button">Add Code</button>
+                            </div>
+                            <hr>
+
+                            <h3>Course Duration </h3>
+                            <div id="durations-container">
+                                <div class="duration-template">
+                                    <div class="text-right"><button type="button" class="remove-duration-button button-danger"> Διαγραφή </button></div>
+                                    <div class="col50">
+                                        <label>Duration Type </label>
+                                        <div>
+                                            <select name="durationtype[]">
+                                                <?php 
+                                                    foreach($LESSON_DURATION_TYPES as $k => $v) {
+                                                        echo "<option value='".$k."'>".$v."</option>";
+                                                    }
+                                                ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col50">
+                                        <label>Διάρκεια (έως 45 χαρακτήρες)</label>
+                                        <div><input type="text" name="durationvalue[]" placeholder="Εισάγετε την διάρκεια του Course"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button-edit" type="button" id="add-duration-button">Add Duration</button>
+                            </div>
+                            <hr>
+                            
+                            <h3>Highlights </h3>
+                            <div id="highlights-container">
+                                <div class="highlight-template">
+                                    <div class="text-right"><button type="button" class="remove-highlight-button button-danger"> Διαγραφή </button></div>
+                                    <div class="">
+                                        <label>Highlight </label>
+                                        <div><input type="text" name="highlights[]" placeholder="Περιγραφή του highlight"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button-edit" type="button" id="add-highlight-button">Add Highlight</button>
+                            </div>
+                            
+                        </div>
+                        <div class="col50">
+
+                            <h3>FAQs </h3>
+                            <div id="faqs-container">
+                                <div class="faq-template">
+                                    <div class="text-right"><button type="button" class="remove-faq-button button-danger"> Διαγραφή </button></div>
+                                    <div class="">
+                                        <label>Question (έως 300 χαρακτήρες)</label>
+                                        <div><input type="text" name="faqquestion[]" placeholder="Ερώτηση"></div>
+                                    </div>
+                                    <div>
+                                        <label>Answer (έως 1000 χαρακτήρες) </label>
+                                        <div><textarea type="text" name="faqanswer[]" placeholder="Απάντηση"></textarea></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="button-edit" type="button" id="add-faq-button">Add QnA</button>
+                            </div>
                         </div>
                     </div>
-
-                    <label>Course Details (έως 500 χαρακτήρες) </label>
-                    <div><textarea type="text" name="courseDetails" placeholder="Εισάγετε το Course Details του Μαθήματος"></textarea></div>
-
-                    <label>Entry Requirements (KEYS Section)</label>
-                    <div><input type="text" name="entryReqsKeys" placeholder="Εισάγετε τα Entry Requirements του Μαθήματος (KEYS Section)"></div>
-
-                    <label>Entry Requirements (έως 500 χαρακτήρες) </label>
-                    <div><textarea type="text" name="entryReqs" placeholder="Εισάγετε τα Entry Requirements του Μαθήματος (FULL)"></textarea></div>
-
-                    <label>Fees Header (έως 500 χαρακτήρες) </label>
-                    <div><textarea type="text" name="feesHeader" placeholder="Εισάγετε το Fees Header του Μαθήματος"></textarea></div>
-
-                    <label>Fees Footer (έως 500 χαρακτήρες) </label>
-                    <div><textarea type="text" name="feesFooter" placeholder="Εισάγετε τα Fees Footer του Μαθήματος"></textarea></div>
-
-                    <label>Student Perks (έως 500 χαρακτήρες) </label>
-                    <div><textarea type="text" name="studentPerks" placeholder="Εισάγετε τα Student perks του Μαθήματος"></textarea></div>
-
-                    <label>Integrated Foundation Year (IFY) (έως 500 χαρακτήρες) </label>
-                    <div><textarea type="text" name="IFY" placeholder="Εισάγετε το IFY του Μαθήματος"></textarea></div>
-            
+                    <div id="tab3" class="tab-content">
+                        <h3>Modules</h3>
+                        <div id="modules-container">
+                            <div class="module-template">
+                                <div class="text-right"><button type="button" class="remove-module-button button-danger"> Διαγραφή </button></div>
+                                <div class="col64">
+                                    <label>Module Title (έως 200 χαρακτήρες)</label>
+                                    <div><input type="text" name="moduletitle[]" placeholder="Εισάγετε τον Τίτλο του Module"></div>
+                                </div>
+                                <div class="col33">
+                                    <label>Module Code (έως 64 χαρακτήρες)</label>
+                                    <div><input type="text" name="modulecode[]" placeholder="Εισάγετε τον Κωδικό του Module"></div>
+                                </div>
+                                <div class="col33">
+                                    <label>Stage </label>
+                                    <div>
+                                        <select name="modulestage[]">
+                                            <?php 
+                                                foreach($LESSON_STAGES as $k => $v) {
+                                                    echo "<option value='".$k."'>".$v."</option>";
+                                                }
+                                            ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col33">
+                                    <label>Module Status </label>
+                                    <div>
+                                        <select name="modulestatus[]">
+                                            <?php 
+                                                foreach($LESSON_STATUS as $k => $v) {
+                                                    echo "<option value='".$k."'>".$v."</option>";
+                                                }
+                                            ?>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col33">
+                                    <label>Credits</label>
+                                    <div><input type="number" step="1" name="modulecredits[]" min="0" max="100" value="20"></div>
+                                </div>
+                                <div>
+                                    <label>Περιγραφή (έως 1500 χαρακτήρες) </label>
+                                    <div><textarea type="text" name="moduledescription[]" placeholder="Περιγραφή Module"></textarea></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="button-edit" type="button" id="add-module-button">Add Module</button>
+                        </div>
+                    </div>
+                                        
+                    <div class="text-center">
+                        <input type="submit" class="button button-edit mt-30" value="Εισαγωγή" />
+                    </div>
                 </form>
-            </div>
         <?php } else if (!empty($_GET['action']) && $_GET['action'] == 'edit' && !empty($_GET['id'])) { ?>
 
             <?php
@@ -388,6 +591,176 @@
     <footer><?php require_once($URLPREFIX."modules/footer.php"); ?></footer>
 </body>
 <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const addModuleButton = document.getElementById('add-module-button');
+        const modulesContainer = document.getElementById('modules-container');
+        const moduleTemplate = document.querySelector('.module-template');
+
+        addModuleButton.addEventListener('click', function() {
+            // Clone the module template
+            const newModule = moduleTemplate.cloneNode(true);
+            // Remove the template class from the new module
+            newModule.classList.remove('module-template');
+            // Add event listener to the remove button
+            const removeButton = newModule.querySelector('.remove-module-button');
+            removeButton.addEventListener('click', function() {
+                modulesContainer.removeChild(newModule);
+            });
+            // Append the new module to the container
+            modulesContainer.appendChild(newModule);
+        });
+
+        // Add event listener to the remove button of the initial module template
+        const initialRemoveButton = moduleTemplate.querySelector('.remove-module-button');
+        initialRemoveButton.addEventListener('click', function() {
+            modulesContainer.removeChild(moduleTemplate);
+        });
+
+        /// Code for Dynamic Fees
+        const addFeeButton = document.getElementById('add-fee-button');
+        const feesContainer = document.getElementById('fees-container');
+        const feeTemplate = document.querySelector('.fee-template');
+
+        addFeeButton.addEventListener('click', function() {
+            // Clone the module template
+            const newModule2 = feeTemplate.cloneNode(true);
+            // Remove the template class from the new module
+            newModule2.classList.remove('fee-template');
+            // Add event listener to the remove button
+            const removeButton2 = newModule2.querySelector('.remove-fee-button');
+            removeButton2.addEventListener('click', function() {
+                feesContainer.removeChild(newModule2);
+            });
+            // Append the new module to the container
+            feesContainer.appendChild(newModule2);
+        });
+
+        // Add event listener to the remove button of the initial module template
+        const initialRemoveButton2 = feeTemplate.querySelector('.remove-fee-button');
+        initialRemoveButton2.addEventListener('click', function() {
+            feesContainer.removeChild(feeTemplate);
+        });
+
+        /// Code for Dynamic Codes
+        const addCodeButton = document.getElementById('add-code-button');
+        const codesContainer = document.getElementById('codes-container');
+        const codeTemplate = document.querySelector('.code-template');
+
+        addCodeButton.addEventListener('click', function() {
+            // Clone the module template
+            const newModule3 = codeTemplate.cloneNode(true);
+            // Remove the template class from the new module
+            newModule3.classList.remove('code-template');
+            // Add event listener to the remove button
+            const removeButton3 = newModule3.querySelector('.remove-code-button');
+            removeButton3.addEventListener('click', function() {
+                codesContainer.removeChild(newModule3);
+            });
+            // Append the new module to the container
+            codesContainer.appendChild(newModule3);
+        });
+
+        // Add event listener to the remove button of the initial module template
+        const initialRemoveButton3 = codeTemplate.querySelector('.remove-code-button');
+        initialRemoveButton3.addEventListener('click', function() {
+            codesContainer.removeChild(codeTemplate);
+        });
+
+        /// Code for Dynamic Durations
+        const addDurationButton = document.getElementById('add-duration-button');
+        const durationsContainer = document.getElementById('durations-container');
+        const durationTemplate = document.querySelector('.duration-template');
+
+        addDurationButton.addEventListener('click', function() {
+            // Clone the module template
+            const newModule4 = durationTemplate.cloneNode(true);
+            // Remove the template class from the new module
+            newModule4.classList.remove('duration-template');
+            // Add event listener to the remove button
+            const removeButton4 = newModule4.querySelector('.remove-duration-button');
+            removeButton4.addEventListener('click', function() {
+                durationsContainer.removeChild(newModule4);
+            });
+            // Append the new module to the container
+            durationsContainer.appendChild(newModule4);
+        });
+
+        // Add event listener to the remove button of the initial module template
+        const initialRemoveButton4 = durationTemplate.querySelector('.remove-duration-button');
+        initialRemoveButton4.addEventListener('click', function() {
+            durationsContainer.removeChild(durationTemplate);
+        });
+
+        /// Code for Dynamic Highlights
+        const addHighlightButton = document.getElementById('add-highlight-button');
+        const highlightsContainer = document.getElementById('highlights-container');
+        const highlightTemplate = document.querySelector('.highlight-template');
+
+        addHighlightButton.addEventListener('click', function() {
+            // Clone the module template
+            const newModule5 = highlightTemplate.cloneNode(true);
+            // Remove the template class from the new module
+            newModule5.classList.remove('highlight-template');
+            // Add event listener to the remove button
+            const removeButton5 = newModule5.querySelector('.remove-highlight-button');
+            removeButton5.addEventListener('click', function() {
+                highlightsContainer.removeChild(newModule5);
+            });
+            // Append the new module to the container
+            highlightsContainer.appendChild(newModule5);
+        });
+
+        // Add event listener to the remove button of the initial module template
+        const initialRemoveButton5 = highlightTemplate.querySelector('.remove-highlight-button');
+        initialRemoveButton5.addEventListener('click', function() {
+            highlightsContainer.removeChild(highlightTemplate);
+        });
+
+        /// Code for Dynamic FAQs
+        const addFaqButton = document.getElementById('add-faq-button');
+        const faqsContainer = document.getElementById('faqs-container');
+        const faqTemplate = document.querySelector('.faq-template');
+
+        addFaqButton.addEventListener('click', function() {
+            // Clone the module template
+            const newModule6 = faqTemplate.cloneNode(true);
+            // Remove the template class from the new module
+            newModule6.classList.remove('highlight-template');
+            // Add event listener to the remove button
+            const removeButton6 = newModule6.querySelector('.remove-faq-button');
+            removeButton6.addEventListener('click', function() {
+                faqsContainer.removeChild(newModule6);
+            });
+            // Append the new module to the container
+            faqsContainer.appendChild(newModule6);
+        });
+
+        // Add event listener to the remove button of the initial module template
+        const initialRemoveButton6 = faqTemplate.querySelector('.remove-faq-button');
+        initialRemoveButton6.addEventListener('click', function() {
+            faqsContainer.removeChild(faqTemplate);
+        });
+    });
+
+    function openTab(event, tabId) {
+        // Hide all tab contents
+        var tabContents = document.getElementsByClassName('tab-content');
+        for (var i = 0; i < tabContents.length; i++) {
+            tabContents[i].classList.remove('active');
+        }
+
+        // Remove active class from all tabs
+        var tabs = document.getElementsByClassName('tab');
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('active');
+        }
+
+        // Show the current tab and add an "active" class to the button that opened the tab
+        document.getElementById(tabId).classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+
     var acc = document.querySelectorAll(".accordion");
 
     for (var i = 0; i < acc.length; i++) {

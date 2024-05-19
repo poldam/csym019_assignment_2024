@@ -272,6 +272,5 @@
 
     <footer><?php require_once($URLPREFIX."modules/footer.php"); ?></footer>
 </body>
-<script src="<?= $URLPREFIX ?>task2.js"></script>
 
 </html>

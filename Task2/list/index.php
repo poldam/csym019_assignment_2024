@@ -42,7 +42,7 @@
 
     <main id="main">
         <?php
-        //deleteresult=success
+            //deleteresult=success
             if(!empty($_GET) && !empty($_GET['deleteresult']) && $_GET['deleteresult'] == 'success') {
                 echo '<div class="alert alert-success"> Course was successfully deleted. </div>';
             }

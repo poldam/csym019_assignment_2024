@@ -136,3 +136,9 @@ function generate_hash($password, $cost = 11) {
 }
 
 // var_dump(generate_hash("password"));
+
+function debug($data) {
+    echo "<pre>";
+    print_r($data);
+    echo "</pre>";
+}

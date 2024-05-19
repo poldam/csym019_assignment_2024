@@ -147,6 +147,10 @@ nav {
     text-align: left;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .loginForm {
     display: inline-block;
     width: 350px;
@@ -218,7 +222,7 @@ nav {
 }
 
 input, textarea, select {
-    padding: 1em;
+    padding: 0.5em;
     border: 2px solid #ccc;
     border-radius: 4px;
     width: calc(100% - 2em);
@@ -232,7 +236,13 @@ input[type="checkbox"] {
 }
 
 textarea {
-    height: 250px;
+    height: 150px;
+}
+
+.col24 {
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .col33 {
@@ -242,9 +252,17 @@ textarea {
 }
 
 .col50 {
-    width: 49.5%;
+    width: calc(49% - 20px);
     display: inline-block;
     vertical-align: top;
+    padding-right: 20px;
+}
+
+.col64 {
+    width: calc(64% - 20px);
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
 }
 
 .width100 {
@@ -364,5 +382,30 @@ table {
 
 .panel2, .panel3 {
     border: 1px solid #ccc;
+}
+
+.tab {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+}
+
+.tab.active {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tab-content.active {
+    display: block;
+    background-color: #efefef;
+    border: 1px dotted #ccc;
 }
 
