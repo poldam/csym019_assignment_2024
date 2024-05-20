@@ -43,7 +43,7 @@
     <main id="main">
         <h2>Load Subjects from JSON/Task 1</h2>
         <?php
-            $jsonFile = '../../Task1/course.json';
+            $jsonFile = '../course.json';
 
             // Read the JSON file content
             $jsonData = file_get_contents($jsonFile);

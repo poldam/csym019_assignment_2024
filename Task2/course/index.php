@@ -88,12 +88,12 @@
 
                     $id = $MYSQL_CONNECTION->lastInsertId();
 
-
-
-                    // FEES
+                    // CODES
                     if(count($_POST['codetype']) > 0) {
                         $counter = 0;
                         foreach($_POST['codetype'] as $codetype) {
+                            if(!empty($_POST['codevalue'][$counter]))
+                                continue;
                             $value = substr($_POST['codevalue'][$counter], 0, 45);
                             $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO codes (lessonid, codetype, `value`) VALUES (:lessonid, :codetype, :value)");
                             $stmt2->bindParam(':lessonid', $id);   
@@ -108,6 +108,8 @@
                     if(count($_POST['durationtype']) > 0) {
                         $counter = 0;
                         foreach($_POST['durationtype'] as $durationtype) {
+                            if(!empty($_POST['durationvalue'][$counter]))
+                                continue;
                             $value = substr($_POST['durationvalue'][$counter], 0, 45);
                             $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO durations (lessonid, durationtype, `value`) VALUES (:lessonid, :durationtype, :value)");
                             $stmt2->bindParam(':lessonid', $id);   
@@ -121,6 +123,8 @@
                     //Highlights
                     if(count($_POST['highlights']) > 0) {
                         foreach($_POST['highlights'] as $highlight) {
+                            if(!empty($highlight))
+                                continue;
                             $highlight = substr($highlight, 0, 500);
                             $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO highlights (lessonid, `text`) VALUES (:lessonid, :highlight)");
                             $stmt2->bindParam(':lessonid', $id);   
@@ -133,6 +137,10 @@
                     if(count($_POST['feetype']) > 0) {
                         $counter = 0;
                         foreach($_POST['feetype'] as $feetype) {
+
+                            if(!empty($_POST['feevalue'][$counter]))
+                                continue;
+                            
                             $region = (int) $_POST['feeregion'][$counter];
                             $extras = substr($_POST['feeextra'][$counter], 0, 145);
                             $value = $_POST['feevalue'][$counter];
@@ -152,6 +160,8 @@
                     if(count($_POST['faqquestion']) > 0) {
                         $counter = 0;
                         foreach($_POST['faqquestion'] as $question) {
+                            if(!empty($question))
+                                continue;
                             $q = substr($question, 0, 300);
                             $a = substr($_POST['faqanswer'][$counter], 0, 1000);
 
@@ -170,6 +180,8 @@
                     if(count($_POST['moduletitle']) > 0) {
                         $counter = 0;
                         foreach($_POST['moduletitle'] as $title) {
+                            if(!empty($title))
+                                continue;
                             $code = substr($_POST['modulecode'][$counter], 0, 64);
                             $title = substr($title, 0, 200);
                             $status = $_POST['modulestatus'][$counter];

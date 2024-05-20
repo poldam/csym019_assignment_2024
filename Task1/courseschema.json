@@ -1,0 +1,341 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "integer"
+            },
+            "title": {
+                "type": "string"
+            },
+            "overview": {
+                "type": "string"
+            },
+            "link": {
+                "type": "string"
+            },
+            "image": {
+                "type": "string"
+            },
+            "highlights": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "KEYFACTS": {
+                "type": "object",
+                "properties": {
+                    "UCASCode": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "additionalProperties": false,
+                            "required": [
+                                "type",
+                                "value"
+                            ]
+                        }
+                    },
+                    "Level": {
+                        "type": "string"
+                    },
+                    "Duration": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "type": {
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "type": "string"
+                                }
+                            },
+                            "additionalProperties": false,
+                            "required": [
+                                "type",
+                                "value"
+                            ]
+                        }
+                    },
+                    "Starting": {
+                        "type": "string"
+                    },
+                    "EntryRequirements": {
+                        "type": "string"
+                    },
+                    "Fees": {
+                        "type": "object",
+                        "properties": {
+                            "UK": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "extra": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "additionalProperties": false,
+                                    "required": [
+                                        "type",
+                                        "value",
+                                        "extra"
+                                    ]
+                                }
+                            },
+                            "International": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "extra": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "additionalProperties": false,
+                                    "required": [
+                                        "type",
+                                        "value",
+                                        "extra"
+                                    ]
+                                }
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "UK"
+                        ]
+                    },
+                    "Location": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "Level",
+                    "Duration",
+                    "Starting",
+                    "Fees",
+                    "Location"
+                ]
+            },
+            "COURSECONTENT": {
+                "type": "object",
+                "properties": {
+                    "CourseDetails": {
+                        "type": "object",
+                        "properties": {
+                            "html": {
+                                "type": "string"
+                            },
+                            "stages": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "modules": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "credits": {
+                                                        "type": "string"
+                                                    },
+                                                    "code": {
+                                                        "type": "string"
+                                                    },
+                                                    "status": {
+                                                        "type": "string"
+                                                    },
+                                                    "description": {
+                                                        "type": "string"
+                                                    }
+                                                },
+                                                "additionalProperties": false,
+                                                "required": [
+                                                    "name",
+                                                    "credits",
+                                                    "code",
+                                                    "status",
+                                                    "description"
+                                                ]
+                                            }
+                                        }
+                                    },
+                                    "additionalProperties": false,
+                                    "required": [
+                                        "name",
+                                        "modules"
+                                    ]
+                                }
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "html",
+                            "stages"
+                        ]
+                    },
+                    "EntryRequirements": {
+                        "type": "object",
+                        "properties": {
+                            "html": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "html"
+                        ]
+                    },
+                    "FeesandFunding": {
+                        "type": "object",
+                        "properties": {
+                            "title": {
+                                "type": "string"
+                            },
+                            "text": {
+                                "type": "string"
+                            },
+                            "Fees": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        },
+                                        "extra": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "additionalProperties": false,
+                                    "required": [
+                                        "type",
+                                        "value",
+                                        "extra"
+                                    ]
+                                }
+                            },
+                            "AdditionalCosts": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "title",
+                            "text",
+                            "Fees"
+                        ]
+                    },
+                    "StudentPerks": {
+                        "type": "object",
+                        "properties": {
+                            "html": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "html"
+                        ]
+                    },
+                    "IntegratedFoundationYear": {
+                        "type": "object",
+                        "properties": {
+                            "html": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "html"
+                        ]
+                    },
+                    "FAQs": {
+                        "type": "object",
+                        "properties": {
+                            "html": {
+                                "type": "string"
+                            },
+                            "questions": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "q": {
+                                            "type": "string"
+                                        },
+                                        "a": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "additionalProperties": false,
+                                    "required": [
+                                        "q",
+                                        "a"
+                                    ]
+                                }
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "html",
+                            "questions"
+                        ]
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "CourseDetails",
+                    "EntryRequirements",
+                    "FeesandFunding"
+                ]
+            }
+        },
+        "additionalProperties": false,
+        "required": [
+            "id",
+            "title",
+            "overview",
+            "link",
+            "image",
+            "highlights",
+            "KEYFACTS",
+            "COURSECONTENT"
+        ]
+    }
+}
