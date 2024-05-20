@@ -46,6 +46,10 @@
             if(!empty($_GET) && !empty($_GET['deleteresult']) && $_GET['deleteresult'] == 'success') {
                 echo '<div class="alert alert-success"> Course was successfully deleted. </div>';
             }
+
+            if(!empty($_GET) && !empty($_GET['insertresult']) && $_GET['insertresult'] == 'success') {
+                echo '<div class="alert alert-success"> Course was successfully inserted. </div>';
+            }
         ?>
         <h2>COURSE LIST</h2>
         <table>

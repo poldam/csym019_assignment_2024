@@ -44,6 +44,161 @@
         <?php 
             if(!empty($_POST)) {
                 debug($_POST);
+
+                
+
+                $title = substr($_POST['title'], 0, 150);
+                $overview = substr($_POST['overview'], 0, 4000);
+                $level = $_POST['level']; 
+                $starting = $_POST['starting'];
+
+                $entryrequirementsforkeys = substr($_POST['entryReqsKeys'], 0, 500);
+                $entryReqsFull = substr($_POST['entryReqs'], 0, 2500);
+
+                $location = substr($_POST["location"], 0, 45);
+                $courseDetails = substr($_POST['courseDetails'], 0, 2500);
+
+                    
+                $feesHeader = substr($_POST['feesHeader'], 0, 500);
+                $feesFooter = substr($_POST['feesFooter'], 0, 500);
+                $studentPerks = substr($_POST['studentPerks'], 0, 2500);
+
+                $IFY = substr($_POST['IFY'], 0, 2500);
+                
+
+                try {
+                    $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO lessons (title, overview, `level`, `starting`, entryrequirementsforkeys, `location`, courseDetails, entryReqsFull, feesHeader, feesFooter, studentPerks, IFY) 
+                                                VALUES (:title, :overview, :level, :starting, :entryrequirementsforkeys, :location, :courseDetails, :entryReqsFull, :feesHeader, :feesFooter, :studentPerks, :IFY) ");
+                    
+                    $stmt2->bindParam(':title', $title);
+                    $stmt2->bindParam(':overview', $overview);
+                    $stmt2->bindParam(':level', $level);   
+                    $stmt2->bindParam(':starting', $starting);
+                    $stmt2->bindParam(':entryrequirementsforkeys', $entryrequirementsforkeys);   
+                    $stmt2->bindParam(':location', $location);
+                    $stmt2->bindParam(':courseDetails', $courseDetails);   
+                    $stmt2->bindParam(':entryReqsFull', $entryReqsFull);
+                    $stmt2->bindParam(':feesHeader', $feesHeader);   
+                    $stmt2->bindParam(':feesFooter', $feesFooter);
+                    $stmt2->bindParam(':studentPerks', $studentPerks);   
+                    $stmt2->bindParam(':IFY', $IFY);        
+                          
+                    // Execute the statement
+                    $stmt2->execute();
+
+                    $id = $MYSQL_CONNECTION->lastInsertId();
+
+
+
+                    // FEES
+                    if(count($_POST['codetype']) > 0) {
+                        $counter = 0;
+                        foreach($_POST['codetype'] as $codetype) {
+                            $value = substr($_POST['codevalue'][$counter], 0, 45);
+                            $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO codes (lessonid, codetype, `value`) VALUES (:lessonid, :codetype, :value)");
+                            $stmt2->bindParam(':lessonid', $id);   
+                            $stmt2->bindParam(':codetype', $codetype);
+                            $stmt2->bindParam(':value', $value);
+                            $stmt2->execute();
+                            $counter++;
+                        }
+                    }
+
+                    // Durations
+                    if(count($_POST['durationtype']) > 0) {
+                        $counter = 0;
+                        foreach($_POST['durationtype'] as $durationtype) {
+                            $value = substr($_POST['durationvalue'][$counter], 0, 45);
+                            $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO durations (lessonid, durationtype, `value`) VALUES (:lessonid, :durationtype, :value)");
+                            $stmt2->bindParam(':lessonid', $id);   
+                            $stmt2->bindParam(':durationtype', $durationtype);
+                            $stmt2->bindParam(':value', $value);
+                            $stmt2->execute();
+                            $counter++;
+                        }
+                    }
+
+                    //Highlights
+                    if(count($_POST['highlights']) > 0) {
+                        foreach($_POST['highlights'] as $highlight) {
+                            $highlight = substr($highlight, 0, 500);
+                            $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO highlights (lessonid, `text`) VALUES (:lessonid, :highlight)");
+                            $stmt2->bindParam(':lessonid', $id);   
+                            $stmt2->bindParam(':highlight', $highlight);
+                            $stmt2->execute();
+                        }
+                    }
+
+                    //fees
+                    if(count($_POST['feetype']) > 0) {
+                        $counter = 0;
+                        foreach($_POST['feetype'] as $feetype) {
+                            $region = (int) $_POST['feeregion'][$counter];
+                            $extras = substr($_POST['feeextra'][$counter], 0, 145);
+                            $value = $_POST['feevalue'][$counter];
+
+                            $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO fees (lessonid, region, feestype, `value`, extras) VALUES (:lessonid, :region, :feestype, :value, :extras)");
+                            $stmt2->bindParam(':lessonid', $id);   
+                            $stmt2->bindParam(':region', $region);
+                            $stmt2->bindParam(':feestype', $feetype);
+                            $stmt2->bindParam(':value', $value);
+                            $stmt2->bindParam(':extras', $extras);
+                            $stmt2->execute();
+                            $counter++;
+                        }
+                    }
+
+                    // FAQS
+                    if(count($_POST['faqquestion']) > 0) {
+                        $counter = 0;
+                        foreach($_POST['faqquestion'] as $question) {
+                            $q = substr($question, 0, 300);
+                            $a = substr($_POST['faqanswer'][$counter], 0, 1000);
+
+                            $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO faqs (lessonid, `question`, `answer`) VALUES (:lessonid, :q, :a)");
+                            $stmt2->bindParam(':lessonid', $id);   
+                            $stmt2->bindParam(':q', $q);
+                            $stmt2->bindParam(':a', $a);
+                            $stmt2->execute();
+                            $counter++;
+                        }
+                    }
+
+                    //Modules
+                    #########SUBJECTS
+
+                    if(count($_POST['moduletitle']) > 0) {
+                        $counter = 0;
+                        foreach($_POST['moduletitle'] as $title) {
+                            $code = substr($_POST['modulecode'][$counter], 0, 64);
+                            $title = substr($title, 0, 200);
+                            $status = $_POST['modulestatus'][$counter];
+                            $stage = $_POST['modulestage'][$counter];
+                            $credits = (int) $_POST['modulecredits'][$counter];
+                            $description = substr($_POST['moduledescription'][$counter], 0, 1500);
+
+                            $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO subjects (lessonid, title, `status`, code, credits, stage, `description`) VALUES (:lessonid, :title, :status, :code, :credits, :stage, :description)");
+                           
+                            $stmt2->bindParam(':lessonid', $id);   
+                            $stmt2->bindParam(':title', $title);
+                            $stmt2->bindParam(':status', $status);
+                            $stmt2->bindParam(':code', $code);
+                            $stmt2->bindParam(':credits', $credits);
+                            $stmt2->bindParam(':stage', $stage);
+                            $stmt2->bindParam(':description', $description);
+                            $stmt2->execute();
+
+                            $counter++;
+                        }
+                    }
+
+
+
+                    header("Location: ../list/?insertresult=success");
+
+                } catch(PDOException $e) {
+                    echo "Error: " . $e->getMessage();
+                }
             }
 
             if(!empty($_GET['action']) && $_GET['action'] == 'delete' && !empty($_GET['id'])) { 
@@ -98,8 +253,8 @@
                     <div id="tab1" class="tab-content active">
                         <div class="col50">
                             
-                            <label>Course Title (έως 150 χαρακτήρες)</label>
-                            <div><input type="text" name="title" placeholder="Εισάγετε τον Τίτλο του Μαθήματος"></div>
+                            <label>* Course Title (έως 150 χαρακτήρες)</label>
+                            <div><input required type="text" name="title" placeholder="Εισάγετε τον Τίτλο του Μαθήματος"></div>
 
                             <label>Overview (έως 500 χαρακτήρες) </label>
                             <div><textarea type="text" name="overview" placeholder="Εισάγετε το Overview του Μαθήματος"></textarea></div>
@@ -137,13 +292,13 @@
                                 </div>
                             </div>
 
-                            <label>Course Details (έως 500 χαρακτήρες) </label>
+                            <label>Course Details (έως 2500 χαρακτήρες) </label>
                             <div><textarea type="text" name="courseDetails" placeholder="Εισάγετε το Course Details του Μαθήματος"></textarea></div>
 
                             <label>Entry Requirements (KEYS Section)</label>
                             <div><input type="text" name="entryReqsKeys" placeholder="Εισάγετε τα Entry Requirements του Μαθήματος (KEYS Section)"></div>
 
-                            <label>Entry Requirements (έως 500 χαρακτήρες) </label>
+                            <label>Entry Requirements (έως 2500 χαρακτήρες) </label>
                             <div><textarea type="text" name="entryReqs" placeholder="Εισάγετε τα Entry Requirements του Μαθήματος (FULL)"></textarea></div>
                         </div>
                         <div class="col50">
@@ -153,10 +308,10 @@
                             <label>Fees Footer (έως 500 χαρακτήρες) </label>
                             <div><textarea type="text" name="feesFooter" placeholder="Εισάγετε τα Fees Footer του Μαθήματος"></textarea></div>
 
-                            <label>Student Perks (έως 500 χαρακτήρες) </label>
+                            <label>Student Perks (έως 2500 χαρακτήρες) </label>
                             <div><textarea type="text" name="studentPerks" placeholder="Εισάγετε τα Student perks του Μαθήματος"></textarea></div>
 
-                            <label>Integrated Foundation Year (IFY) (έως 500 χαρακτήρες) </label>
+                            <label>Integrated Foundation Year (IFY) (έως 2500 χαρακτήρες) </label>
                             <div><textarea type="text" name="IFY" placeholder="Εισάγετε το IFY του Μαθήματος"></textarea></div>
                         </div>
                     </div>
@@ -191,12 +346,12 @@
                                         </div>
                                     </div>
                                     <div class="col24">
-                                        <label>Price</label>
-                                        <div><input type="number" step="1" name="feevalue[]" min="0" max="100" value="20"></div>
+                                        <label>Fee (&pound;)</label>
+                                        <div><input type="number" step="1" name="feevalue[]" min="0" max="99999" value="1000"></div>
                                     </div>
                                     <div class="col24">
                                         <label>Extras (έως 200 χαρακτήρες)</label>
-                                        <div><input type="text" name="feeextra[]" placeholder="Εισάγετε τον Τίτλο του Module"></div>
+                                        <div><input type="text" name="feeextra[]" placeholder="Εισάγετε Extra πληροφορία για το Fee"></div>
                                     </div>
                                 </div>
                             </div>
@@ -301,8 +456,8 @@
                             <div class="module-template">
                                 <div class="text-right"><button type="button" class="remove-module-button button-danger"> Διαγραφή </button></div>
                                 <div class="col64">
-                                    <label>Module Title (έως 200 χαρακτήρες)</label>
-                                    <div><input type="text" name="moduletitle[]" placeholder="Εισάγετε τον Τίτλο του Module"></div>
+                                    <label>* Module Title (έως 200 χαρακτήρες)</label>
+                                    <div><input required type="text" name="moduletitle[]" placeholder="Εισάγετε τον Τίτλο του Module"></div>
                                 </div>
                                 <div class="col33">
                                     <label>Module Code (έως 64 χαρακτήρες)</label>
@@ -401,8 +556,8 @@
                     <h3>COURSE CONTENT</h3>
 
                     <button class="accordion">Course Details</button>
-                    <div class="panel"> 
-                        <?= $row['courseDetails'] ?>
+                    <div class="panel"> <br>
+                        <?= $row['courseDetails'] ?><br>
                         <?php
                             $stmt2 = $MYSQL_CONNECTION->prepare("SELECT * FROM subjects WHERE lessonid = :id");
                             $stmt2->bindParam(':id', $lessonid);
@@ -432,11 +587,11 @@
                                 }
                                 echo "<br></div>";
                             }
-                        ?><br>
+                        ?><br><br>
                     </div>
                     <button class="accordion">Entry Requirements</button>
                     <div class="panel"> <br>
-                        <?= $row['entryReqsFull'] ?>
+                        <?= $row['entryReqsFull'] ?><br>
                     <br></div>
 
                     <button class="accordion">Fees & Funding</button>
@@ -460,14 +615,14 @@
                     <?php if(!empty($row['studentPerks'])) { ?>
                         <button class="accordion">Student Perks</button>
                         <div class="panel"> <br>
-                        <?= $row['studentPerks'] ?>
+                        <?= $row['studentPerks'] ?><br>
                         <br></div>
                     <?php } ?>
                     
                     <?php if(!empty($row['IFY'])) { ?>
                         <button class="accordion"> Integrated Foundation Year (IFY) </button>
                         <div class="panel"> <br>
-                        <?= $row['IFY'] ?>
+                        <?= $row['IFY'] ?><br>
                         <br></div>
                     <?php } ?>
 
