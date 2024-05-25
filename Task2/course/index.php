@@ -313,7 +313,6 @@
 
                 if ($row) {
                     $id = $row['id'];
-                    // debug($row);
                 }
             ?>
             <div>
@@ -584,6 +583,12 @@
         initialRemoveButton.addEventListener('click', function() {
             container.removeChild(template);
         });
+    }
+
+    function deleteTemplate(name, elem) {
+        // console.log(name);
+        // console.log(elem.parentNode);
+        elem.parentNode.parentNode.remove(elem.parentNode)
     }
     <?php if (!empty($_GET['action']) && $_GET['action'] != 'view') { ?>
         document.addEventListener('DOMContentLoaded', function() {

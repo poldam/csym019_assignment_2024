@@ -123,14 +123,14 @@
                     $first = true;
                     while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) { ?>
                         <div class="fee-template">
-                            <div class="text-right"><button type="button" class="remove-fee-button button-danger"> Διαγραφή </button></div>
+                            <div class="text-right"><button type="button" onclick="deleteTemplate('fee', this)" class="remove-fee-button button-danger"> Διαγραφή </button></div>
                             <div class="col24">
                                 <label>Region </label>
                                 <div>
                                     <select name="feeregion[]">
                                         <?php 
                                             foreach($LESSON_FEE_REGIONS as $k => $v) {
-                                                if(!$row2['region'] == $k)
+                                                if($row2['region'] == $k)
                                                     echo "<option selected value='".$k."'>".$v."</option>";
                                                 else
                                                     echo "<option value='".$k."'>".$v."</option>";
@@ -145,7 +145,7 @@
                                     <select name="feetype[]">
                                         <?php 
                                             foreach($LESSON_FEE_TYPES as $k => $v) {
-                                                if(!$row2['feesType'] == $k)
+                                                if($row2['feesType'] == $k)
                                                     echo "<option selected value='".$k."'>".$v."</option>";
                                                 else
                                                     echo "<option value='".$k."'>".$v."</option>";
@@ -200,14 +200,14 @@
                     $first = true;
                     while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) { ?>
                         <div class="code-template">
-                            <div class="text-right"><button type="button" class="remove-code-button button-danger"> Διαγραφή </button></div>
+                            <div class="text-right"><button type="button" onclick="deleteTemplate('code', this)" class="remove-code-button button-danger"> Διαγραφή </button></div>
                             <div class="col50">
                                 <label>Code Type </label>
                                 <div>
                                     <select name="codetype[]">
                                         <?php 
                                             foreach($LESSON_CODE_TYPES as $k => $v) {
-                                                if($row['codeType'] == $k)
+                                                if($row2['codetype'] == $k)
                                                     echo "<option selected value='".$k."'>".$v."</option>";
                                                 else
                                                     echo "<option value='".$k."'>".$v."</option>";
@@ -258,14 +258,14 @@
                     $first = true;
                     while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) { ?>
                         <div class="duration-template">
-                            <div class="text-right"><button type="button" class="remove-duration-button button-danger"> Διαγραφή </button></div>
+                            <div class="text-right"><button type="button" onclick="deleteTemplate('duration', this)" class="remove-duration-button button-danger"> Διαγραφή </button></div>
                             <div class="col50">
                                 <label>Duration Type </label>
                                 <div>
                                     <select name="durationtype[]">
                                         <?php 
                                             foreach($LESSON_DURATION_TYPES as $k => $v) {
-                                                if($row2['durationType'] == $k)
+                                                if($row2['durationtype'] == $k)
                                                     echo "<option selected value='".$k."'>".$v."</option>";
                                                 else
                                                     echo "<option value='".$k."'>".$v."</option>";
@@ -303,7 +303,7 @@
                     while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
                         ?>
                             <div class="highlight-template">
-                                <div class="text-right"><button type="button" class="remove-highlight-button button-danger"> Διαγραφή </button></div>
+                                <div class="text-right"><button type="button" onclick="deleteTemplate('highlight', this)" class="remove-highlight-button button-danger"> Διαγραφή </button></div>
                                 <div class="">
                                     <label>Highlight </label>
                                     <div><input type="text" name="highlights[]" placeholder="Περιγραφή του highlight" value="<?= $row2['text'] ?>"></div>
@@ -341,7 +341,7 @@
                     while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) { ?>
                         
                         <div class="faq-template">
-                            <div class="text-right"><button type="button" class="remove-faq-button button-danger"> Διαγραφή </button></div>
+                            <div class="text-right"><button type="button" onclick="deleteTemplate('faq', this)" class="remove-faq-button button-danger"> Διαγραφή </button></div>
                             <div class="">
                                 <label>Question (έως 300 χαρακτήρες)</label>
                                 <div><input type="text" name="faqquestion[]" placeholder="Ερώτηση" value="<?= $row2['question'] ?>"></div>
@@ -413,7 +413,7 @@
 
             while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) { ?>
                 <div class="module-template">
-                    <div class="text-right"><button type="button" class="remove-module-button button-danger"> Διαγραφή </button></div>
+                    <div class="text-right"><button type="button" onclick="deleteTemplate('module', this)" class="remove-module-button button-danger"> Διαγραφή </button></div>
                     <div class="col64">
                         <label> Module Title (έως 200 χαρακτήρες)</label>
                         <div><input type="text" name="moduletitle[]" placeholder="Εισάγετε τον Τίτλο του Module" value="<?= $row2['title'] ?>"></div>
