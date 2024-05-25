@@ -48,7 +48,7 @@
                 $row2 = $stmt2->fetch(PDO::FETCH_ASSOC);
 
                 if ($row2) {
-                    echo $row2['total_courses'];
+                    echo "<a href='./list/'>".$row2['total_courses']."</a>";
                 } else {
                     echo 0;
                 }

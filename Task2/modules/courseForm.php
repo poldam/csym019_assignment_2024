@@ -80,43 +80,42 @@
         <div class="col50">
             <h3>Fees </h3>
             <div id="fees-container">
-                <?php if($_GET['action'] == 'insert') { ?>
-                    <div class="fee-template">
-                        <div class="text-right"><button type="button" class="remove-fee-button button-danger"> Διαγραφή </button></div>
-                        <div class="col24">
-                            <label>Region </label>
-                            <div>
-                                <select name="feeregion[]">
-                                    <?php 
-                                        foreach($LESSON_FEE_REGIONS as $k => $v) {
-                                            echo "<option value='".$k."'>".$v."</option>";
-                                        }
-                                    ?>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col24">
-                            <label>Fee Type </label>
-                            <div>
-                                <select name="feetype[]">
-                                    <?php 
-                                        foreach($LESSON_FEE_TYPES as $k => $v) {
-                                            echo "<option value='".$k."'>".$v."</option>";
-                                        }
-                                    ?>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col24">
-                            <label>Fee (&pound;)</label>
-                            <div><input type="number" step="1" name="feevalue[]" min="0" max="99999" value="1000"></div>
-                        </div>
-                        <div class="col24">
-                            <label>Extras (έως 200 χαρακτήρες)</label>
-                            <div><input type="text" name="feeextra[]" placeholder="Εισάγετε Extra πληροφορία για το Fee"></div>
+                <div class="fee-template">
+                    <div class="text-right"><button type="button" class="remove-fee-button button-danger"> Διαγραφή </button></div>
+                    <div class="col24">
+                        <label>Region </label>
+                        <div>
+                            <select name="feeregion[]">
+                                <?php 
+                                    foreach($LESSON_FEE_REGIONS as $k => $v) {
+                                        echo "<option value='".$k."'>".$v."</option>";
+                                    }
+                                ?>
+                            </select>
                         </div>
                     </div>
-                <?php } else { 
+                    <div class="col24">
+                        <label>Fee Type </label>
+                        <div>
+                            <select name="feetype[]">
+                                <?php 
+                                    foreach($LESSON_FEE_TYPES as $k => $v) {
+                                        echo "<option value='".$k."'>".$v."</option>";
+                                    }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col24">
+                        <label>Fee (&pound;)</label>
+                        <div><input type="number" step="1" name="feevalue[]" min="0" max="99999" value=""></div>
+                    </div>
+                    <div class="col24">
+                        <label>Extras (έως 200 χαρακτήρες)</label>
+                        <div><input type="text" name="feeextra[]" placeholder="Εισάγετε Extra πληροφορία για το Fee"></div>
+                    </div>
+                </div>
+                <?php if ($_GET['action'] == 'edit') { 
                     $stmt2 = $MYSQL_CONNECTION->prepare("SELECT * FROM fees WHERE lessonid = :id");
                     $stmt2->bindParam(':id', $lessonid);
                     $stmt2->execute();
@@ -174,27 +173,26 @@
 
             <h3>Course Codes </h3>
             <div id="codes-container">
-                <?php if($_GET['action'] == 'insert') { ?>
-                    <div class="code-template">
-                        <div class="text-right"><button type="button" class="remove-code-button button-danger"> Διαγραφή </button></div>
-                        <div class="col50">
-                            <label>Code Type </label>
-                            <div>
-                                <select name="codetype[]">
-                                    <?php 
-                                        foreach($LESSON_CODE_TYPES as $k => $v) {
-                                            echo "<option value='".$k."'>".$v."</option>";
-                                        }
-                                    ?>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col50">
-                            <label>Code (έως 45 χαρακτήρες)</label>
-                            <div><input type="text" name="codevalue[]" placeholder="Εισάγετε τον Κωδικό του Course"></div>
+                <div class="code-template">
+                    <div class="text-right"><button type="button" class="remove-code-button button-danger"> Διαγραφή </button></div>
+                    <div class="col50">
+                        <label>Code Type </label>
+                        <div>
+                            <select name="codetype[]">
+                                <?php 
+                                    foreach($LESSON_CODE_TYPES as $k => $v) {
+                                        echo "<option value='".$k."'>".$v."</option>";
+                                    }
+                                ?>
+                            </select>
                         </div>
                     </div>
-                <?php } else {
+                    <div class="col50">
+                        <label>Code (έως 45 χαρακτήρες)</label>
+                        <div><input type="text" name="codevalue[]" placeholder="Εισάγετε τον Κωδικό του Course"></div>
+                    </div>
+                </div>
+                <?php if($_GET['action'] == 'edit') {
                     $stmt2 = $MYSQL_CONNECTION->prepare("SELECT * FROM codes WHERE lessonid = :id");
                     $stmt2->bindParam(':id', $lessonid);
                     $stmt2->execute();
@@ -233,27 +231,26 @@
 
             <h3>Course Duration </h3>
             <div id="durations-container">
-                <?php if($_GET['action'] == 'insert') { ?>
-                    <div class="duration-template">
-                        <div class="text-right"><button type="button" class="remove-duration-button button-danger"> Διαγραφή </button></div>
-                        <div class="col50">
-                            <label>Duration Type </label>
-                            <div>
-                                <select name="durationtype[]">
-                                    <?php 
-                                        foreach($LESSON_DURATION_TYPES as $k => $v) {
-                                            echo "<option value='".$k."'>".$v."</option>";
-                                        }
-                                    ?>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col50">
-                            <label>Διάρκεια (έως 45 χαρακτήρες)</label>
-                            <div><input type="text" name="durationvalue[]" placeholder="Εισάγετε την διάρκεια του Course"></div>
+                <div class="duration-template">
+                    <div class="text-right"><button type="button" class="remove-duration-button button-danger"> Διαγραφή </button></div>
+                    <div class="col50">
+                        <label>Duration Type </label>
+                        <div>
+                            <select name="durationtype[]">
+                                <?php 
+                                    foreach($LESSON_DURATION_TYPES as $k => $v) {
+                                        echo "<option value='".$k."'>".$v."</option>";
+                                    }
+                                ?>
+                            </select>
                         </div>
                     </div>
-                <?php } else { 
+                    <div class="col50">
+                        <label>Διάρκεια (έως 45 χαρακτήρες)</label>
+                        <div><input type="text" name="durationvalue[]" placeholder="Εισάγετε την διάρκεια του Course"></div>
+                    </div>
+                </div>
+                <?php if($_GET['action'] == 'edit') { 
                     $stmt2 = $MYSQL_CONNECTION->prepare("SELECT * FROM durations WHERE lessonid = :id");
                     $stmt2->bindParam(':id', $lessonid);
                     $stmt2->execute();
@@ -292,15 +289,14 @@
             
             <h3>Highlights </h3>
             <div id="highlights-container">
-                <?php if($_GET['action'] == 'insert') { ?>
-                    <div class="highlight-template">
-                        <div class="text-right"><button type="button" class="remove-highlight-button button-danger"> Διαγραφή </button></div>
-                        <div class="">
-                            <label>Highlight </label>
-                            <div><input type="text" name="highlights[]" placeholder="Περιγραφή του highlight"></div>
-                        </div>
+                <div class="highlight-template">
+                    <div class="text-right"><button type="button" class="remove-highlight-button button-danger"> Διαγραφή </button></div>
+                    <div class="">
+                        <label>Highlight </label>
+                        <div><input type="text" name="highlights[]" placeholder="Περιγραφή του highlight"></div>
                     </div>
-                <?php } else { 
+                </div>
+                <?php if($_GET['action'] == 'edit') { 
                     $stmt2 = $MYSQL_CONNECTION->prepare("SELECT * FROM highlights WHERE lessonid = :id");
                     $stmt2->bindParam(':id', $id);
                     $stmt2->execute();
@@ -326,19 +322,18 @@
 
             <h3>FAQs </h3>
             <div id="faqs-container">
-                <?php if($_GET['action'] == 'insert') { ?>
-                    <div class="faq-template">
-                        <div class="text-right"><button type="button" class="remove-faq-button button-danger"> Διαγραφή </button></div>
-                        <div class="">
-                            <label>Question (έως 300 χαρακτήρες)</label>
-                            <div><input type="text" name="faqquestion[]" placeholder="Ερώτηση"></div>
-                        </div>
-                        <div>
-                            <label>Answer (έως 1000 χαρακτήρες) </label>
-                            <div><textarea type="text" name="faqanswer[]" placeholder="Απάντηση"></textarea></div>
-                        </div>
+                <div class="faq-template">
+                    <div class="text-right"><button type="button" class="remove-faq-button button-danger"> Διαγραφή </button></div>
+                    <div class="">
+                        <label>Question (έως 300 χαρακτήρες)</label>
+                        <div><input type="text" name="faqquestion[]" placeholder="Ερώτηση"></div>
                     </div>
-                <?php } else {
+                    <div>
+                        <label>Answer (έως 1000 χαρακτήρες) </label>
+                        <div><textarea type="text" name="faqanswer[]" placeholder="Απάντηση"></textarea></div>
+                    </div>
+                </div>
+                <?php if($_GET['action'] == 'edit') {
                     $stmt2 = $MYSQL_CONNECTION->prepare("SELECT * FROM faqs WHERE lessonid = :id");
                     $stmt2->bindParam(':id', $id);
                     $stmt2->execute();
@@ -368,7 +363,6 @@
     <div id="tab3" class="tab-content">
         <h3>Modules</h3>
         <div id="modules-container">
-        <?php if($_GET['action'] == 'insert') { ?>
             <div class="module-template">
                 <div class="text-right"><button type="button" class="remove-module-button button-danger"> Διαγραφή </button></div>
                 <div class="col64">
@@ -412,7 +406,7 @@
                     <div><textarea type="text" name="moduledescription[]" placeholder="Περιγραφή Module"></textarea></div>
                 </div>
             </div>
-        <?php } else {
+        <?php if($_GET['action'] == 'edit') {
             $stmt2 = $MYSQL_CONNECTION->prepare("SELECT * FROM subjects WHERE lessonid = :id");
             $stmt2->bindParam(':id', $lessonid);
             $stmt2->execute();

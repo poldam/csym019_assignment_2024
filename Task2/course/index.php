@@ -120,8 +120,9 @@
 
                     // CODES
                     if(count($_POST['codetype']) > 0) {
-                        $counter = 0;
+                        $counter = -1;
                         foreach($_POST['codetype'] as $codetype) {
+                            $counter++;
                             if(empty($_POST['codevalue'][$counter]))
                                 continue;
                             $value = substr($_POST['codevalue'][$counter], 0, 45);
@@ -130,14 +131,15 @@
                             $stmt2->bindParam(':codetype', $codetype);
                             $stmt2->bindParam(':value', $value);
                             $stmt2->execute();
-                            $counter++;
+                            
                         }
                     }
 
                     // Durations
                     if(count($_POST['durationtype']) > 0) {
-                        $counter = 0;
+                        $counter = -1;
                         foreach($_POST['durationtype'] as $durationtype) {
+                            $counter++;
                             if(empty($_POST['durationvalue'][$counter]))
                                 continue;
                             $value = substr($_POST['durationvalue'][$counter], 0, 45);
@@ -146,7 +148,6 @@
                             $stmt2->bindParam(':durationtype', $durationtype);
                             $stmt2->bindParam(':value', $value);
                             $stmt2->execute();
-                            $counter++;
                         }
                     }
 
@@ -165,9 +166,9 @@
 
                     //fees
                     if(count($_POST['feetype']) > 0) {
-                        $counter = 0;
+                        $counter = -1;
                         foreach($_POST['feetype'] as $feetype) {
-
+                            $counter++;
                             if(empty($_POST['feevalue'][$counter]))
                                 continue;
                             
@@ -182,14 +183,15 @@
                             $stmt2->bindParam(':value', $value);
                             $stmt2->bindParam(':extras', $extras);
                             $stmt2->execute();
-                            $counter++;
+                            
                         }
                     }
 
                     // FAQS
                     if(count($_POST['faqquestion']) > 0) {
-                        $counter = 0;
+                        $counter = -1;
                         foreach($_POST['faqquestion'] as $question) {
+                            $counter++;
                             if(empty($question))
                                 continue;
                             $q = substr($question, 0, 300);
@@ -200,7 +202,7 @@
                             $stmt2->bindParam(':q', $q);
                             $stmt2->bindParam(':a', $a);
                             $stmt2->execute();
-                            $counter++;
+                            
                         }
                     }
 
@@ -208,8 +210,9 @@
                     #########SUBJECTS
 
                     if(count($_POST['moduletitle']) > 0) {
-                        $counter = 0;
+                        $counter = -1;
                         foreach($_POST['moduletitle'] as $title) {
+                            $counter++;
                             if(empty($title))
                                 continue;
                             $code = substr($_POST['modulecode'][$counter], 0, 64);
@@ -240,8 +243,6 @@
                             $stmt2->bindParam(':stage', $stage);
                             $stmt2->bindParam(':description', $description);
                             $stmt2->execute();
-
-                            $counter++;
                         }
                     }
 
@@ -558,172 +559,173 @@
     <footer><?php require_once($URLPREFIX."modules/footer.php"); ?></footer>
 </body>
 <script>
+    <?php if (!empty($_GET['action']) && $_GET['action'] != 'view') { ?>
+        document.addEventListener('DOMContentLoaded', function() {
+            const addModuleButton = document.getElementById('add-module-button');
+            const modulesContainer = document.getElementById('modules-container');
+            const moduleTemplate = document.querySelector('.module-template');
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const addModuleButton = document.getElementById('add-module-button');
-        const modulesContainer = document.getElementById('modules-container');
-        const moduleTemplate = document.querySelector('.module-template');
-
-        // MODULES
-        addModuleButton.addEventListener('click', function() {
-            // Clone the module template
-            const newModule = moduleTemplate.cloneNode(true);
-            // Remove the template class from the new module
-            newModule.classList.remove('module-template');
-            // Add event listener to the remove button
-            const removeButton = newModule.querySelector('.remove-module-button');
-            removeButton.addEventListener('click', function() {
-                modulesContainer.removeChild(newModule);
+            // MODULES
+            addModuleButton.addEventListener('click', function() {
+                // Clone the module template
+                const newModule = moduleTemplate.cloneNode(true);
+                // Remove the template class from the new module
+                newModule.classList.remove('module-template');
+                // Add event listener to the remove button
+                const removeButton = newModule.querySelector('.remove-module-button');
+                removeButton.addEventListener('click', function() {
+                    modulesContainer.removeChild(newModule);
+                });
+                // Append the new module to the container
+                modulesContainer.appendChild(newModule);
             });
-            // Append the new module to the container
-            modulesContainer.appendChild(newModule);
-        });
 
-        // Add event listener to the remove button of the initial module template
-        const initialRemoveButton = moduleTemplate.querySelector('.remove-module-button');
+            // Add event listener to the remove button of the initial module template
+            const initialRemoveButton = moduleTemplate.querySelector('.remove-module-button');
 
-        for(let i = 0; i < initialRemoveButton.length; i++) {
-            initialRemoveButton[i].addEventListener('click', function() {
+            for(let i = 0; i < initialRemoveButton.length; i++) {
+                initialRemoveButton[i].addEventListener('click', function() {
+                    modulesContainer.removeChild(moduleTemplate);
+                });
+            }
+
+            initialRemoveButton.addEventListener('click', function() {
                 modulesContainer.removeChild(moduleTemplate);
             });
-        }
 
-        initialRemoveButton.addEventListener('click', function() {
-            modulesContainer.removeChild(moduleTemplate);
-        });
+            /// Code for Dynamic Fees
+            const addFeeButton = document.getElementById('add-fee-button');
+            const feesContainer = document.getElementById('fees-container');
+            const feeTemplate = document.querySelector('.fee-template');
 
-        /// Code for Dynamic Fees
-        const addFeeButton = document.getElementById('add-fee-button');
-        const feesContainer = document.getElementById('fees-container');
-        const feeTemplate = document.querySelector('.fee-template');
-
-        addFeeButton.addEventListener('click', function() {
-            // Clone the module template
-            const newModule2 = feeTemplate.cloneNode(true);
-            // Remove the template class from the new module
-            newModule2.classList.remove('fee-template');
-            // Add event listener to the remove button
-            const removeButton2 = newModule2.querySelector('.remove-fee-button');
-            removeButton2.addEventListener('click', function() {
-                feesContainer.removeChild(newModule2);
+            addFeeButton.addEventListener('click', function() {
+                // Clone the module template
+                const newModule2 = feeTemplate.cloneNode(true);
+                // Remove the template class from the new module
+                newModule2.classList.remove('fee-template');
+                // Add event listener to the remove button
+                const removeButton2 = newModule2.querySelector('.remove-fee-button');
+                removeButton2.addEventListener('click', function() {
+                    feesContainer.removeChild(newModule2);
+                });
+                // Append the new module to the container
+                feesContainer.appendChild(newModule2);
             });
-            // Append the new module to the container
-            feesContainer.appendChild(newModule2);
-        });
 
-        // Add event listener to the remove button of the initial module template
-        const initialRemoveButton2 = feeTemplate.querySelector('.remove-fee-button');
+            // Add event listener to the remove button of the initial module template
+            const initialRemoveButton2 = feeTemplate.querySelector('.remove-fee-button');
 
-        for(let i = 0; i < initialRemoveButton.length; i++) {
-            initialRemoveButton2[i].addEventListener('click', function() {
+            for(let i = 0; i < initialRemoveButton.length; i++) {
+                initialRemoveButton2[i].addEventListener('click', function() {
+                    feesContainer.removeChild(feeTemplate);
+                });
+            }
+
+            initialRemoveButton2.addEventListener('click', function() {
                 feesContainer.removeChild(feeTemplate);
             });
-        }
 
-        initialRemoveButton2.addEventListener('click', function() {
-            feesContainer.removeChild(feeTemplate);
-        });
+            /// Code for Dynamic Codes
+            const addCodeButton = document.getElementById('add-code-button');
+            const codesContainer = document.getElementById('codes-container');
+            const codeTemplate = document.querySelector('.code-template');
 
-        /// Code for Dynamic Codes
-        const addCodeButton = document.getElementById('add-code-button');
-        const codesContainer = document.getElementById('codes-container');
-        const codeTemplate = document.querySelector('.code-template');
-
-        addCodeButton.addEventListener('click', function() {
-            // Clone the module template
-            const newModule3 = codeTemplate.cloneNode(true);
-            // Remove the template class from the new module
-            newModule3.classList.remove('code-template');
-            // Add event listener to the remove button
-            const removeButton3 = newModule3.querySelector('.remove-code-button');
-            removeButton3.addEventListener('click', function() {
-                codesContainer.removeChild(newModule3);
+            addCodeButton.addEventListener('click', function() {
+                // Clone the module template
+                const newModule3 = codeTemplate.cloneNode(true);
+                // Remove the template class from the new module
+                newModule3.classList.remove('code-template');
+                // Add event listener to the remove button
+                const removeButton3 = newModule3.querySelector('.remove-code-button');
+                removeButton3.addEventListener('click', function() {
+                    codesContainer.removeChild(newModule3);
+                });
+                // Append the new module to the container
+                codesContainer.appendChild(newModule3);
             });
-            // Append the new module to the container
-            codesContainer.appendChild(newModule3);
-        });
 
-        // Add event listener to the remove button of the initial module template
-        const initialRemoveButton3 = codeTemplate.querySelector('.remove-code-button');
-        initialRemoveButton3.addEventListener('click', function() {
-            codesContainer.removeChild(codeTemplate);
-        });
-
-        /// Code for Dynamic Durations
-        const addDurationButton = document.getElementById('add-duration-button');
-        const durationsContainer = document.getElementById('durations-container');
-        const durationTemplate = document.querySelector('.duration-template');
-
-        addDurationButton.addEventListener('click', function() {
-            // Clone the module template
-            const newModule4 = durationTemplate.cloneNode(true);
-            // Remove the template class from the new module
-            newModule4.classList.remove('duration-template');
-            // Add event listener to the remove button
-            const removeButton4 = newModule4.querySelector('.remove-duration-button');
-            removeButton4.addEventListener('click', function() {
-                durationsContainer.removeChild(newModule4);
+            // Add event listener to the remove button of the initial module template
+            const initialRemoveButton3 = codeTemplate.querySelector('.remove-code-button');
+            initialRemoveButton3.addEventListener('click', function() {
+                codesContainer.removeChild(codeTemplate);
             });
-            // Append the new module to the container
-            durationsContainer.appendChild(newModule4);
-        });
 
-        // Add event listener to the remove button of the initial module template
-        const initialRemoveButton4 = durationTemplate.querySelector('.remove-duration-button');
-        initialRemoveButton4.addEventListener('click', function() {
-            durationsContainer.removeChild(durationTemplate);
-        });
+            /// Code for Dynamic Durations
+            const addDurationButton = document.getElementById('add-duration-button');
+            const durationsContainer = document.getElementById('durations-container');
+            const durationTemplate = document.querySelector('.duration-template');
 
-        /// Code for Dynamic Highlights
-        const addHighlightButton = document.getElementById('add-highlight-button');
-        const highlightsContainer = document.getElementById('highlights-container');
-        const highlightTemplate = document.querySelector('.highlight-template');
-
-        addHighlightButton.addEventListener('click', function() {
-            // Clone the module template
-            const newModule5 = highlightTemplate.cloneNode(true);
-            // Remove the template class from the new module
-            newModule5.classList.remove('highlight-template');
-            // Add event listener to the remove button
-            const removeButton5 = newModule5.querySelector('.remove-highlight-button');
-            removeButton5.addEventListener('click', function() {
-                highlightsContainer.removeChild(newModule5);
+            addDurationButton.addEventListener('click', function() {
+                // Clone the module template
+                const newModule4 = durationTemplate.cloneNode(true);
+                // Remove the template class from the new module
+                newModule4.classList.remove('duration-template');
+                // Add event listener to the remove button
+                const removeButton4 = newModule4.querySelector('.remove-duration-button');
+                removeButton4.addEventListener('click', function() {
+                    durationsContainer.removeChild(newModule4);
+                });
+                // Append the new module to the container
+                durationsContainer.appendChild(newModule4);
             });
-            // Append the new module to the container
-            highlightsContainer.appendChild(newModule5);
-        });
 
-        // Add event listener to the remove button of the initial module template
-        const initialRemoveButton5 = highlightTemplate.querySelector('.remove-highlight-button');
-        initialRemoveButton5.addEventListener('click', function() {
-            highlightsContainer.removeChild(highlightTemplate);
-        });
-
-        /// Code for Dynamic FAQs
-        const addFaqButton = document.getElementById('add-faq-button');
-        const faqsContainer = document.getElementById('faqs-container');
-        const faqTemplate = document.querySelector('.faq-template');
-
-        addFaqButton.addEventListener('click', function() {
-            // Clone the module template
-            const newModule6 = faqTemplate.cloneNode(true);
-            // Remove the template class from the new module
-            newModule6.classList.remove('highlight-template');
-            // Add event listener to the remove button
-            const removeButton6 = newModule6.querySelector('.remove-faq-button');
-            removeButton6.addEventListener('click', function() {
-                faqsContainer.removeChild(newModule6);
+            // Add event listener to the remove button of the initial module template
+            const initialRemoveButton4 = durationTemplate.querySelector('.remove-duration-button');
+            initialRemoveButton4.addEventListener('click', function() {
+                durationsContainer.removeChild(durationTemplate);
             });
-            // Append the new module to the container
-            faqsContainer.appendChild(newModule6);
-        });
 
-        // Add event listener to the remove button of the initial module template
-        const initialRemoveButton6 = faqTemplate.querySelector('.remove-faq-button');
-        initialRemoveButton6.addEventListener('click', function() {
-            faqsContainer.removeChild(faqTemplate);
+            /// Code for Dynamic Highlights
+            const addHighlightButton = document.getElementById('add-highlight-button');
+            const highlightsContainer = document.getElementById('highlights-container');
+            const highlightTemplate = document.querySelector('.highlight-template');
+
+            addHighlightButton.addEventListener('click', function() {
+                // Clone the module template
+                const newModule5 = highlightTemplate.cloneNode(true);
+                // Remove the template class from the new module
+                newModule5.classList.remove('highlight-template');
+                // Add event listener to the remove button
+                const removeButton5 = newModule5.querySelector('.remove-highlight-button');
+                removeButton5.addEventListener('click', function() {
+                    highlightsContainer.removeChild(newModule5);
+                });
+                // Append the new module to the container
+                highlightsContainer.appendChild(newModule5);
+            });
+
+            // Add event listener to the remove button of the initial module template
+            const initialRemoveButton5 = highlightTemplate.querySelector('.remove-highlight-button');
+            initialRemoveButton5.addEventListener('click', function() {
+                highlightsContainer.removeChild(highlightTemplate);
+            });
+
+            /// Code for Dynamic FAQs
+            const addFaqButton = document.getElementById('add-faq-button');
+            const faqsContainer = document.getElementById('faqs-container');
+            const faqTemplate = document.querySelector('.faq-template');
+
+            addFaqButton.addEventListener('click', function() {
+                // Clone the module template
+                const newModule6 = faqTemplate.cloneNode(true);
+                // Remove the template class from the new module
+                newModule6.classList.remove('highlight-template');
+                // Add event listener to the remove button
+                const removeButton6 = newModule6.querySelector('.remove-faq-button');
+                removeButton6.addEventListener('click', function() {
+                    faqsContainer.removeChild(newModule6);
+                });
+                // Append the new module to the container
+                faqsContainer.appendChild(newModule6);
+            });
+
+            // Add event listener to the remove button of the initial module template
+            const initialRemoveButton6 = faqTemplate.querySelector('.remove-faq-button');
+            initialRemoveButton6.addEventListener('click', function() {
+                faqsContainer.removeChild(faqTemplate);
+            });
         });
-    });
+    <?php } ?>
 
     function openTab(event, tabId) {
         // Hide all tab contents
