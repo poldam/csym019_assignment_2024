@@ -192,6 +192,12 @@ nav {
     color: #555;
     margin-right: 3px;
     cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.buttonTable a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .button-danger {
@@ -210,6 +216,11 @@ nav {
     background-color: #155724;
     border: 2px solid #155724;
     color: #fff;
+}
+
+.button-sm {
+    font-size: 14px;
+    padding:4px;
 }
 
 /* Change the link color on hover */

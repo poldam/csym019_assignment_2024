@@ -49,6 +49,10 @@
 
             if(!empty($_GET) && !empty($_GET['insertresult']) && $_GET['insertresult'] == 'success') {
                 echo '<div class="alert alert-success"> Course was successfully inserted. </div>';
+            } 
+
+            if(!empty($_GET) && !empty($_GET['updateresult']) && $_GET['updateresult'] == 'success') {
+                echo '<div class="alert alert-success"> Course was successfully updated. </div>';
             }
         ?>
         <h2>COURSE LIST</h2>
@@ -91,9 +95,9 @@
                             echo "<td><div title='".$row['overview']."'>".substr($row['overview'], 0, 100)."</div></td>";
                             echo "<td> ".$credits." </td>";
                             echo "<td>";
-                                echo '<span class="buttonTable button-info"> <a href="../course/?action=view&id='.$row['id'].'" target="_blank"> VIEW </a> </span>';
-                                echo '<span class="buttonTable button-edit"> <a href="../course/?action=edit&id='.$row['id'].'" target="_blank">EDIT </a></span>';
-                                echo '<span class="buttonTable button-danger" id="course-'.$row['id'].'"><a href="../course?action=delete&id='.$row['id'].'">DELETE</a></span>';
+                                echo '<button class="buttonTable button-info"> <a href="../course/?action=view&id='.$row['id'].'" target="_blank"> VIEW </a> </button>';
+                                echo '<button class="buttonTable button-edit"> <a href="../course/?action=edit&id='.$row['id'].'" target="_blank">EDIT </a></button>';
+                                echo '<button class="buttonTable button-danger" id="course-'.$row['id'].'"><a href="../course?action=delete&id='.$row['id'].'">DELETE</a></button>';
                             echo "</td>";
                         echo "</tr>";
                     }

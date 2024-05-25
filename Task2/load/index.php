@@ -41,7 +41,7 @@
     </nav>
 
     <main id="main">
-        <h2>Load Subjects from JSON/Task 1</h2>
+        <h2>Load Subjects from JSON/Task 1 to Test Task 2</h2>
         <?php
             $jsonFile = '../course.json';
 
@@ -239,7 +239,7 @@
                             $row = $stmt2->fetch(PDO::FETCH_ASSOC);
         
                             if ($row) {
-                                $stmt2 = $MYSQL_CONNECTION->prepare("UPDATE subjects SET lessonid = :lessonid, title = :title, `status` = :status, code = :code, credits = :code, stage = :stage, `description` = :description WHERE lessonid = :lessonid AND code = :code");
+                                $stmt2 = $MYSQL_CONNECTION->prepare("UPDATE subjects SET lessonid = :lessonid, title = :title, `status` = :status, code = :code, credits = :credits, stage = :stage, `description` = :description WHERE lessonid = :lessonid AND code = :code");
                                 $stmt2->bindParam(':code', $code);   
                             } else {
                                 $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO subjects (lessonid, title, `status`, code, credits, stage, `description`) VALUES (:lessonid, :title, :status, :code, :credits, :stage, :description)");
