@@ -317,7 +317,7 @@
             ?>
             <div>
                 <h2> Course Edit (<?= $row['title'] ?>)  <span class="button button-edit button-sm mr-30"> <a href="../course?action=view&id=<?= $lessonid ?>"> View Course </a></span>
-                <span class="button button-sm button-danger" id="deleteLesson"> <a href="../course?action=delete&id=<?= $lessonid ?>">Delete Course</a></span></h2>
+                <span class="button button-sm button-danger" id="deleteLesson"> <a href="../course?action=delete&id=<?= $lessonid ?>" onclick="return confirm('Είστε σίγουροι για την μόνιμη διαγραφή του Course και όλων των δεδομένων τους?')" >Delete Course</a></span></h2>
 
                 <?php require_once("../modules/courseForm.php"); ?>
 
@@ -372,7 +372,10 @@
                             $subjects = [
                                 1 => [],
                                 2 => [],
-                                3 => []
+                                3 => [],
+                                4 => [],
+                                5 => [],
+                                6 => []
                             ];
 
                             while ($row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) {
@@ -546,7 +549,7 @@
                 </div>
                 <div class="mt-30">
                     <span class="button button-edit mr-30"> <a href="../course?action=edit&id=<?= $lessonid ?>"> Edit Course </a></span> 
-                    <span class="button button-danger" id="deleteLesson"> <a href="../course?action=delete&id=<?= $lessonid ?>">Delete Course</a></span>
+                    <span class="button button-danger" id="deleteLesson"> <a href="../course?action=delete&id=<?= $lessonid ?>" onclick="return confirm('Είστε σίγουροι για την μόνιμη διαγραφή του Course και όλων των δεδομένων τους?')">Delete Course</a></span>
                 <div>
             </div>
         <?php } ?>
@@ -561,6 +564,7 @@
         const modulesContainer = document.getElementById('modules-container');
         const moduleTemplate = document.querySelector('.module-template');
 
+        // MODULES
         addModuleButton.addEventListener('click', function() {
             // Clone the module template
             const newModule = moduleTemplate.cloneNode(true);
@@ -577,6 +581,13 @@
 
         // Add event listener to the remove button of the initial module template
         const initialRemoveButton = moduleTemplate.querySelector('.remove-module-button');
+
+        for(let i = 0; i < initialRemoveButton.length; i++) {
+            initialRemoveButton[i].addEventListener('click', function() {
+                modulesContainer.removeChild(moduleTemplate);
+            });
+        }
+
         initialRemoveButton.addEventListener('click', function() {
             modulesContainer.removeChild(moduleTemplate);
         });
@@ -602,6 +613,13 @@
 
         // Add event listener to the remove button of the initial module template
         const initialRemoveButton2 = feeTemplate.querySelector('.remove-fee-button');
+
+        for(let i = 0; i < initialRemoveButton.length; i++) {
+            initialRemoveButton2[i].addEventListener('click', function() {
+                feesContainer.removeChild(feeTemplate);
+            });
+        }
+
         initialRemoveButton2.addEventListener('click', function() {
             feesContainer.removeChild(feeTemplate);
         });

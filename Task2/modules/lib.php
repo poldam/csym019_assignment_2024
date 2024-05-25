@@ -91,6 +91,14 @@ $LESSON_STAGES = [
     5 => "STAGE 5"
 ];
 
+function generateRandomColor() {
+    $red = mt_rand(0, 255);
+    $green = mt_rand(0, 255);
+    $blue = mt_rand(0, 255);
+
+    return "'rgb($red, $green, $blue)'";
+}
+
 function checkLogin($email, $password) {
   
     global $MYSQL_CONNECTION;
