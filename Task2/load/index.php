@@ -41,7 +41,7 @@
     </nav>
 
     <main id="main">
-        <h2>Load Subjects from JSON/Task 1 to Test Task 2</h2>
+        <h2>Load Courses/Modules from JSON/Task 1 to Test Task 2</h2>
         <?php
             $jsonFile = '../course.json';
 

@@ -58,7 +58,7 @@
         if(!empty($_GET['action']) && $_GET['action'] == 'report') {
             echo '<h2>REPORT RESULTS <button class="button button-sm button-edit"> <a href="../list/">Επιστροφή στη λίστα</a> </button>  </h2>';
         } else {
-            echo '<h2>COURSE LIST  <button class="button button-sm button-info" onclick="createReport()"> Create Report </button>  </h2>';        
+            echo '<h2>COURSE LIST  <button class="button button-sm button-info" onclick="createReport()"> Generate Report </button>  </h2>';        
         }
         ?>
         
@@ -81,9 +81,9 @@
             <?php
                 try {
                     if(!empty($_GET['action']) && $_GET['action'] == 'report') {
-                        $stmt = $MYSQL_CONNECTION->prepare("SELECT * FROM lessons WHERE id IN(".$_GET['ids'].") ");
+                        $stmt = $MYSQL_CONNECTION->prepare("SELECT * FROM lessons WHERE id IN(".$_GET['ids'].") ORDER BY title asc");
                     } else {
-                        $stmt = $MYSQL_CONNECTION->prepare("SELECT * FROM lessons");
+                        $stmt = $MYSQL_CONNECTION->prepare("SELECT * FROM lessons ORDER BY title asc");
                         
                     }
 
