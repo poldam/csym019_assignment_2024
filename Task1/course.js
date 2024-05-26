@@ -383,7 +383,7 @@ var currencySelector = document.getElementById("currencySelector");
 currencySelector.addEventListener("change", currencyChanged);
 
 // Uncomment to go live!
-// getRates();
+getRates();
 
 loadAndHandleJSON('./course.json', setUpLessons);
 
