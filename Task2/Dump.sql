@@ -240,6 +240,7 @@ CREATE TABLE `users` (
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` VALUES (1,'pol_dam@hotmail.com','$2y$11$BALq.3nsOZQUa.0fd9yuZ.V127MIzZdqzJzq0eK6wwgIpNaNqgPei');
+INSERT INTO `users` VALUES (1,'guest@task2.uk','$2y$11$BALq.3nsOZQUa.0fd9yuZ.V127MIzZdqzJzq0eK6wwgIpNaNqgPei');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
