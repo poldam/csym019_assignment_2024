@@ -10,16 +10,36 @@ var RELOADSECONDS = 100;  // Reload time in seconds used in setTimeout function 
 //      jsonFile: path to json file
 //      callback: name of function that serves as the callback. 
 function loadAndHandleJSON(jsonFile, callback) {
-    fetch(jsonFile) // get json file
-        .then(response => response.json()) // turn it into json
-        .then(data => callback(null, data)) // pass the data to the callback function
-        .catch(error => callback(error, null)); //in case of an error pass the error to the callback function
+    $.ajax({
+        url: jsonFile, // get file from url
+        dataType: 'json', // file type is json
+        success: function(data) { // on success
+            callback(null, data); // call callback function with data
+        },
+        error: function(jqXHR, textStatus, errorThrown) { // in case of error
+            callback(errorThrown, null); // call callback funtion with error
+        }
+    });
 
-    setTimeout(function () { // Periodically reload the json file
-        loadAndHandleJSON('./course.json', setUpLessons);  //load and handle json file using setUpLessons() as the callback function
+    setTimeout(function() { // Periodically reload the json file
+        loadAndHandleJSON(jsonFile, setUpLessons); //load and handle json file using setUpLessons() as the callback function
     }, RELOADSECONDS * 1000); //Reload every RELOADSECNODS seconds
 }
-// Funciton that sets up the lessosn that we load from the file
+
+// SECOND VERSION WITH fetch() and no jQuery
+// function loadAndHandleJSON(jsonFile, callback) {
+//     fetch(jsonFile) // get json file
+//         .then(response => response.json()) // turn it into json
+//         .then(data => callback(null, data)) // pass the data to the callback function
+//         .catch(error => callback(error, null)); //in case of an error pass the error to the callback function
+
+//     setTimeout(function () { // Periodically reload the json file
+//         loadAndHandleJSON('./course.json', setUpLessons);  
+//     }, RELOADSECONDS * 1000); 
+// }
+
+
+// Function that sets up the lessosn that we load from the file
 // Args:
 //      error: potential error that is thrown during the loading
 //      lessond: json data in an array
