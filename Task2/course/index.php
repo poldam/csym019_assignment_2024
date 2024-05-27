@@ -293,7 +293,7 @@
                 $stmt2->bindParam(':lessonid', $id);
                 $stmt2->execute();
 
-                header("Location: ../list?deleteresult=success"); // redirect to the list of course and ask to throw a delete success message
+                header("Location: ../list?deleteresult=success"); // redirect to the list of courses and ask to throw a delete success message
 
 
             } else if(!empty($_GET['action']) && $_GET['action'] == 'insert') { ?>
