@@ -60,7 +60,7 @@ function setupAccordion(id) {
     for (var i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () { // add click listener to the button
             this.classList.toggle("active"); // on click toggle the panel
-            var panel = this.nextElementSibling; // get next dom elenet, whioch is the panel
+            var panel = this.nextElementSibling; // get next dom elenet, which is the panel
             if (panel.style.maxHeight) { // if the element has a height which means it was open, 
                 panel.style.maxHeight = null; // set the height to null => close it
             } else {

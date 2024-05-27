@@ -37,12 +37,15 @@
     <nav>
         <div class="navHeader roboto-bold">MAIN MENU</div>
         <hr>
+        <!-- Include the menu -->
         <?php require_once($URLPREFIX."modules/menu.php"); ?>
     </nav>
 
     <main id="main">
         <?php 
-            if(!empty($_POST)) {
+            if(!empty($_POST)) { // If Course Form is submitted
+
+                // we do some input sanitation to make sure we follow the DB string length restrictions
                 $title = substr($_POST['title'], 0, 150);
                 $overview = substr($_POST['overview'], 0, 4000);
                 $level = $_POST['level']; 
@@ -72,7 +75,6 @@
                         $stmt2 = $MYSQL_CONNECTION->prepare("UPDATE lessons SET title = :title, overview = :overview, `level` = :level, `starting` = :starting, entryrequirementsforkeys = :entryrequirementsforkeys, `location` = :location, courseDetails = :courseDetails, entryReqsFull = :entryReqsFull, feesHeader = :feesHeader, feesFooter = :feesFooter, studentPerks = :studentPerks, IFY = :IFY WHERE id = :id");
 
                         // Bind parameters
-                        // id, title, overview, level, starting, entryrequirementsforkeys, location, courseDetails, entryReqsFull, feesHeader, feesFooter, studentPerks, IFY
                         $stmt2->bindParam(':id', $id);
                     }
                     
@@ -95,7 +97,6 @@
                     if($_POST['action'] == 'insert') {
                         $id = $MYSQL_CONNECTION->lastInsertId();
                     } else {
-                        // debug($_POST);
                         ##### CODES
                         $stmt2 = $MYSQL_CONNECTION->prepare("DELETE FROM codes WHERE lessonid = :lessonid");
                         $stmt2->bindParam(':lessonid', $id);
@@ -207,8 +208,6 @@
                     }
 
                     //Modules
-                    #########SUBJECTS
-
                     if(count($_POST['moduletitle']) > 0) {
                         $counter = -1;
                         foreach($_POST['moduletitle'] as $title) {
@@ -294,7 +293,7 @@
                 $stmt2->bindParam(':lessonid', $id);
                 $stmt2->execute();
 
-                header("Location: ../list?deleteresult=success");
+                header("Location: ../list?deleteresult=success"); // redirect to the list of course and ask to throw a delete success message
 
 
             } else if(!empty($_GET['action']) && $_GET['action'] == 'insert') { ?>
@@ -558,24 +557,23 @@
     <footer><?php require_once($URLPREFIX."modules/footer.php"); ?></footer>
 </body>
 <script>
+    // Function that adds listeners to the dynamic sections of the Course Form
+    // Args:
+    //      name: Name of the section/Container
     function addListeners(name) {
-        const button = document.getElementById('add-' + name + '-button');
-        const container = document.getElementById(name + 's-container');
-        const template = document.querySelector('.' + name + '-template');
+        const button = document.getElementById('add-' + name + '-button'); // get the Add button by ID 
+        const container = document.getElementById(name + 's-container'); // get the container of the section by ID
+        const template = document.querySelector('.' + name + '-template'); // get the template by class
 
-        // MODULES
-        button.addEventListener('click', function() {
-            // Clone the module template
-            const newElement = template.cloneNode(true);
-            // Remove the template class from the new module
-            newElement.classList.remove(name + '-template');
-            // Add event listener to the remove button
-            const removeButton = newElement.querySelector('.remove-' + name + '-button');
-            removeButton.addEventListener('click', function() {
-                container.removeChild(newElement);
+        button.addEventListener('click', function() { // add a click event listener
+            const newElement = template.cloneNode(true);  // Clone the module template
+            newElement.classList.remove(name + '-template'); // Remove the template class from the new module
+            const removeButton = newElement.querySelector('.remove-' + name + '-button'); // get new remove button
+            removeButton.addEventListener('click', function() { // Add event listener to the remove button
+                container.removeChild(newElement); // on click remove the new template from the container
             });
-            // Append the new module to the container
-            container.appendChild(newElement);
+            
+            container.appendChild(newElement); // Append the new module to the container
         });
 
         // Add event listener to the remove button of the initial module template
@@ -586,12 +584,11 @@
     }
 
     function deleteTemplate(name, elem) {
-        // console.log(name);
-        // console.log(elem.parentNode);
-        elem.parentNode.parentNode.remove(elem.parentNode)
+        elem.parentNode.parentNode.remove(elem.parentNode); // Get the grandparent and delete its child
     }
-    <?php if (!empty($_GET['action']) && $_GET['action'] != 'view') { ?>
+    <?php if (!empty($_GET['action']) && $_GET['action'] != 'view') { ?> // if we are not in view mode
         document.addEventListener('DOMContentLoaded', function() {
+            // Add listeners to all dynamic form elements 
             addListeners('module');
             addListeners('fee');
             addListeners('code');
@@ -619,47 +616,29 @@
         event.currentTarget.classList.add('active');
     }
 
-    var acc = document.querySelectorAll(".accordion");
+    // Function that sets up an accordion
+    // Args:
+    //      id: a string to define the accordion class suffix
+    function setupAccordion(id) {
+        var acc = document.querySelectorAll(".accordion" + id); // select the accordion class based on the function argument
 
-    for (var i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = "10000px";
-            }
-        });
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () { // add click listener to the button
+                this.classList.toggle("active"); // on click toggle the panel
+                var panel = this.nextElementSibling; // get next dom elenet, which is the panel
+                if (panel.style.maxHeight) { // if the element has a height which means it was open, 
+                    panel.style.maxHeight = null; // set the height to null => close it
+                } else {
+                    panel.style.maxHeight = "10000px"; // set max height to 10000 => open the panel
+                }
+            });
+        }
     }
 
-    var acc2 = document.querySelectorAll(".accordion2");
-
-    for (var j = 0; j < acc2.length; j++) {
-        acc2[j].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel2 = this.nextElementSibling;
-            if (panel2.style.maxHeight) {
-                panel2.style.maxHeight = null;
-            } else {
-                panel2.style.maxHeight = "10000px";
-            }
-        });
-    }
-
-    var acc3 = document.querySelectorAll(".accordion3");
-
-    for (var k = 0; k < acc3.length; k++) {
-        acc3[k].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var panel3 = this.nextElementSibling;
-            if (panel3.style.maxHeight) {
-                panel3.style.maxHeight = null;
-            } else {
-                panel3.style.maxHeight = "10000px";
-            }
-        });
-    }
+    // Set up the three levels accordions
+    setupAccordion(""); // Course Accordion
+    setupAccordion("2"); // Stages Accordion
+    setupAccordion("3"); // Modules Accordion
 </script>
 
 </html>
