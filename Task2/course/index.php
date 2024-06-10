@@ -1,4 +1,5 @@
 <?php
+    // SETUP PAGE
     $URLPREFIX = "../";
 
     session_name('CYM019'); 
@@ -23,9 +24,6 @@
     <meta name="description" content="CSYM019 - TASK 2 - POLYVIOS DAMIANAKIS - 23858016">
     <meta name="author" content="Polyvios Damianakis">
     <link rel="stylesheet" href="<?= $URLPREFIX ?>task2.css">
-
-    <!-- <script src="<?= $URLPREFIX ?>Chart.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
 <body>
@@ -66,10 +64,12 @@
                 
 
                 try {
+                    // in case of insert
                     if($_POST['action'] == 'insert') {
                         $stmt2 = $MYSQL_CONNECTION->prepare("INSERT INTO lessons (title, overview, `level`, `starting`, entryrequirementsforkeys, `location`, courseDetails, entryReqsFull, feesHeader, feesFooter, studentPerks, IFY) 
                                                 VALUES (:title, :overview, :level, :starting, :entryrequirementsforkeys, :location, :courseDetails, :entryReqsFull, :feesHeader, :feesFooter, :studentPerks, :IFY) ");
                     } else {
+                        // in case of an update
                         $id = $_POST['id'];
                         // Row exists, perform an UPDATE
                         $stmt2 = $MYSQL_CONNECTION->prepare("UPDATE lessons SET title = :title, overview = :overview, `level` = :level, `starting` = :starting, entryrequirementsforkeys = :entryrequirementsforkeys, `location` = :location, courseDetails = :courseDetails, entryReqsFull = :entryReqsFull, feesHeader = :feesHeader, feesFooter = :feesFooter, studentPerks = :studentPerks, IFY = :IFY WHERE id = :id");
@@ -93,10 +93,12 @@
                           
                     // Execute the statement
                     $stmt2->execute();
-
+                    
+                    // in case of insert get last inserted id
                     if($_POST['action'] == 'insert') {
                         $id = $MYSQL_CONNECTION->lastInsertId();
                     } else {
+                        // Delete Course features
                         ##### CODES
                         $stmt2 = $MYSQL_CONNECTION->prepare("DELETE FROM codes WHERE lessonid = :lessonid");
                         $stmt2->bindParam(':lessonid', $id);
@@ -119,7 +121,7 @@
                         $stmt2->execute();
                     }
 
-                    // CODES
+                    // Insert course CODES
                     if(count($_POST['codetype']) > 0) {
                         $counter = -1;
                         foreach($_POST['codetype'] as $codetype) {
@@ -136,7 +138,7 @@
                         }
                     }
 
-                    // Durations
+                    // Insert course Durations
                     if(count($_POST['durationtype']) > 0) {
                         $counter = -1;
                         foreach($_POST['durationtype'] as $durationtype) {
@@ -152,7 +154,7 @@
                         }
                     }
 
-                    //Highlights
+                    //Insert course Highlights
                     if(count($_POST['highlights']) > 0) {
                         foreach($_POST['highlights'] as $highlight) {
                             if(empty($highlight))
@@ -165,7 +167,7 @@
                         }
                     }
 
-                    //fees
+                    //Insert course fees
                     if(count($_POST['feetype']) > 0) {
                         $counter = -1;
                         foreach($_POST['feetype'] as $feetype) {
@@ -188,7 +190,7 @@
                         }
                     }
 
-                    // FAQS
+                    // Insert course FAQS
                     if(count($_POST['faqquestion']) > 0) {
                         $counter = -1;
                         foreach($_POST['faqquestion'] as $question) {
@@ -207,13 +209,15 @@
                         }
                     }
 
-                    //Modules
+                    //Insert course Modules
                     if(count($_POST['moduletitle']) > 0) {
                         $counter = -1;
                         foreach($_POST['moduletitle'] as $title) {
                             $counter++;
                             if(empty($title))
                                 continue;
+
+                            // sanitise and trim fields
                             $code = substr($_POST['modulecode'][$counter], 0, 64);
                             $title = substr($title, 0, 200);
                             $status = $_POST['modulestatus'][$counter];
@@ -245,6 +249,7 @@
                         }
                     }
 
+                    // redirect to list based on teh action
                     if($_POST['action'] == 'insert') {
                         header("Location: ../list/?insertresult=success");
                     } else {
@@ -256,6 +261,7 @@
                 }
             }
 
+            // In case of a delete, we need to delete all course related rows in all teh other tables based on teh lesson id
             if(!empty($_GET['action']) && $_GET['action'] == 'delete' && !empty($_GET['id'])) { 
                 $id = $_GET['id'];
 
@@ -296,7 +302,9 @@
                 header("Location: ../list?deleteresult=success"); // redirect to the list of courses and ask to throw a delete success message
 
 
-            } else if(!empty($_GET['action']) && $_GET['action'] == 'insert') { ?>
+            } else if(!empty($_GET['action']) && $_GET['action'] == 'insert') { 
+                // in case of an insret import teh courseForm.php    
+            ?>
                 <h2> Create Course</h2>
 
                 <?php require_once("../modules/courseForm.php"); ?>
@@ -304,6 +312,7 @@
         <?php } else if (!empty($_GET['action']) && $_GET['action'] == 'edit' && !empty($_GET['id'])) { ?>
 
             <?php
+            // In case of an Edit fetch all teh data of the selected course
                 $lessonid = $_GET['id'];
                 $stmt = $MYSQL_CONNECTION->prepare("SELECT * FROM lessons WHERE id = :id");
                 $stmt->bindParam(':id', $lessonid);
@@ -318,12 +327,16 @@
                 <h2> Edit Course (<?= $row['title'] ?>)  <span class="button button-edit button-sm mr-30"> <a href="../course?action=view&id=<?= $lessonid ?>"> View Course </a></span>
                 <span class="button button-sm button-danger" id="deleteLesson"> <a href="../course?action=delete&id=<?= $lessonid ?>" onclick="return confirm('Είστε σίγουροι για την μόνιμη διαγραφή του Course και όλων των δεδομένων τους?')" >Delete Course</a></span></h2>
 
-                <?php require_once("../modules/courseForm.php"); ?>
+                <?php 
+                    // import course form which is teh same for update/insert
+                    require_once("../modules/courseForm.php"); 
+                ?>
 
             </div>
         <?php } else if (!empty($_GET['action']) && $_GET['action'] == 'view' && !empty($_GET['id'])) { ?>
 
             <?php
+            // in case of course view
                 $lessonid = $_GET['id'];
                 $stmt = $MYSQL_CONNECTION->prepare("SELECT * FROM lessons where id = :id");
                 $stmt->bindParam(':id', $lessonid);

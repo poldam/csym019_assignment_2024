@@ -1,4 +1,5 @@
 <?php
+    // Setup page helper vars and start session
     $URLPREFIX = "../";
 
     session_name('CYM019'); 
@@ -24,7 +25,7 @@
     <meta name="author" content="Polyvios Damianakis">
     <link rel="stylesheet" href="<?= $URLPREFIX ?>task2.css">
 
-    <!-- <script src="<?= $URLPREFIX ?>Chart.js"></script> -->
+    <!-- Import Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 
@@ -42,7 +43,7 @@
 
     <main id="main">
         <?php
-            //deleteresult=success
+            //Print messages for delete/add/update course
             if(!empty($_GET) && !empty($_GET['deleteresult']) && $_GET['deleteresult'] == 'success') {
                 echo '<div class="alert alert-success"> Course was successfully deleted. </div>';
             }
@@ -55,13 +56,15 @@
                 echo '<div class="alert alert-success"> Course was successfully updated. </div>';
             }
         
+        // Show back to list button in case of a report
         if(!empty($_GET['action']) && $_GET['action'] == 'report') {
             echo '<h2>REPORT RESULTS <button class="button button-sm button-edit"> <a href="../list/">Επιστροφή στη λίστα</a> </button>  </h2>';
         } else {
+            // show create report button
             echo '<h2>COURSE LIST  <button class="button button-sm button-info" onclick="createReport()"> Generate Report </button>  </h2>';        
         }
         ?>
-        
+        <!-- Table setup -->
         <table>
             <tr>
                 <?php if(empty($_GET['action']) || $_GET['action'] != 'report') { 
@@ -79,34 +82,41 @@
                 <th>ACTIONS</th>
             <tr>
             <?php
+                // get all selected courses from GET['ids'] in case of a report
                 try {
                     if(!empty($_GET['action']) && $_GET['action'] == 'report') {
                         $stmt = $MYSQL_CONNECTION->prepare("SELECT * FROM lessons WHERE id IN(".$_GET['ids'].") ORDER BY title asc");
                     } else {
+                        // if no report is selected then show in a table all teh courses
                         $stmt = $MYSQL_CONNECTION->prepare("SELECT * FROM lessons ORDER BY title asc");
                         
                     }
 
                     $stmt->execute();
-
+                    // go through all the courses
                     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                         $credits = "0";
+                        // query to get the total credits based on teh course modules
                         $stmt2 =  $MYSQL_CONNECTION->prepare("SELECT SUM(credits) AS total_credits FROM subjects where lessonid = :id");
                         $stmt2->bindParam(':id', $row['id']);
                         $stmt2->execute();
                         $row2 = $stmt2->fetch(PDO::FETCH_ASSOC);
-    
+
+                        // if there are modules with credits assign teh SUM to $credits var
                         if ($row2) {
                             // var_dump($row2);
                             $credits = $row2['total_credits'];
                         }
 
+                        // in case of a report
                         if(!empty($_GET['action']) && $_GET['action'] == 'report') {
                             
+                            //get all the modules of teh current course
                             $stmt3 = $MYSQL_CONNECTION->prepare("SELECT * FROM subjects WHERE lessonid = :id");
                             $stmt3->bindParam(':id', $row['id']);
                             $stmt3->execute();
 
+                            // store modules per stage
                             $subjects = [
                                 1 => [],
                                 2 => [],
@@ -116,27 +126,33 @@
                                 6 => []
                             ];
 
-                            $subjectLabels = [];
-                            $subjectCredits = [];
-                            $subjectColors = [];
+                            $subjectLabels = []; // save in array module labels for carts
+                            $subjectCredits = []; // save in array module credits for carts
+                            $subjectColors = []; // save in array module colors for carts
 
                             // $subjects[$row3['stage']][0] = 0;
-
+                            // go through modules
                             while ($row3 = $stmt3->fetch(PDO::FETCH_ASSOC)) {
-                                $row3['status'] = $LESSON_STATUS[$row3['status']];
+                                $row3['status'] = $LESSON_STATUS[$row3['status']]; // get status
+
+                                // initiate stage
                                 if(empty($subjects[$row3['stage']][0]))
                                     $subjects[$row3['stage']][0] = 0;
 
+                                // sum up credits per stage
                                 $subjects[$row3['stage']][0] += $row3['credits'];
+                                // save module per stage
                                 $subjects[$row3['stage']][1][] = $row3;
 
-                                $subjectLabels[] = $row3['title']." (".$row3['code'].")";
-                                $subjectCredits[] = $row3['credits'];
-                                $subjectColors[] = generateRandomColor();
+                                $subjectLabels[] = $row3['title']." (".$row3['code'].")"; // update labels
+                                $subjectCredits[] = $row3['credits']; // update credits
+                                $subjectColors[] = generateRandomColor(); //create a random color
                             }
                         }
 
+                        // print table rows, one row per module
                         echo "<tr>";
+                            // in case of no report include a checkbox 
                             if(empty($_GET['action']) || $_GET['action'] != 'report')  
                                 echo '<td> <input type="checkbox" id="checkbox-'.$row['id'].'" class="course-checkbox"/> </td>';
                             echo "<td>".$row['id']."</td>";
@@ -146,6 +162,7 @@
                             echo "<td>".$row['location']."</td>";
                             echo "<td><div title='".$row['overview']."'>".substr($row['overview'], 0, 100)."</div></td>";
                             echo "<td> ".$credits." </td>";
+                            // print action buttons
                             echo "<td>";
                                 echo '<button class="buttonTable button-info"> <a href="../course/?action=view&id='.$row['id'].'" target="_blank"> VIEW </a> </button>';
                                 echo '<button class="buttonTable button-edit"> <a href="../course/?action=edit&id='.$row['id'].'" target="_blank">EDIT </a></button>';
@@ -156,12 +173,14 @@
                             <?php echo "</td>";
                         echo "</tr>";
 
+                        // in case of report save all the course info in teh STATISTICS array
                         if(!empty($_GET['action']) && $_GET['action'] == 'report') {
                             $STATISTICS[$row['id']] = [$row['id'], $row['title'], $credits, $subjects, $subjectLabels, $subjectCredits, $subjectColors];
                         }
                     }
 
                 } catch(PDOException $e) {
+                    // print erorr in case of mysql error
                     echo "Error: " . $e->getMessage();
                 }
 
@@ -171,6 +190,7 @@
         <?php if(!empty($_GET['action']) && $_GET['action'] == 'report') { ?>
             <div class="mt-30 text-center">
                 <?php
+                // in case of report setup the graph data
                     $COURSESIDS = [];
                     $COURSESMODULES = [];
                     $COURSESCREDITS = [];
@@ -178,21 +198,27 @@
                     $COURSESNAMES = [];
                 ?>
                 <?php foreach($STATISTICS as $id => $data) { 
+                    // gor through courses with $id => $data
                     if(empty($data[2]))
                         $data[2] = 0;
 
                     // $COURSESIDS[] = [$id, count($data[4]), $data[2]];
 
+                    // setup graph info
                     $COURSESIDS[] = $id;
                     $COURSESMODULES[] = count($data[4]);
                     $COURSESCREDITS[] = $data[2];
                     $COURSESCOLORS[] = generateRandomColor();
                     $COURSESNAMES[] = "'".$data[1]."'";
+
+                    // add the modules title
                     ?>
                     <h3> <?= $data[1] ?> (Modules: <?= count($data[4]) ?> | Total Credits: <?= $data[2] ?>) <button class="buttonTable button-edit"> <a href="../course/?action=edit&id=<?= $id ?>" target="_blank"> EDIT </a></button> </h3>
                     <div class="col50 badge">
+                    <!-- Charts placeholder -->
                         <canvas id="reportChart-<?= $data[0] ?>" class="mychart"></canvas>
                         <script>
+                        // charts options setup
                             var options = {
                                 legend: { display: false },
                                 title: { display: true,  text: "<?= $data[1] ?> - Credits per Module" },
@@ -211,10 +237,13 @@
                                     }
                                 }
                             };
+
+                            // setup values
                             var xValues = ["<?= implode("\",\"", $data[4]) ?>"];
                             var yValues = [<?= implode(",", $data[5]) ?>];
                             var colors = [<?= implode(",", $data[6]) ?>];
 
+                            // create new chart
                             new Chart("reportChart-<?= $data[0] ?>", {
                                 type: "pie",
                                 data: {

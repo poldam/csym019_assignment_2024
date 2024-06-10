@@ -1,3 +1,4 @@
+<!-- MENU SETUP -->
 <div id="menu">
     <div><a class="menuitem <?php if($PAGE == "dashboard") echo "activemenuitem"; ?>" href="<?= $URLPREFIX ?>">Dashboard</a></div> 
     <div><a class="menuitem <?php if($PAGE == "course") echo "activemenuitem"; ?>" href="<?= $URLPREFIX."course?action=insert" ?>">Course Actions</a></div>
